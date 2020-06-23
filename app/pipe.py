@@ -20,11 +20,12 @@ import pandas as pd
 
 
 from sklearn.cluster import DBSCAN, KMeans
+from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import adjusted_mutual_info_score, adjusted_rand_score, completeness_score, homogeneity_score
+from sklearn.metrics import adjusted_mutual_info_score, adjusted_rand_score, completeness_score, homogeneity_score, v_measure_score
 from sklearn.mixture import GaussianMixture
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import LabelEncoder
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import LabelEncoder, Normalizer
 
 import sys
 import time
@@ -44,13 +45,8 @@ def main():
 	# =======================
 
 	n_jobs = args.n_jobs
-	#TODO: min, max df to args?!
-	vectorizer = TfidfVectorizer(max_df=0.5,
-								 min_df=2.0,
-								 lowercase=args.lowercase,
-								 max_features=args.max_features,
-								 stop_words=None)
-	ars_dict = {}
+	n_components = 3 #for dimension reduction
+	results_dict = {}
 
 	
 	# ================================
@@ -100,11 +96,33 @@ def main():
 	unique_epochs = list(np.unique(corpus["epoch"]))
 
 
-	if args.reduce_dimensionality:
-		#TODO
-		nothing = 0
-		...
+	
+	# ===============
+	# vectorization #
+	# ===============
+
+	#TODO: min, max df to args?!
+	vectorizer = TfidfVectorizer(max_df=0.5,
+								 min_df=2.0,
+								 lowercase=args.lowercase,
+								 max_features=args.max_features,
+								 stop_words=None)
 	vector = vectorizer.fit_transform(text)
+
+	if args.reduce_dimensionality:
+		logging.info(f"Reduce dimensionality to {n_components}.")
+		svd = TruncatedSVD(n_components=n_components)
+		normalizer = Normalizer(copy=False)
+		lsa = make_pipeline(svd, normalizer)
+		vector = lsa.fit_transform(vector)
+
+		explained_variance = svd.explained_variance_ratio_.sum()
+		logging.info("Explained variance of the SVD step: {}%".format(int(explained_variance * 100)))
+
+
+	# ============
+	# clustering #
+	# ============
 
 	kmeans_st = time.time()
 	kmeans = KMeans(n_clusters=len(unique_epochs),
@@ -115,9 +133,18 @@ def main():
 	kmeans_ars = adjusted_rand_score(labels, kmeans.labels_)
 	logging.info(f"Adjusted Rand Score for K-Means: {kmeans_ars}.")
 
-	with open("../results/kmeans_ars.json", "r+") as f:
+	kmeans_vm = v_measure_score(labels, kmeans.labels_)
+	logging.info(f"V-measure for K-Means: {kmeans_vm}.")
+
+	output_path = "../results/kmeans_results.json"
+
+	if args.reduce_dimensionality:
+		output_path = "../results/kmeans_results_rd.json"	
+
+
+	with open(output_path, "r+") as f:
 		dic = json.load(f)
-		dic[f"{epoch1}/{epoch2}"] = kmeans_ars
+		dic[f"{epoch1}/{epoch2}"] = {"ars": kmeans_ars, "vm": kmeans_vm}
 		f.seek(0)
 		json.dump(dic, f)
 
@@ -179,7 +206,7 @@ if __name__ == "__main__":
 	parser.add_argument("--lowercase", "-l", type=bool, default=False, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
-	parser.add_argument("--reduce_dimensionality", "-rd", type=bool, default=False, help="Indicates if dimension reduction should be applied before clustering.")
+	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
 	
 	args = parser.parse_args()
