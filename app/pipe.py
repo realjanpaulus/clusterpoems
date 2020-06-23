@@ -47,6 +47,7 @@ def main():
 	n_jobs = args.n_jobs
 	n_components = 3 #for dimension reduction
 	results_dict = {}
+	top_words = {}
 
 	
 	# ================================
@@ -128,6 +129,38 @@ def main():
 	kmeans = KMeans(n_clusters=len(unique_epochs),
 					n_jobs=n_jobs)
 	kmeans.fit(vector)
+
+
+	# ==================
+	# kmeans top words #
+	# ==================
+
+	if args.reduce_dimensionality:
+        original_space_centroids = svd.inverse_transform(kmeans.cluster_centers_)
+        order_centroids = original_space_centroids.argsort()[:, ::-1]
+    else:
+        order_centroids = kmeans.cluster_centers_.argsort()[:, ::-1]
+
+    terms = vectorizer.get_feature_names()
+
+    top_words_cluster = {}
+    for i in range(true_k):
+        top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :10]]
+
+
+    output_path = "../results/kmeans_top_words.json"
+
+	if args.reduce_dimensionality:
+		output_path = "../results/kmeans_top_words_rd.json"	
+
+
+	with open(output_path, "r+") as f:
+		dic = json.load(f)
+		dic[f"{epoch1}/{epoch2}"] = top_words_cluster
+		f.seek(0)
+		json.dump(dic, f)
+
+
 
 	print("--------------- Metrics (K-Means) ---------------")
 	kmeans_ars = adjusted_rand_score(labels, kmeans.labels_)
