@@ -103,7 +103,6 @@ def main():
 
 	#TODO: min, max df to args?!
 	vectorizer = TfidfVectorizer(max_df=0.5,
-								 min_df=2.0,
 								 lowercase=args.lowercase,
 								 max_features=args.max_features,
 								 stop_words=None)
