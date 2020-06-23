@@ -117,7 +117,7 @@ def main():
 		new_entry = {f"{epoch1}/{epoch2}" : kmeans_ars}
 		dic.update(new_entry)
 		f.seek(0)
-    	json.dump(dic, f)
+		json.dump(dic, f)
 
 	kmeans_amis = adjusted_mutual_info_score(labels, kmeans.labels_)
 	logging.info(f"Adjusted Mutuial Info Score for K-Means: {kmeans_amis}.")

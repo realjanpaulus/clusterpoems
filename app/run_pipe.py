@@ -25,13 +25,13 @@ def main():
 	if args.epoch_division == "brenner":
 		epochs = {
 					"Barock": {"b": 1600, "e": 1700},
-				    "Frühaufklärung": {"b": 1700, "e": 1755},
-				    "Aufklärung": {"b": 1755, "e": 1810},
-				    "Klassik_Romantik": {"b": 1786, "e": 1832},
-				    "Biedermeier": {"b": 1815, "e": 1848},
-				    "Realismus": {"b": 1848, "e": 1900},
-				    "Moderne": {"b": 1880, "e": 1918},
-				    "Weimarer Republik": {"b": 1918, "e": 1933}
+					"Frühaufklärung": {"b": 1700, "e": 1755},
+					"Aufklärung": {"b": 1755, "e": 1810},
+					"Klassik_Romantik": {"b": 1786, "e": 1832},
+					"Biedermeier": {"b": 1815, "e": 1848},
+					"Realismus": {"b": 1848, "e": 1900},
+					"Moderne": {"b": 1880, "e": 1918},
+					"Weimarer Republik": {"b": 1918, "e": 1933}
 				}
 
 		unique_epochs = list(epochs.keys())
@@ -42,19 +42,19 @@ def main():
 
 	
 
-	cartesian_inputs = list(combinations(unique_epochs, r=2))
+	combinations_inputs = list(combinations(unique_epochs, r=2))
 
 
-	for idx, t in enumerate(cartesian_inputs):
+	for idx, t in enumerate(combinations_inputs):
 		
 		print("--------------------------------------------")
-		logging.info(f"Argument combination {idx+1}/{len(cartesian_inputs)}.")
+		logging.info(f"Argument combination {idx+1}/{len(combinations_inputs)}.")
 		logging.info(f"Epoch 1: {t[0]}.")
 		logging.info(f"Epoch 2: {t[1]}.")
 		print("--------------------------------------------")
 
 
-		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_divison} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -mf {args.max_features} -nj {args.n_jobs}"
+		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -mf {args.max_features} -nj {args.n_jobs}"
 
 		
 		if args.save_date:
