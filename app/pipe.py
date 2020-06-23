@@ -44,7 +44,10 @@ def main():
 	# =======================
 
 	n_jobs = args.n_jobs
-	vectorizer = TfidfVectorizer(lowercase=args.lowercase,
+	#TODO: min, max df to args?!
+	vectorizer = TfidfVectorizer(max_df=0.5,
+								 min_df=2.0,
+								 lowercase=args.lowercase,
 								 max_features=args.max_features,
 								 stop_words=None)
 	ars_dict = {}

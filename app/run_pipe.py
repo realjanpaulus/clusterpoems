@@ -22,6 +22,8 @@ def main():
 
 	logging.info("Clustering for all epoch combinations.")
 
+
+	#TODO: reset json file
 	if args.epoch_division == "brenner":
 		epochs = {
 					"Barock": {"b": 1600, "e": 1700},
