@@ -117,8 +117,7 @@ def main():
 
 	with open("../results/kmeans_ars.json", "r+") as f:
 		dic = json.load(f)
-		new_entry = {f"{epoch1}/{epoch2}" : kmeans_ars}
-		dic.update(new_entry)
+		dic[f"{epoch1}/{epoch2}"] = kmeans_ars
 		f.seek(0)
 		json.dump(dic, f)
 
