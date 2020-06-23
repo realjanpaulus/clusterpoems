@@ -69,7 +69,7 @@ def main():
 	
 if __name__ == "__main__":
 	
-	parser = argparse.ArgumentParser(prog="bert_opt", description="Runs bert classification script with multiple arguments.")
+	parser = argparse.ArgumentParser(prog="run_pipe", description="Runs clustering script with multiple epoch combinations.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
 	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
