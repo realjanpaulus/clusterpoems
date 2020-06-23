@@ -135,19 +135,19 @@ def main():
 	# ==================
 
 	if args.reduce_dimensionality:
-        original_space_centroids = svd.inverse_transform(kmeans.cluster_centers_)
-        order_centroids = original_space_centroids.argsort()[:, ::-1]
-    else:
-        order_centroids = kmeans.cluster_centers_.argsort()[:, ::-1]
+		original_space_centroids = svd.inverse_transform(kmeans.cluster_centers_)
+		order_centroids = original_space_centroids.argsort()[:, ::-1]
+	else:
+		order_centroids = kmeans.cluster_centers_.argsort()[:, ::-1]
 
-    terms = vectorizer.get_feature_names()
+	terms = vectorizer.get_feature_names()
 
-    top_words_cluster = {}
-    for i in range(true_k):
-        top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :10]]
+	top_words_cluster = {}
+	for i in range(true_k):
+		top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :10]]
 
 
-    output_path = "../results/kmeans_top_words.json"
+	output_path = "../results/kmeans_top_words.json"
 
 	if args.reduce_dimensionality:
 		output_path = "../results/kmeans_top_words_rd.json"	
