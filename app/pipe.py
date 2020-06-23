@@ -79,7 +79,7 @@ def main():
 
 	if args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
-		epoch_exception = "Klassik_Romantik"
+		epoch_exception = args.epoch_exception
 		corpus = add_epoch_division(corpus, epochs, epoch_exception=epoch_exception)
 		logging.info(f"Added epoch division by '{args.epoch_division}'.")
 	else:
@@ -111,6 +111,13 @@ def main():
 	print("--------------- Metrics (K-Means) ---------------")
 	kmeans_ars = adjusted_rand_score(labels, kmeans.labels_)
 	logging.info(f"Adjusted Rand Score for K-Means: {kmeans_ars}.")
+
+	with open("../results/kmeans_ars.json", "r+") as f:
+		dic = json.load(f)
+		new_entry = {f"{epoch1}/{epoch2}" : kmeans_ars}
+		dic.update(new_entry)
+		f.seek(0)
+    	json.dump(dic, f)
 
 	kmeans_amis = adjusted_mutual_info_score(labels, kmeans.labels_)
 	logging.info(f"Adjusted Mutuial Info Score for K-Means: {kmeans_amis}.")
@@ -164,10 +171,11 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(prog="pipe", description="Pipeline for clustering.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
+	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
 	parser.add_argument("--epoch_one", "-eo", type=str, default="Aufklärung", help="Name of the first epoch.")
 	parser.add_argument("--epoch_two", "-et", type=str, default="Realismus", help="Name of the first epoch.")
 	parser.add_argument("--lowercase", "-l", type=bool, default=False, help="Indicates if words should be lowercased.")
-	parser.add_argument("--max_features", "-mf", type=int, default=60000, help="Indicates the number of most frequent words.")
+	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
 	parser.add_argument("--reduce_dimensionality", "-rd", type=bool, default=False, help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")

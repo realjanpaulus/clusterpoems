@@ -1,0 +1,91 @@
+import argparse
+from itertools import combinations
+import logging
+import subprocess
+import sys
+import time
+
+def main():
+
+	program_st = time.time()
+
+
+	logging.basicConfig(level=logging.DEBUG, 
+						filename=f"../logs/run_{args.corpus_name}.log", 
+						filemode="w")
+	console = logging.StreamHandler()
+	console.setLevel(logging.INFO)
+	formatter = logging.Formatter("%(levelname)s: %(message)s")
+	console.setFormatter(formatter)
+	logging.getLogger('').addHandler(console)
+	
+
+	logging.info("Clustering for all epoch combinations.")
+
+	if args.epoch_division == "brenner":
+		epochs = {
+					"Barock": {"b": 1600, "e": 1700},
+				    "Frühaufklärung": {"b": 1700, "e": 1755},
+				    "Aufklärung": {"b": 1755, "e": 1810},
+				    "Klassik_Romantik": {"b": 1786, "e": 1832},
+				    "Biedermeier": {"b": 1815, "e": 1848},
+				    "Realismus": {"b": 1848, "e": 1900},
+				    "Moderne": {"b": 1880, "e": 1918},
+				    "Weimarer Republik": {"b": 1918, "e": 1933}
+				}
+
+		unique_epochs = list(epochs.keys())
+
+		if args.epoch_exception in unique_epochs:
+			unique_epochs.remove(args.epoch_exception)
+
+
+	
+
+	cartesian_inputs = list(combinations(unique_epochs, r=2))
+
+
+	for idx, t in enumerate(cartesian_inputs):
+		
+		print("--------------------------------------------")
+		logging.info(f"Argument combination {idx+1}/{len(cartesian_inputs)}.")
+		logging.info(f"Epoch 1: {t[0]}.")
+		logging.info(f"Epoch 2: {t[1]}.")
+		print("--------------------------------------------")
+
+
+		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_divison} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -mf {args.max_features} -nj {args.n_jobs}"
+
+		if args.domain_adaption:
+			if args.domain_adaption_alternative_path:
+				command = f"python bertclf.py -cn {args.corpus_name} -m {args.model} -da -daap -bs {t[0]} -lr {t[1]}"
+			else:
+				command = f"python bertclf.py -cn {args.corpus_name} -m {args.model} -da -bs {t[0]} -lr {t[1]}"
+		else:
+			command = f"python bertclf.py -cn {args.corpus_name} -m {args.model} -bs {t[0]} -lr {t[1]}"
+		
+		if args.save_date:
+			command += " -sd"
+		
+		subprocess.call(["bash", "-c", command])
+		print("\n")
+	program_duration = float(time.time() - program_st)
+	logging.info(f"Overall run-time: {int(program_duration)/60} minute(s).")
+	"""
+	
+	
+if __name__ == "__main__":
+	
+	parser = argparse.ArgumentParser(prog="bert_opt", description="Runs bert classification script with multiple arguments.")
+	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
+	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
+	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
+	parser.add_argument("--lowercase", "-l", type=bool, default=False, help="Indicates if words should be lowercased.")
+	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
+	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
+	parser.add_argument("--reduce_dimensionality", "-rd", type=bool, default=False, help="Indicates if dimension reduction should be applied before clustering.")
+	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
+	
+	args = parser.parse_args()
+
+	main()
