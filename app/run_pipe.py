@@ -31,7 +31,7 @@ def main():
 					"Biedermeier": {"b": 1815, "e": 1848},
 					"Realismus": {"b": 1848, "e": 1900},
 					"Moderne": {"b": 1880, "e": 1918},
-					"Weimarer Republik": {"b": 1918, "e": 1933}
+					"Weimarer_Republik": {"b": 1918, "e": 1933}
 				}
 
 		unique_epochs = list(epochs.keys())
