@@ -183,7 +183,7 @@ def main():
 		json.dump(dic, f)
 
 	kmeans_amis = adjusted_mutual_info_score(labels, kmeans.labels_)
-	logging.info(f"Adjusted Mutuial Info Score for K-Means: {kmeans_amis}.")
+	logging.info(f"Adjusted Mutual Info Score for K-Means: {kmeans_amis}.")
 
 	kmeans_hs = homogeneity_score(labels, kmeans.labels_)
 	logging.info(f"Homogeneity Score for K-Means: {kmeans_hs}.")
