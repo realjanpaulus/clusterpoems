@@ -56,13 +56,6 @@ def main():
 
 		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_divison} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -mf {args.max_features} -nj {args.n_jobs}"
 
-		if args.domain_adaption:
-			if args.domain_adaption_alternative_path:
-				command = f"python bertclf.py -cn {args.corpus_name} -m {args.model} -da -daap -bs {t[0]} -lr {t[1]}"
-			else:
-				command = f"python bertclf.py -cn {args.corpus_name} -m {args.model} -da -bs {t[0]} -lr {t[1]}"
-		else:
-			command = f"python bertclf.py -cn {args.corpus_name} -m {args.model} -bs {t[0]} -lr {t[1]}"
 		
 		if args.save_date:
 			command += " -sd"
@@ -71,7 +64,7 @@ def main():
 		print("\n")
 	program_duration = float(time.time() - program_st)
 	logging.info(f"Overall run-time: {int(program_duration)/60} minute(s).")
-	"""
+
 	
 	
 if __name__ == "__main__":
