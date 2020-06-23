@@ -1,5 +1,6 @@
 import argparse
 from itertools import combinations
+import json
 import logging
 import subprocess
 import sys
@@ -23,7 +24,25 @@ def main():
 	logging.info("Clustering for all epoch combinations.")
 
 
-	#TODO: reset json file
+	# reset json files #
+
+	output_path = "../results/kmeans_top_words.json"
+	if args.reduce_dimensionality:
+		output_path = "../results/kmeans_top_words_rd.json"	
+
+	with open(output_path, "w+") as f:
+		json.dump({}, f)
+
+
+	output_path = "../results/kmeans_results.json"
+	if args.reduce_dimensionality:
+		output_path = "../results/kmeans_results_rd.json"	
+
+	with open(output_path, "w+") as f:
+		json.dump({}, f)
+
+
+
 	if args.epoch_division == "brenner":
 		epochs = {
 					"Barock": {"b": 1600, "e": 1700},
@@ -56,7 +75,7 @@ def main():
 		print("--------------------------------------------")
 
 
-		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -mf {args.max_features} -nj {args.n_jobs}"
+		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -l {args.lowercase} -mf {args.max_features} -nj {args.n_jobs}"
 
 		
 		if args.save_date:
@@ -75,7 +94,7 @@ if __name__ == "__main__":
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
 	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
-	parser.add_argument("--lowercase", "-l", type=bool, default=False, help="Indicates if words should be lowercased.")
+	parser.add_argument("--lowercase", "-l", type=bool, default=True, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
 	parser.add_argument("--reduce_dimensionality", "-rd", type=bool, default=False, help="Indicates if dimension reduction should be applied before clustering.")
