@@ -80,6 +80,10 @@ def main():
 		
 		if args.save_date:
 			command += " -sd"
+
+		if args.reduce_dimensionality:
+			command += " -rd"
+
 		
 		subprocess.call(["bash", "-c", command])
 		print("\n")
