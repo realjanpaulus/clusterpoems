@@ -79,10 +79,15 @@ def main():
 	with open("epochs.json") as f:
 		epochs = json.loads(f.read())
 
+	#TODO: mehr
 	if args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
 		epoch_exception = args.epoch_exception
 		corpus = add_epoch_division(corpus, epochs, epoch_exception=epoch_exception)
+		logging.info(f"Added epoch division by '{args.epoch_division}'.")
+	elif args.epoch_division == "simple":
+		epochs = epochs["simple"]
+		corpus = add_epoch_division(corpus, epochs, epoch_exception="")
 		logging.info(f"Added epoch division by '{args.epoch_division}'.")
 	else:
 		logging.warning(f"Couldn't find a epoch division with the name '{args.epoch_division}'.")
