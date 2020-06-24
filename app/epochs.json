@@ -1,28 +1,32 @@
 {
-      "random": {
-            "Barock": {"b": 1600, "e": 1720},
-            "Aufklärung": {"b": 1720, "e": 1790},
-            "Empfindsamkeit": {"b": 1740, "e": 1790},
-            "Sturm und Drang": {"b": 1765, "e": 1790},
-            "Klassik": {"b": 1786, "e": 1882},
-            "Romantik": {"b": 1798, "e": 1835},
-            "Biedermeier": {"b": 1815, "e": 1848},
-            "Vormärz_Junges Deutschland": {"b": 1825, "e": 1848},
-            "Realismus": {"b": 1848, "e": 1890},
-            "Naturalismus": {"b": 1880, "e": 1900},
-            "Moderne": {"b": 1890, "e": 1920},
-            "Expressionismus": {"b": 1910, "e": 1925},
-            "Avantgarde_Dadaismus": {"b": 1915, "e": 1925},
-            "Literatur der Weimarer Republik_Neue Sachlichkeit": {"b": 1919, "e": 1932}
-            },
-      "brenner": {
-            "Barock": {"b": 1600, "e": 1700},
-            "Frühaufklärung": {"b": 1700, "e": 1755},
-            "Aufklärung": {"b": 1755, "e": 1810},
-            "Klassik_Romantik": {"b": 1786, "e": 1832},
-            "Biedermeier": {"b": 1815, "e": 1848},
-            "Realismus": {"b": 1848, "e": 1900},
-            "Moderne": {"b": 1880, "e": 1918},
-            "Weimarer_Republik": {"b": 1918, "e": 1933}
-            }
+"random": {
+      "Barock": {"b": 1600, "e": 1720},
+      "Aufklärung": {"b": 1720, "e": 1790},
+      "Empfindsamkeit": {"b": 1740, "e": 1790},
+      "Sturm und Drang": {"b": 1765, "e": 1790},
+      "Klassik": {"b": 1786, "e": 1882},
+      "Romantik": {"b": 1798, "e": 1835},
+      "Biedermeier": {"b": 1815, "e": 1848},
+      "Vormärz_Junges Deutschland": {"b": 1825, "e": 1848},
+      "Realismus": {"b": 1848, "e": 1890},
+      "Naturalismus": {"b": 1880, "e": 1900},
+      "Moderne": {"b": 1890, "e": 1920},
+      "Expressionismus": {"b": 1910, "e": 1925},
+      "Avantgarde_Dadaismus": {"b": 1915, "e": 1925},
+      "Literatur der Weimarer Republik_Neue Sachlichkeit": {"b": 1919, "e": 1932}
+      },
+"brenner": {
+      "Barock": {"b": 1600, "e": 1700},
+      "Frühaufklärung": {"b": 1700, "e": 1755},
+      "Aufklärung": {"b": 1755, "e": 1810},
+      "Klassik_Romantik": {"b": 1786, "e": 1832},
+      "Biedermeier": {"b": 1815, "e": 1848},
+      "Realismus": {"b": 1848, "e": 1900},
+      "Moderne": {"b": 1880, "e": 1918},
+      "Weimarer_Republik": {"b": 1918, "e": 1933}
+      },
+"simple": {
+      "Realismus": {"b": 1850, "e": 1850},
+      "Moderne": {"b": 1900, "e": 1900}
+      }
 }
