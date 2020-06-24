@@ -184,6 +184,13 @@ def wordcloud_epochs(df, epochs, n = 100, pos_remove = False):
 # =====
 
 
+def clear_json(jsonpath):
+    """ Clears an json file.
+    """
+    with open(jsonpath, "w+") as f:
+        json.dump({}, f)
+
+
 def hide_code():
     """Hide jupyter notebook code cells."""
     toggle_code_str = """

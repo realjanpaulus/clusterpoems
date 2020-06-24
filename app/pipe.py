@@ -31,7 +31,7 @@ from sklearn.preprocessing import LabelEncoder, Normalizer
 from stop_words import get_stop_words
 import sys
 import time
-from utils import add_epoch_division, text_cleaning
+from utils import add_epoch_division, clear_json, text_cleaning
 
 
 def main():
@@ -126,102 +126,139 @@ def main():
 	# clustering #
 	# ============
 
-	kmeans_st = time.time()
-	kmeans = KMeans(n_clusters=len(unique_epochs),
-					n_jobs=n_jobs)
-	kmeans.fit(vector)
+
+	if args.method == "kmeans" or args.method == "all":
+
+		kmeans_st = time.time()
+		kmeans = KMeans(n_clusters=len(unique_epochs),
+						n_jobs=n_jobs)
+		kmeans.fit(vector)
 
 
-	# ==================
-	# kmeans top words #
-	# ==================
+		# ==================
+		# kmeans top words #
+		# ==================
 
-	if args.reduce_dimensionality:
-		original_space_centroids = svd.inverse_transform(kmeans.cluster_centers_)
-		order_centroids = original_space_centroids.argsort()[:, ::-1]
-	else:
-		order_centroids = kmeans.cluster_centers_.argsort()[:, ::-1]
+		if args.reduce_dimensionality:
+			original_space_centroids = svd.inverse_transform(kmeans.cluster_centers_)
+			order_centroids = original_space_centroids.argsort()[:, ::-1]
+		else:
+			order_centroids = kmeans.cluster_centers_.argsort()[:, ::-1]
 
-	terms = vectorizer.get_feature_names()
+		terms = vectorizer.get_feature_names()
 
-	top_words_cluster = {}
-	for i in range(len(unique_epochs)):
-		top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :10]]
-
-
-	output_path = "../results/kmeans_top_words.json"
-
-	if args.reduce_dimensionality:
-		output_path = "../results/kmeans_top_words_rd.json"	
+		top_words_cluster = {}
+		for i in range(len(unique_epochs)):
+			top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :10]]
 
 
-	with open(output_path, "r+") as f:
-		dic = json.load(f)
-		dic[f"{epoch1}/{epoch2}"] = top_words_cluster
-		f.seek(0)
-		json.dump(dic, f)
+		output_path = "../results/kmeans_top_words.json"
+
+		if args.reduce_dimensionality:
+			output_path = "../results/kmeans_top_words_rd.json"	
+
+		if args.keep_json:
+			clear_json(output_path)
+
+		with open(output_path, "r+") as f:
+			dic = json.load(f)
+			dic[f"{epoch1}/{epoch2}"] = top_words_cluster
+			f.seek(0)
+			json.dump(dic, f)
 
 
 
-	print("--------------- Metrics (K-Means) ---------------")
-	kmeans_ars = adjusted_rand_score(labels, kmeans.labels_)
-	logging.info(f"Adjusted Rand Score for K-Means: {kmeans_ars}.")
+		print("--------------- Metrics (K-Means) ---------------")
+		kmeans_ari = adjusted_rand_score(labels, kmeans.labels_)
+		logging.info(f"Adjusted Rand Score for K-Means: {kmeans_ari}.")
 
-	kmeans_vm = v_measure_score(labels, kmeans.labels_)
-	logging.info(f"V-measure for K-Means: {kmeans_vm}.")
+		kmeans_vm = v_measure_score(labels, kmeans.labels_)
+		logging.info(f"V-measure for K-Means: {kmeans_vm}.")
 
-	output_path = "../results/kmeans_results.json"
+		output_path = "../results/kmeans_results.json"
 
-	if args.reduce_dimensionality:
-		output_path = "../results/kmeans_results_rd.json"	
+		if args.reduce_dimensionality:
+			output_path = "../results/kmeans_results_rd.json"	
 
 
-	with open(output_path, "r+") as f:
-		dic = json.load(f)
-		dic[f"{epoch1}/{epoch2}"] = {"ars": kmeans_ars, "vm": kmeans_vm}
-		f.seek(0)
-		json.dump(dic, f)
+		with open(output_path, "r+") as f:
+			dic = json.load(f)
+			dic[f"{epoch1}/{epoch2}"] = {"ari": kmeans_ari, "vm": kmeans_vm}
+			f.seek(0)
+			json.dump(dic, f)
 
-	kmeans_amis = adjusted_mutual_info_score(labels, kmeans.labels_)
-	logging.info(f"Adjusted Mutual Info Score for K-Means: {kmeans_amis}.")
+		kmeans_amis = adjusted_mutual_info_score(labels, kmeans.labels_)
+		logging.info(f"Adjusted Mutual Info Score for K-Means: {kmeans_amis}.")
 
-	kmeans_hs = homogeneity_score(labels, kmeans.labels_)
-	logging.info(f"Homogeneity Score for K-Means: {kmeans_hs}.")
+		kmeans_hs = homogeneity_score(labels, kmeans.labels_)
+		logging.info(f"Homogeneity Score for K-Means: {kmeans_hs}.")
 
-	kmeans_cs = completeness_score(labels, kmeans.labels_)
-	logging.info(f"Completeness Score for K-Means: {kmeans_cs}.")
-	print("--------------------------------------------------")
+		kmeans_cs = completeness_score(labels, kmeans.labels_)
+		logging.info(f"Completeness Score for K-Means: {kmeans_cs}.")
+		print("--------------------------------------------------")
 
-	kmeans_duration = float(time.time() - kmeans_st)
-	logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
+		kmeans_duration = float(time.time() - kmeans_st)
+		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
+	elif args.method == "dbscan" or args.method == "all":
 
-	"""TODO
-	dbscan_st = time.time()
-	dbscan = DBSCAN(n_jobs=n_jobs)
-	dbscan.fit(vector)
-	dbscan_ars = adjusted_rand_score(labels, dbscan.labels_)
-	logging.info(f"Adjusted Rand Score for DBSCAN: {dbscan_ars}.")
-	dbscan_duration = float(time.time() - dbscan_st)
-	logging.info(f"Run-time DBSCAN: {dbscan_duration} seconds")
-	"""
-
-	"""TODO
-	gmm_st = time.time()
-	gmm = GaussianMixture()
-	gmm.fit(vector)
-	gmm_ars = adjusted_rand_score(labels, gmm.labels_)
-	logging.info(f"Adjusted Rand Score for Gaussian Mixture Model: {gmm_ars}.")
-	gmm_duration = float(time.time() - gmm_st)
-	logging.info(f"Run-time Gaussian Mixture Model: {gmm_duration} seconds")
-	"""
 	
+		dbscan_st = time.time()
+		dbscan = DBSCAN(n_jobs=n_jobs)
+		dbscan.fit(vector)
+		dbscan_ari = adjusted_rand_score(labels, dbscan.labels_)
+		logging.info(f"Adjusted Rand Score for DBSCAN: {dbscan_ari}.")
+		dbscan_duration = float(time.time() - dbscan_st)
+		logging.info(f"Run-time DBSCAN: {dbscan_duration} seconds")
+	elif args.method == "gmm" or args.method == "all":
 
-	logging.info(f"Read {args.corpus_name} corpus ({int((time.time() - program_st)/60)} minute(s)).")
+		gmm_st = time.time()
+		gmm = GaussianMixture(n_components=2, n_init=10, max_iter=100)
+		gmm.fit(vector.toarray())
+
+		if not gmm.converged_:
+			logging.info("Gaussian Mixture Model didn't converged. Increase max iter.")
+			gmm = GaussianMixture(n_components=2, n_init=10, max_iter=250)
+			gmm.fit(vector.toarray())
+
+		gmm_labels = gmm.predict(vector.toarray())
+
+		# ==================
+		# gmm top words #
+		# ==================
+
+		# TODO
 
 
-	# ============
-	# clustering #
-	# ============
+		print("--------------- Metrics (Gaussian Mixture Model) ---------------")
+		gmm_ari = adjusted_rand_score(labels, gmm_labels)
+		logging.info(f"Adjusted Rand Score for Gaussian Mixture Model: {gmm_ari}.")
+		
+
+		gmm_vm = v_measure_score(labels, gmm_labels)
+		logging.info(f"V-measure for for Gaussian Mixture Model: {gmm_vm}.")
+
+		output_path = "../results/gmm_results.json"
+
+		if args.reduce_dimensionality:
+			output_path = "../results/gmm_results_rd.json"	
+
+		if args.keep_json:
+			clear_json(output_path)
+
+		with open(output_path, "r+") as f:
+			dic = json.load(f)
+			dic[f"{epoch1}/{epoch2}"] = {"ari": gmm_ari, "vm": gmm_vm}
+			f.seek(0)
+			json.dump(dic, f)
+
+		print("-----------------------------------------------------------------")
+
+		gmm_duration = float(time.time() - gmm_st)
+		logging.info(f"Run-time Gaussian Mixture Model: {gmm_duration} seconds")
+	else:
+		logging.warning(f"Couldn't find a method with the name '{args.method}'.")
+
+	
 
 	
 	program_duration = float(time.time() - program_st)
@@ -237,8 +274,10 @@ if __name__ == "__main__":
 	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
 	parser.add_argument("--epoch_one", "-eo", type=str, default="Aufklärung", help="Name of the first epoch.")
 	parser.add_argument("--epoch_two", "-et", type=str, default="Realismus", help="Name of the first epoch.")
+	parser.add_argument("--keep_json", "-kj", action="store_false", help="Indicates if previous json results should kept.")
 	parser.add_argument("--lowercase", "-l", type=bool, default=True, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
+	parser.add_argument("--method", "-m", type=str, default="kmeans", help="Indicates clustering method. Possible values are 'kmeans', 'dbscan', 'gmm', 'all'.")
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
 	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
