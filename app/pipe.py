@@ -72,7 +72,7 @@ def main():
 		corpus = text_cleaning(pd.read_csv("../corpora/german_poems.csv"))
 		text_name = "poem"
 		logging.info(f"Read '{args.corpus_name}' corpus.")
-	elif args.corpus_name = "noise":
+	elif args.corpus_name == "noise":
 		corpus = pd.read_csv("../corpora/german_poems_noiseless.csv")
 		text_name = "poem"
 		logging.info(f"Read '{args.corpus_name}' corpus.")
