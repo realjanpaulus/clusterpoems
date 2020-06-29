@@ -1,0 +1,16 @@
+INFO: Read 'noise' corpus.
+INFO: Added epoch division by 'brenner'.
+INFO: Used epochs are 'Frühaufklärung' and 'Biedermeider'.
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 1%
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 1.0.
+INFO: V-measure for K-Means: 1.0.
+INFO: Adjusted Mutual Info Score for K-Means: 1.0.
+INFO: Homogeneity Score for K-Means: 1.0.
+INFO: Completeness Score for K-Means: 1.0.
+INFO: Run-time K-Means: 0.08977866172790527 seconds
+INFO: Run-time: 0.016666666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
