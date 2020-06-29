@@ -6,6 +6,8 @@ import numpy as np
 import pandas as pd
 import re
 
+
+from scipy.cluster.hierarchy import dendrogram
 import seaborn as sns
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn import metrics
@@ -128,6 +130,31 @@ def get_json_dict(filename):
    with open(filename) as f_in:
        return(json.load(f_in))
 
+def linkage_matrix(model):
+    counts = np.zeros(model.children_.shape[0])
+    n_samples = len(model.labels_)
+    for i, merge in enumerate(model.children_):
+        current_count = 0
+        for child_idx in merge:
+            if child_idx < n_samples:
+                current_count += 1  # leaf node
+            else:
+                current_count += counts[child_idx - n_samples]
+        counts[i] = current_count
+
+    return np.column_stack([model.children_, 
+                            model.distances_,
+                            counts]).astype(float)
+
+def plot_dendrogram(model, **kwargs):
+    # Create linkage matrix and then plot the dendrogram
+
+    # create the counts of samples under each node
+    lm = linkage_matrix(model)
+
+    # Plot the corresponding dendrogram
+    dendrogram(lm, **kwargs)
+
 def purity_score(y_true, y_pred):
     # compute contingency matrix (also called confusion matrix)
     contingency_matrix = metrics.cluster.contingency_matrix(y_true, y_pred)
@@ -147,6 +174,17 @@ def get_top_n_words(column, n = None, stopwords = "", pos_remove = False):
     words_freq = [(word, sum_words[0, idx]) for word, idx in vectorizer.vocabulary_.items()]
     words_freq = sorted(words_freq, key = lambda x: x[1], reverse=True)
     return words_freq[:n]
+
+
+def remove_noise_poet(corpus, noise_pids, min_n=50):
+    """ Removes noisy poets from corpus.
+    """
+    df = corpus.copy()
+    noise_df = corpus[corpus.pid.isin(noise_pids)]
+    noise_poets = dict(noise_df.poet.value_counts())
+    poets = [k for k, v in noise_poets.items() if v >= min_n]
+    df = df[df.poet.isin(poets) == False]
+    return df
 
 def remove_pos(lst, used_pos = ["VERB", "ADJ", "NOUN"]):
     """ Remove every part of speach except the specified exceptions.

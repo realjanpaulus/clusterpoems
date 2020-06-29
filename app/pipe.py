@@ -72,6 +72,10 @@ def main():
 		corpus = text_cleaning(pd.read_csv("../corpora/german_poems.csv"))
 		text_name = "poem"
 		logging.info(f"Read '{args.corpus_name}' corpus.")
+	elif args.corpus_name = "noise":
+		corpus = pd.read_csv("../corpora/german_poems_noiseless.csv")
+		text_name = "poem"
+		logging.info(f"Read '{args.corpus_name}' corpus.")
 	else:
 		logging.warning(f"Couldn't find a corpus with the name '{args.corpus_name}'.")
 	
@@ -180,12 +184,16 @@ def main():
 		kmeans_vm = v_measure_score(labels, kmeans.labels_)
 		logging.info(f"V-measure for K-Means: {kmeans_vm}.")
 
-		output_path = "../results/kmeans_results.json"
+
+		output_name = "kmeans_results"
 
 		if args.reduce_dimensionality:
-			output_path = "../results/kmeans_results_rd.json"	
+			output_name += "_rd"
 
+		if args.save_date:
+			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
 
+		
 		with open(output_path, "r+") as f:
 			dic = json.load(f)
 			dic[f"{epoch1}/{epoch2}"] = {"ari": kmeans_ari, "vm": kmeans_vm}
@@ -242,10 +250,16 @@ def main():
 		gmm_vm = v_measure_score(labels, gmm_labels)
 		logging.info(f"V-measure for for Gaussian Mixture Model: {gmm_vm}.")
 
-		output_path = "../results/gmm_results.json"
+		output_name = "gmm_results"
 
 		if args.reduce_dimensionality:
-			output_path = "../results/gmm_results_rd.json"	
+			output_name += "_rd"
+
+		if args.save_date:
+			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
+
+		
+		output_path = f"../results/{output_name}.json"
 
 		if args.keep_json:
 			clear_json(output_path)
@@ -274,7 +288,7 @@ def main():
 if __name__ == "__main__":
 	
 	parser = argparse.ArgumentParser(prog="pipe", description="Pipeline for clustering.")
-	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
+	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'. Another possible value is 'noise'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
 	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
 	parser.add_argument("--epoch_one", "-eo", type=str, default="Aufklärung", help="Name of the first epoch.")
