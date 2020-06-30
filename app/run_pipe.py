@@ -75,7 +75,7 @@ def main():
 		print("--------------------------------------------")
 
 
-		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -l {args.lowercase} -m {method} -mf {args.max_features} -nj {args.n_jobs} -kj"
+		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -l {args.lowercase} -m {args.method} -mf {args.max_features} -nj {args.n_jobs} -kj"
 
 		
 		if args.save_date:
