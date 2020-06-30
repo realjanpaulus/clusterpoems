@@ -74,7 +74,7 @@ def main():
 		print("--------------------------------------------")
 
 
-		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -l {args.lowercase} -m {args.method} -mf {args.max_features} -nj {args.n_jobs} -cj {args.clear_json}"
+		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -l {args.lowercase} -m {args.method} -mf {args.max_features} -nj {args.n_jobs}"
 
 		
 		if args.save_date:
@@ -86,6 +86,8 @@ def main():
 		if args.merge_poet:
 			command += " -mp"
 
+		if args.clear_json:
+			command += " -cj"
 
 
 		
@@ -99,7 +101,7 @@ def main():
 if __name__ == "__main__":
 	
 	parser = argparse.ArgumentParser(prog="run_pipe", description="Runs clustering script with multiple epoch combinations.")
-	parser.add_argument("--clear_json", "-cj", action="store_false", help="Indicates if previous json results should cleared.")
+	parser.add_argument("--clear_json", "-cj", action="store_true", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
 	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
