@@ -31,7 +31,7 @@ from sklearn.preprocessing import LabelEncoder, Normalizer
 from stop_words import get_stop_words
 import sys
 import time
-from utils import add_epoch_division, clear_json, text_cleaning
+from utils import add_epoch_division, clear_json, merge_corpus_poets, text_cleaning
 
 
 def main():
@@ -97,6 +97,10 @@ def main():
 		logging.warning(f"Couldn't find a epoch division with the name '{args.epoch_division}'.")
 
 
+
+	if args.merge_poet:
+		corpus = merge_corpus_poets(corpus)
+
 	epoch1 = args.epoch_one
 	epoch2 = args.epoch_two
 	corpus = corpus[(corpus.epoch == epoch1) | (corpus.epoch == epoch2)]
@@ -161,10 +165,15 @@ def main():
 			top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :10]]
 
 
-		output_path = "../results/kmeans_top_words.json"
+		output_name = "kmeans_results"
 
 		if args.reduce_dimensionality:
-			output_path = "../results/kmeans_top_words_rd.json"	
+			output_name += "_rd"
+
+		if args.save_date:
+			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
+
+		output_path = f"../results/{output_name}.json"
 
 		if args.keep_json:
 			clear_json(output_path)
@@ -185,15 +194,7 @@ def main():
 		logging.info(f"V-measure for K-Means: {kmeans_vm}.")
 
 
-		output_name = "kmeans_results"
 
-		if args.reduce_dimensionality:
-			output_name += "_rd"
-
-		if args.save_date:
-			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
-
-		
 		with open(output_path, "r+") as f:
 			dic = json.load(f)
 			dic[f"{epoch1}/{epoch2}"] = {"ari": kmeans_ari, "vm": kmeans_vm}
@@ -296,6 +297,7 @@ if __name__ == "__main__":
 	parser.add_argument("--keep_json", "-kj", action="store_false", help="Indicates if previous json results should kept.")
 	parser.add_argument("--lowercase", "-l", type=bool, default=True, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
+	parser.add_argument("--merge_poet", "-mp", action="store_true", help="Indicates if all poems of a poet should be merged.")
 	parser.add_argument("--method", "-m", type=str, default="kmeans", help="Indicates clustering method. Possible values are 'kmeans', 'dbscan', 'gmm', 'all'.")
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
 	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")

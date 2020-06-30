@@ -33,6 +33,24 @@ def add_epoch_division(corpus, epochs, epoch_exception=""):
     df["epoch"] = df.apply(lambda row: get_epoch(row.year, epochs_d), axis=1)
     return df
 
+
+def merge_corpus_poets(corpus):
+    """ Merge poems in corpus by poet. Epoch with the most entries will be chosen.
+    """
+    df = corpus.copy()
+    new_poems = {}
+
+    for idx, poet in enumerate(list(np.unique(df.poet))):
+        pcorpus = df[df.poet == poet]
+        epochs = dict(pcorpus.epoch.value_counts())
+        s = " ".join(pcorpus.poem)
+        new_poems[idx] = [idx, poet, s, max(epochs)]
+        
+    mod_c = pd.DataFrame.from_dict(new_poems).T
+    mod_c.columns = ["id", "poet", "poem", "epoch"]
+    
+    return mod_c
+
 def text_cleaning(corpus):
     df = corpus.copy()
     df["poem"] = df.poem.apply(unescape)
