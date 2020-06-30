@@ -75,7 +75,7 @@ def main():
 		print("--------------------------------------------")
 
 
-		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -l {args.lowercase} -mf {args.max_features} -nj {args.n_jobs} -kj"
+		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -ee {args.epoch_exception} -eo {t[0]} -et {t[1]} -l {args.lowercase} -m {method} -mf {args.max_features} -nj {args.n_jobs} -kj"
 
 		
 		if args.save_date:
@@ -83,6 +83,11 @@ def main():
 
 		if args.reduce_dimensionality:
 			command += " -rd"
+
+		if args.merge_poet:
+			command += " -mp"
+
+
 
 		
 		subprocess.call(["bash", "-c", command])
@@ -101,6 +106,8 @@ if __name__ == "__main__":
 	parser.add_argument("--keep_json", "-kj", action="store_false", help="Indicates if previous json results should kept.")
 	parser.add_argument("--lowercase", "-l", type=bool, default=True, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
+	parser.add_argument("--merge_poet", "-mp", action="store_true", help="Indicates if all poems of a poet should be merged.")
+	parser.add_argument("--method", "-m", type=str, default="kmeans", help="Indicates clustering method. Possible values are 'kmeans', 'dbscan', 'gmm', 'all'.")
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
 	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
