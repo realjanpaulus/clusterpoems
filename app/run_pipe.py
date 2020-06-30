@@ -32,7 +32,7 @@ def main():
 	if args.reduce_dimensionality:
 		output_path = "../results/kmeans_top_words_rd.json"	
 
-	if args.keep_json:
+	if args.clear_json:
 		clear_json(output_path)
 
 
@@ -40,7 +40,7 @@ def main():
 	if args.reduce_dimensionality:
 		output_path = "../results/kmeans_results_rd.json"	
 
-	if args.keep_json:
+	if args.clear_json:
 		clear_json(output_path)
 
 	if args.epoch_division == "brenner":
@@ -61,7 +61,6 @@ def main():
 			unique_epochs.remove(args.epoch_exception)
 
 
-	
 
 	combinations_inputs = list(combinations(unique_epochs, r=2))
 
@@ -103,7 +102,7 @@ if __name__ == "__main__":
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
 	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
-	parser.add_argument("--keep_json", "-kj", action="store_false", help="Indicates if previous json results should kept.")
+	parser.add_argument("--clear_json", "-cj", action="store_false", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--lowercase", "-l", type=bool, default=True, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
 	parser.add_argument("--merge_poet", "-mp", action="store_true", help="Indicates if all poems of a poet should be merged.")

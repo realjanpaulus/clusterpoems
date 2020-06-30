@@ -165,6 +165,26 @@ def main():
 			top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :10]]
 
 
+	
+
+		print("--------------- Metrics (K-Means) ---------------")
+		kmeans_ari = adjusted_rand_score(labels, kmeans.labels_)
+		logging.info(f"Adjusted Rand Score for K-Means: {kmeans_ari}.")
+
+		kmeans_vm = v_measure_score(labels, kmeans.labels_)
+		logging.info(f"V-measure for K-Means: {kmeans_vm}.")
+		"""TODO: weg?
+		kmeans_amis = adjusted_mutual_info_score(labels, kmeans.labels_)
+		logging.info(f"Adjusted Mutual Info Score for K-Means: {kmeans_amis}.")
+
+		kmeans_hs = homogeneity_score(labels, kmeans.labels_)
+		logging.info(f"Homogeneity Score for K-Means: {kmeans_hs}.")
+
+		kmeans_cs = completeness_score(labels, kmeans.labels_)
+		logging.info(f"Completeness Score for K-Means: {kmeans_cs}.")
+		"""
+		print("--------------------------------------------------")
+
 		output_name = "kmeans_results"
 
 		if args.reduce_dimensionality:
@@ -175,41 +195,18 @@ def main():
 
 		output_path = f"../results/{output_name}.json"
 
-		if args.keep_json:
+		with open(output_path, "r+") as f:
+			dic = json.load(f)
+			dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": kmeans_ari, 
+												 	"vm": kmeans_vm},
+									 	 "tw": top_words_cluster}
+			f.seek(0)
+			json.dump(dic, f)
+
+		if args.clear_json:
 			clear_json(output_path)
 
-		with open(output_path, "r+") as f:
-			dic = json.load(f)
-			dic[f"{epoch1}/{epoch2}"] = top_words_cluster
-			f.seek(0)
-			json.dump(dic, f)
-
-
-
-		print("--------------- Metrics (K-Means) ---------------")
-		kmeans_ari = adjusted_rand_score(labels, kmeans.labels_)
-		logging.info(f"Adjusted Rand Score for K-Means: {kmeans_ari}.")
-
-		kmeans_vm = v_measure_score(labels, kmeans.labels_)
-		logging.info(f"V-measure for K-Means: {kmeans_vm}.")
-
-
-
-		with open(output_path, "r+") as f:
-			dic = json.load(f)
-			dic[f"{epoch1}/{epoch2}"] = {"ari": kmeans_ari, "vm": kmeans_vm}
-			f.seek(0)
-			json.dump(dic, f)
-
-		kmeans_amis = adjusted_mutual_info_score(labels, kmeans.labels_)
-		logging.info(f"Adjusted Mutual Info Score for K-Means: {kmeans_amis}.")
-
-		kmeans_hs = homogeneity_score(labels, kmeans.labels_)
-		logging.info(f"Homogeneity Score for K-Means: {kmeans_hs}.")
-
-		kmeans_cs = completeness_score(labels, kmeans.labels_)
-		logging.info(f"Completeness Score for K-Means: {kmeans_cs}.")
-		print("--------------------------------------------------")
+		
 
 		kmeans_duration = float(time.time() - kmeans_st)
 		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
@@ -294,7 +291,7 @@ if __name__ == "__main__":
 	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
 	parser.add_argument("--epoch_one", "-eo", type=str, default="Aufklärung", help="Name of the first epoch.")
 	parser.add_argument("--epoch_two", "-et", type=str, default="Realismus", help="Name of the first epoch.")
-	parser.add_argument("--keep_json", "-kj", action="store_false", help="Indicates if previous json results should kept.")
+	parser.add_argument("--clear_json", "-cj", action="store_false", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--lowercase", "-l", type=bool, default=True, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
 	parser.add_argument("--merge_poet", "-mp", action="store_true", help="Indicates if all poems of a poet should be merged.")
