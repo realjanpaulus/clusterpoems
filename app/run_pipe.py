@@ -90,7 +90,6 @@ def main():
 			command += " -cj"
 
 
-		
 		subprocess.call(["bash", "-c", command])
 		print("\n")
 	program_duration = float(time.time() - program_st)

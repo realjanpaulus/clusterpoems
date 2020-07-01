@@ -308,7 +308,7 @@ def main():
 
 if __name__ == "__main__":
 	
-	parser = argparse.ArgumentParser(prog="pipe", description="Pipeline for clustering.")
+	parser = argparse.ArgumentParser(prog="pipe", description="Pipeline for clustering.", add_help=True)
 	parser.add_argument("--clear_json", "-cj", action="store_true", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'. Another possible value is 'noise'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
