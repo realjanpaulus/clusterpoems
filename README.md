@@ -10,4 +10,10 @@ Clustering files for the course "Clustering" at the Julius-Maximilians Universit
 - `run_pipe.py`: Runs `pipe.py` for every possible combination of epochs. For more informations about the possible input arguments run the following command in a terminal: `python run_pipe.py -h`. 
 - `utils.py`: Stores helper functions for clustering experiments.
 
+**corpora**: Contains text corpora in csv files.
+
+**presentation**: Contains the presentation for the clustering experiments.
+
+**results**: Contains the experiment results as images and json files.
+
 
