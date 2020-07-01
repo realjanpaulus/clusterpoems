@@ -32,7 +32,7 @@ from stop_words import get_stop_words
 import sys
 import time
 from utils import add_epoch_division, clear_json, merge_corpus_poets, text_cleaning
-
+from yellowbrick.text import UMAPVisualizer
 
 def main():
 
@@ -105,7 +105,9 @@ def main():
 	epoch2 = args.epoch_two
 	corpus = corpus[(corpus.epoch == epoch1) | (corpus.epoch == epoch2)]
 	logging.info(f"Used epochs are '{epoch1}' and '{epoch2}'.")
-
+	logging.info(f"Count of different poets: {len(np.unique(corpus.poet))}")
+	logging.info(f"Count of poets of epoch '{epoch1}': {len(np.unique(corpus[corpus.epoch == epoch1].poet))}")
+	logging.info(f"Count of poets of epoch '{epoch2}': {len(np.unique(corpus[corpus.epoch == epoch2].poet))}")
 
 	text = corpus[text_name].values
 	labels = LabelEncoder().fit_transform(corpus["epoch"].values)
@@ -143,7 +145,7 @@ def main():
 	if args.method == "kmeans" or args.method == "all":
 
 		kmeans_st = time.time()
-		kmeans = KMeans(n_clusters=len(unique_epochs),
+		kmeans = KMeans(len(unique_epochs),
 						n_jobs=n_jobs)
 		kmeans.fit(vector)
 
@@ -195,13 +197,18 @@ def main():
 
 		output_path = f"../results/{output_name}.json"
 
-		with open(output_path, "r+") as f:
-			dic = json.load(f)
+		
+		with open(output_path, "w+") as f:
+			try:
+				dic = json.load(f)
+			except:
+				dic = {}
 			dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": kmeans_ari, 
 												 	"vm": kmeans_vm},
 									 	 "tw": top_words_cluster}
 			f.seek(0)
 			json.dump(dic, f)
+
 
 		if args.clear_json:
 			clear_json(output_path)
@@ -276,6 +283,22 @@ def main():
 		logging.warning(f"Couldn't find a method with the name '{args.method}'.")
 
 	
+	if args.visualization:
+		umap = UMAPVisualizer(color="bold")
+		umap.fit(vector, list(corpus.epoch))
+
+		figure_name = f"{epoch1}_{epoch2}"
+
+		if args.reduce_dimensionality:
+			figure_name += "_rd"
+
+		if args.save_date:
+			figure_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
+
+
+		figure_path = f"../results/figures/{figure_name}.png"
+		umap.show(outpath=figure_path, dpi=300)
+
 
 	
 	program_duration = float(time.time() - program_st)
@@ -299,7 +322,8 @@ if __name__ == "__main__":
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
 	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
-	
+	parser.add_argument("--visualization", "-v", action="store_true", help="Indicates if results should be visualized.")
+
 	args = parser.parse_args()
 
 	main()
