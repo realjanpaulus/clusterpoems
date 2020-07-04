@@ -12,9 +12,10 @@ INFO: Count of poets of epoch 'Barock': 41
 INFO: Count of poets of epoch 'Aufklärung': 61
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.548660603426516.
-INFO: V-measure for K-Means: 0.4888600613898469.
-INFO: Run-time K-Means: 0.21164703369140625 seconds
+INFO: Adjusted Rand Score for K-Means: 0.5490676704893636.
+INFO: V-measure for K-Means: 0.4660893409720713.
+INFO: Create results file.
+INFO: Run-time K-Means: 0.23295998573303223 seconds
 INFO: Run-time: 0.16666666666666666 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -31,10 +32,11 @@ INFO: Count of poets of epoch 'Barock': 41
 INFO: Count of poets of epoch 'Klassik': 59
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.7364130581483861.
-INFO: V-measure for K-Means: 0.6884426378181666.
-INFO: Run-time K-Means: 0.27987074851989746 seconds
-INFO: Run-time: 0.18333333333333332 minute(s).
+INFO: Adjusted Rand Score for K-Means: 0.668183911259689.
+INFO: V-measure for K-Means: 0.6306386143760561.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.22355961799621582 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
 INFO: Argument combination 3/28.
@@ -50,9 +52,10 @@ INFO: Count of poets of epoch 'Barock': 41
 INFO: Count of poets of epoch 'Romantik': 13
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.06675407945410479.
-INFO: V-measure for K-Means: 0.24703183167962608.
-INFO: Run-time K-Means: 0.1652088165283203 seconds
+INFO: Adjusted Rand Score for K-Means: -0.10639307318230322.
+INFO: V-measure for K-Means: 0.10168794888808047.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.17032909393310547 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -69,9 +72,10 @@ INFO: Count of poets of epoch 'Barock': 41
 INFO: Count of poets of epoch 'Biedermeier': 28
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.6301227736468961.
-INFO: V-measure for K-Means: 0.6160262537078539.
-INFO: Run-time K-Means: 0.17772769927978516 seconds
+INFO: Adjusted Rand Score for K-Means: 0.4167420275021009.
+INFO: V-measure for K-Means: 0.47381182184303927.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.1690828800201416 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -90,7 +94,8 @@ INFO: Count of poets of epoch 'Realismus': 49
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
 INFO: Adjusted Rand Score for K-Means: 0.6360414848470758.
 INFO: V-measure for K-Means: 0.6135237496118755.
-INFO: Run-time K-Means: 0.20937347412109375 seconds
+INFO: Update results file.
+INFO: Run-time K-Means: 0.2193431854248047 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -107,9 +112,10 @@ INFO: Count of poets of epoch 'Barock': 41
 INFO: Count of poets of epoch 'Naturalismus': 22
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.4148516905206389.
-INFO: V-measure for K-Means: 0.4683338559198958.
-INFO: Run-time K-Means: 0.16936087608337402 seconds
+INFO: Adjusted Rand Score for K-Means: 0.70240484752695.
+INFO: V-measure for K-Means: 0.6052823238719693.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.1682600975036621 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -128,7 +134,8 @@ INFO: Count of poets of epoch 'Expressionismus': 15
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
 INFO: Adjusted Rand Score for K-Means: -0.09634757161348433.
 INFO: V-measure for K-Means: 0.0983747109126094.
-INFO: Run-time K-Means: 0.15172553062438965 seconds
+INFO: Update results file.
+INFO: Run-time K-Means: 0.18120622634887695 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -145,9 +152,10 @@ INFO: Count of poets of epoch 'Aufklärung': 61
 INFO: Count of poets of epoch 'Klassik': 59
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.27851509828791376.
-INFO: V-measure for K-Means: 0.22204205232504248.
-INFO: Run-time K-Means: 0.2728271484375 seconds
+INFO: Adjusted Rand Score for K-Means: 0.21145388581991703.
+INFO: V-measure for K-Means: 0.17316713944686854.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.28046488761901855 seconds
 INFO: Run-time: 0.16666666666666666 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -164,9 +172,10 @@ INFO: Count of poets of epoch 'Aufklärung': 61
 INFO: Count of poets of epoch 'Romantik': 13
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.03176747509169871.
-INFO: V-measure for K-Means: 0.19779162603456754.
-INFO: Run-time K-Means: 0.20308136940002441 seconds
+INFO: Adjusted Rand Score for K-Means: -0.09215523896078191.
+INFO: V-measure for K-Means: 0.11830807815451316.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.23270153999328613 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -183,9 +192,10 @@ INFO: Count of poets of epoch 'Aufklärung': 61
 INFO: Count of poets of epoch 'Biedermeier': 28
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.2961171877197972.
-INFO: V-measure for K-Means: 0.33295804092673914.
-INFO: Run-time K-Means: 0.21773910522460938 seconds
+INFO: Adjusted Rand Score for K-Means: 0.20149824953258128.
+INFO: V-measure for K-Means: 0.33724692250811633.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.23203349113464355 seconds
 INFO: Run-time: 0.16666666666666666 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -202,9 +212,10 @@ INFO: Count of poets of epoch 'Aufklärung': 61
 INFO: Count of poets of epoch 'Realismus': 49
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.4474787222106461.
-INFO: V-measure for K-Means: 0.49065033531729824.
-INFO: Run-time K-Means: 0.22925591468811035 seconds
+INFO: Adjusted Rand Score for K-Means: 0.21597499138016799.
+INFO: V-measure for K-Means: 0.3398879175971728.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.251450777053833 seconds
 INFO: Run-time: 0.16666666666666666 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -221,9 +232,10 @@ INFO: Count of poets of epoch 'Aufklärung': 61
 INFO: Count of poets of epoch 'Naturalismus': 22
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.07162356099071912.
-INFO: V-measure for K-Means: 0.25410522341678904.
-INFO: Run-time K-Means: 0.22560739517211914 seconds
+INFO: Adjusted Rand Score for K-Means: 0.6424190670601727.
+INFO: V-measure for K-Means: 0.5982424835635329.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.18487811088562012 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -240,9 +252,10 @@ INFO: Count of poets of epoch 'Aufklärung': 61
 INFO: Count of poets of epoch 'Expressionismus': 15
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.024226861672434992.
-INFO: V-measure for K-Means: 0.20437853591220886.
-INFO: Run-time K-Means: 0.18022537231445312 seconds
+INFO: Adjusted Rand Score for K-Means: -0.03965681601525277.
+INFO: V-measure for K-Means: 0.16652376984201375.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.17560696601867676 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -259,9 +272,10 @@ INFO: Count of poets of epoch 'Klassik': 59
 INFO: Count of poets of epoch 'Romantik': 13
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.03387786884390884.
-INFO: V-measure for K-Means: 0.02635768777766347.
-INFO: Run-time K-Means: 0.18113255500793457 seconds
+INFO: Adjusted Rand Score for K-Means: 0.09661307216573294.
+INFO: V-measure for K-Means: 0.09075226198353226.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.18921399116516113 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -278,9 +292,10 @@ INFO: Count of poets of epoch 'Klassik': 59
 INFO: Count of poets of epoch 'Biedermeier': 28
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.08669000276115559.
-INFO: V-measure for K-Means: 0.10011663426237585.
-INFO: Run-time K-Means: 0.18536782264709473 seconds
+INFO: Adjusted Rand Score for K-Means: 0.01043434595027099.
+INFO: V-measure for K-Means: 0.03444267006528293.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.1819772720336914 seconds
 INFO: Run-time: 0.16666666666666666 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -297,9 +312,10 @@ INFO: Count of poets of epoch 'Klassik': 59
 INFO: Count of poets of epoch 'Realismus': 49
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: -0.007961715329048805.
-INFO: V-measure for K-Means: 0.0005981671707406313.
-INFO: Run-time K-Means: 0.24489331245422363 seconds
+INFO: Adjusted Rand Score for K-Means: 0.012840789758231044.
+INFO: V-measure for K-Means: 0.02327979428240606.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.21985197067260742 seconds
 INFO: Run-time: 0.16666666666666666 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -316,9 +332,10 @@ INFO: Count of poets of epoch 'Klassik': 59
 INFO: Count of poets of epoch 'Naturalismus': 22
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.19659681903140472.
-INFO: V-measure for K-Means: 0.15376434582311324.
-INFO: Run-time K-Means: 0.18131661415100098 seconds
+INFO: Adjusted Rand Score for K-Means: 0.3012003463034842.
+INFO: V-measure for K-Means: 0.31915758819900386.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.20202207565307617 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -335,9 +352,10 @@ INFO: Count of poets of epoch 'Klassik': 59
 INFO: Count of poets of epoch 'Expressionismus': 15
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.023207493202791845.
-INFO: V-measure for K-Means: 0.0941443338527509.
-INFO: Run-time K-Means: 0.1713552474975586 seconds
+INFO: Adjusted Rand Score for K-Means: 0.19670827403585608.
+INFO: V-measure for K-Means: 0.18566170600120635.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.1749415397644043 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -356,7 +374,8 @@ INFO: Count of poets of epoch 'Biedermeier': 28
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
 INFO: Adjusted Rand Score for K-Means: -0.003210688485539053.
 INFO: V-measure for K-Means: 0.00010786280864938037.
-INFO: Run-time K-Means: 0.13565778732299805 seconds
+INFO: Update results file.
+INFO: Run-time K-Means: 0.13918495178222656 seconds
 INFO: Run-time: 0.13333333333333333 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -375,8 +394,9 @@ INFO: Count of poets of epoch 'Realismus': 49
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
 INFO: Adjusted Rand Score for K-Means: 0.035264528717319936.
 INFO: V-measure for K-Means: 0.028992057736060763.
-INFO: Run-time K-Means: 0.17413949966430664 seconds
-INFO: Run-time: 0.15 minute(s).
+INFO: Update results file.
+INFO: Run-time K-Means: 0.16611099243164062 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
 INFO: Argument combination 21/28.
@@ -392,9 +412,10 @@ INFO: Count of poets of epoch 'Romantik': 13
 INFO: Count of poets of epoch 'Naturalismus': 22
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: -0.014804673450208309.
-INFO: V-measure for K-Means: 0.0006205291333215283.
-INFO: Run-time K-Means: 0.13013911247253418 seconds
+INFO: Adjusted Rand Score for K-Means: -0.024711360881043375.
+INFO: V-measure for K-Means: 0.02613232461377693.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.12712955474853516 seconds
 INFO: Run-time: 0.13333333333333333 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -411,9 +432,10 @@ INFO: Count of poets of epoch 'Romantik': 13
 INFO: Count of poets of epoch 'Expressionismus': 15
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: -0.009565857247976326.
-INFO: V-measure for K-Means: 0.054136140449196686.
-INFO: Run-time K-Means: 0.09194803237915039 seconds
+INFO: Adjusted Rand Score for K-Means: -0.021961567257299797.
+INFO: V-measure for K-Means: 0.015836487618987226.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.12385749816894531 seconds
 INFO: Run-time: 0.13333333333333333 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -432,7 +454,8 @@ INFO: Count of poets of epoch 'Realismus': 49
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
 INFO: Adjusted Rand Score for K-Means: 0.02583950779259357.
 INFO: V-measure for K-Means: 0.018682821327883205.
-INFO: Run-time K-Means: 0.17942023277282715 seconds
+INFO: Update results file.
+INFO: Run-time K-Means: 0.17700839042663574 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -449,9 +472,10 @@ INFO: Count of poets of epoch 'Biedermeier': 28
 INFO: Count of poets of epoch 'Naturalismus': 22
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: -0.013889920522914689.
-INFO: V-measure for K-Means: 0.05585299583353245.
-INFO: Run-time K-Means: 0.1496574878692627 seconds
+INFO: Adjusted Rand Score for K-Means: -0.015939215485932298.
+INFO: V-measure for K-Means: 0.07949995175195858.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.13896727561950684 seconds
 INFO: Run-time: 0.13333333333333333 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -470,7 +494,8 @@ INFO: Count of poets of epoch 'Expressionismus': 15
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
 INFO: Adjusted Rand Score for K-Means: -0.008469055374592766.
 INFO: V-measure for K-Means: 8.878882086207732e-05.
-INFO: Run-time K-Means: 0.13835525512695312 seconds
+INFO: Update results file.
+INFO: Run-time K-Means: 0.12971854209899902 seconds
 INFO: Run-time: 0.13333333333333333 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -487,9 +512,10 @@ INFO: Count of poets of epoch 'Realismus': 49
 INFO: Count of poets of epoch 'Naturalismus': 22
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: -0.007601140863400899.
-INFO: V-measure for K-Means: 0.00011716128177653647.
-INFO: Run-time K-Means: 0.18283367156982422 seconds
+INFO: Adjusted Rand Score for K-Means: -0.05177937782064987.
+INFO: V-measure for K-Means: 0.024181130872006924.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.17924141883850098 seconds
 INFO: Run-time: 0.15 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -506,9 +532,10 @@ INFO: Count of poets of epoch 'Realismus': 49
 INFO: Count of poets of epoch 'Expressionismus': 15
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.1890383151484395.
-INFO: V-measure for K-Means: 0.11467258938213577.
-INFO: Run-time K-Means: 0.156585693359375 seconds
+INFO: Adjusted Rand Score for K-Means: 0.16397063463682443.
+INFO: V-measure for K-Means: 0.1017639588768433.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.14629316329956055 seconds
 INFO: Run-time: 0.13333333333333333 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
@@ -525,13 +552,14 @@ INFO: Count of poets of epoch 'Naturalismus': 22
 INFO: Count of poets of epoch 'Expressionismus': 15
 /home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
   warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
-INFO: Adjusted Rand Score for K-Means: 0.098586974175735.
-INFO: V-measure for K-Means: 0.07480044782141274.
-INFO: Run-time K-Means: 0.13950800895690918 seconds
+INFO: Adjusted Rand Score for K-Means: -0.02794476035743296.
+INFO: V-measure for K-Means: 0.008028446875592857.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.13216567039489746 seconds
 INFO: Run-time: 0.13333333333333333 minute(s).
 --------------- Metrics (K-Means) ---------------
 --------------------------------------------------
-INFO: Overall run-time: 5.066666666666666 minute(s).
+INFO: Overall run-time: 5.016666666666667 minute(s).
 --------------------------------------------
 --------------------------------------------
 
