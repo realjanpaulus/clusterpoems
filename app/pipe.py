@@ -16,6 +16,7 @@ from datetime import datetime
 import json
 import logging
 import numpy as np
+import os
 import pandas as pd
 
 
@@ -182,7 +183,7 @@ def main():
 		print("--------------------------------------------------")
 
 
-		output_name = f"kmeans_results_{args.epoch_divison}"
+		output_name = f"kmeans_results_{args.epoch_division}"
 
 		if args.reduce_dimensionality:
 			output_name += "_rd"
@@ -193,18 +194,27 @@ def main():
 		output_path = f"../results/{output_name}.json"
 
 		
-		with open(output_path, "w+") as f:
-			try:
+		if os.path.exists(output_path):
+			logging.info("Update results file.")
+			with open(output_path, "r+") as f:
 				dic = json.load(f)
-			except:
+				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": kmeans_ari, 
+													"vm": kmeans_vm},
+											 "tw": top_words_cluster}
+				f.seek(0)
+				f.write(json.dumps(dic))
+				f.truncate()
+		else:
+			logging.info("Create results file.")
+			with open(output_path, "w") as f:
 				dic = {}
-			dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": kmeans_ari, 
-												 	"vm": kmeans_vm},
-									 	 "tw": top_words_cluster}
-			f.seek(0)
-			json.dump(dic, f)
+				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": kmeans_ari, 
+													"vm": kmeans_vm},
+											 "tw": top_words_cluster}
+				json.dump(dic, f)
+		
 
-
+			
 		if args.clear_json:
 			clear_json(output_path)
 
