@@ -20,40 +20,134 @@ from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 # corpus processing  #
 # ================== # 
 
-def add_epoch_division(corpus, epochs, epoch_exception=""):
+def add_epoch_division(corpus, epochs, epoch_exceptions=[], add_years=0):
 	""" Divide poems in DataFrame into epochs by dictionary.
+		Epochs exceptions will be skipped.
+		To add or reduce the end of an epoch, set 'add_years'.
 	"""
 	df = corpus.copy()
 	epochs_d = {}
 	
 	for epoch, v in epochs.items():
-		if epoch != epoch_exception:
-			epochs_d[epoch] = list(range(epochs[epoch]["b"], epochs[epoch]["e"] + 1))
+		if epoch not in epoch_exceptions:
+			epochs_d[epoch] = list(range(epochs[epoch]["b"], epochs[epoch]["e"] + add_years))
 	
 	df["epoch"] = df.apply(lambda row: get_epoch(row.year, epochs_d), axis=1)
 	return df
 
+def replace_poets(text):
+	""" Unify poet spelling
+	"""
+	text = re.sub('Abschatz, Hans Assmann von', 'Abschatz, Hans Aßmann von', text)
+	text = re.sub('Czepko, Daniel von', 'Czepko von Reigersfeld, Daniel', text)
+	text = re.sub('Goethe, Johann Wolfgang', 'Goethe, Johann Wolfgang von', text)
+	text = re.sub('Hoffmannswaldau, Christian Hoffmann von', 'Hofmann von Hofmannswaldau, Christian', text)
+	text = re.sub('Hofmannswaldau, Christian Hofmann von', 'Hofmann von Hofmannswaldau, Christian', text)
+	text = re.sub('Karsch, Anna Luise', 'Karsch, Anna Louisa', text)
+	text = re.sub('Kosegarten, Gotthard Ludwig', 'Kosegarten, Ludwig Gotthard', text)
+	text = re.sub('Stieler, Kaspar', 'Stieler, Kaspar von', text)
+	text = re.sub('Zachariä, Justus Friedrich Wilhelm', 'Zachariae, Justus Friedrich Wilhelm', text)
+	text = re.sub('Zinzendorf, Nicolaus Ludwig von', 'Zinzendorf, Nikolaus Ludwig von', text)
+	
+	return text
 
 def merge_corpus_poets(corpus, min_count=6):
 	""" Merge poems in corpus by poet. Epoch with the most entries will be chosen.
 	"""
+	
+	# remove poets with less than min_count
 	df = corpus.copy()
 	poets = [k for k, v in dict(df.poet.value_counts()).items() if v >= min_count]
 	df = df[df.poet.isin(poets)]
-	new_poems = {}
-
-	for idx, poet in enumerate(list(np.unique(df.poet))):
-		pcorpus = df[df.poet == poet]
-		epochs = dict(pcorpus.epoch.value_counts())
-		s = " ".join(pcorpus.poem)
-		new_poems[idx] = [idx, poet, s, max(epochs)]
-		
-	mod_c = pd.DataFrame.from_dict(new_poems).T
-	mod_c.columns = ["id", "poet", "poem", "epoch"]
+	df["poet"] = df.poet.apply(replace_poets)
 	
+	
+	new_poems = {}
+	
+
+	# fill dictionary 'new_poems' with a summarized poem of all poems of a poet within 
+	# an epoch, with the corresponding epoch, the mean of the publication years, 
+	# the poets name and an id.
+	# Skip poet with no name (N.N.)
+	c = 0
+	for poet in list(np.unique(df.poet)):
+		if poet != "N. N.,":
+			pcorpus = df[df.poet == poet]
+			for e in pcorpus.epoch.unique():
+				ecorpus = pcorpus[pcorpus.epoch == e]
+				s = " ".join(ecorpus.poem)
+				year = int(ecorpus.year.mean())
+				new_poems[c] = [c, poet, s, year, e]
+				c += 1
+		
+
+	mod_c = pd.DataFrame.from_dict(new_poems).T
+	mod_c.columns = ["id", "poet", "poem", "year", "epoch"]
+
 	return mod_c
 
+
+def normalize_characters(text):
+	""" The original code from Thomas Haider was copied and slightly modified,
+		for the original code see:
+		https://github.com/tnhaider/poetry-corpus-building/blob/master/extract_dta_poems.py
+	"""
+	text = re.sub('<[^>]*>', '', text)
+	text = re.sub('ſ', 's', text)
+	if text.startswith("b'"):
+		text = text[2:-1]
+	text = re.sub('&#223;', 'ß', text)
+	text = re.sub('&#383;', 's', text)
+	text = re.sub('u&#868;', 'ü', text)
+	text = re.sub('a&#868;', 'ä', text)
+	text = re.sub('o&#868;', 'ö', text)
+	text = re.sub('&#246;', 'ö', text)
+	text = re.sub('&#224;', 'a', text) # quam with agrave
+	text = re.sub('&#772;', 'm', text) # Combining Macron in kom772t
+	text = re.sub('&#8217;', "'", text)
+	text = re.sub('&#42843;', "r", text) # small rotunda
+	text = re.sub('&#244;', "o", text) # o with circumflex (ocr)
+	text = re.sub('&#230;', "ae", text) 
+	text = re.sub('&#8229;', '.', text) # Two Dot Leader ... used as 'lieber A.'
+	text = re.sub('Jch', 'Ich', text)
+	text = re.sub('Jst', 'Ist', text)
+	text = re.sub('JCh', 'Ich', text)
+	text = re.sub('jch', 'ich', text)
+	text = re.sub('Jn', 'In', text)
+	text = re.sub('Bey', 'Bei', text)
+	text = re.sub('bey', 'bei', text)
+	text = re.sub('seyn', 'sein', text)
+	text = re.sub('Seyn', 'Sein', text)
+	text = re.sub('kan', 'kann', text)
+	text = re.sub('kannn', 'kann', text)
+	text = re.sub('Kannn', 'kann', text)
+	text = re.sub('Kan', 'Kann', text)
+	text = re.sub('DJe', 'Die', text)
+	text = re.sub('Wje', 'Wie', text)
+	text = re.sub('¬', '-', text) # negation sign
+	text = re.sub('Jn', 'In', text)
+	text = text.encode("utf-8", 'replace')
+	#text = text.decode("utf-8", 'replace')
+	text = re.sub(b'o\xcd\xa4', b'\xc3\xb6', text) # ö
+	text = re.sub(b'u\xcd\xa4', b'\xc3\xbc', text) # ü
+	text = re.sub(b'a\xcd\xa4', b'\xc3\xa4', text) # ä
+	text = re.sub(b'&#771;', b'\xcc\x83', text) # Tilde
+	text = re.sub(b'&#8222;', b'\xe2\x80\x9d', text) # Lower Quot Mark
+	text = re.sub(b'\xea\x9d\x9b', b'r', text) # small Rotunda
+	text = re.sub(b'\xea\x9d\x9a', b'R', text) # big Rotunda
+	text = text.decode('utf-8')
+	ftl = text[:2] # check if first two letters are capitalized
+	try:
+		if ftl == ftl[:2].upper():
+			text = ftl[0] + ftl[1].lower() + text[2:]
+	except IndexError:
+		pass
+	return text
+
+
 def text_cleaning(corpus):
+	""" Applies character normalization to the corpus. 
+	"""
 	df = corpus.copy()
 	df["poem"] = df.poem.apply(unescape)
 
@@ -62,13 +156,11 @@ def text_cleaning(corpus):
 		return re.sub(regex, r"\1", s)
 
 	df["poem"] = df["poem"].apply(remove_b)
-
-	orthography_correction = {"ſ": "s", "uͤ": "ue", "aͤ": "ae", "oͤ": "oe"}
-
-	for k, v in orthography_correction.items():
-		df["poem"] = df["poem"].str.replace(k, v)
+	df["poem"] = df["poem"].apply(normalize_characters)
 
 	return df
+
+
 
 def random_downsampling(corpus, 
 						class_col = "epoch", 

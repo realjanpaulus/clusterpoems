@@ -84,14 +84,20 @@ def main():
 		epochs = json.loads(f.read())
 
 	#TODO: mehr
-	if args.epoch_division == "brenner":
+	if args.epoch_division == "amann":
+		epochs = epochs["amann"]
+		epoch_exceptions = ["Sturm_Drang"]
+		corpus = add_epoch_division(corpus, epochs, epoch_exceptions=epoch_exceptions)
+		logging.info(f"Added epoch division by '{args.epoch_division}'.")
+	 
+	elif args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
-		epoch_exception = args.epoch_exception
-		corpus = add_epoch_division(corpus, epochs, epoch_exception=epoch_exception)
+		epoch_exceptions = ["Klassik_Romantik"]
+		corpus = add_epoch_division(corpus, epochs, epoch_exceptions=epoch_exceptions)
 		logging.info(f"Added epoch division by '{args.epoch_division}'.")
 	elif args.epoch_division == "simple":
 		epochs = epochs["simple"]
-		corpus = add_epoch_division(corpus, epochs, epoch_exception="")
+		corpus = add_epoch_division(corpus, epochs, epoch_exceptions="")
 		logging.info(f"Added epoch division by '{args.epoch_division}'.")
 	else:
 		logging.warning(f"Couldn't find a epoch division with the name '{args.epoch_division}'.")
@@ -311,9 +317,9 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(prog="pipe", description="Pipeline for clustering.", add_help=True)
 	parser.add_argument("--clear_json", "-cj", action="store_true", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'. Another possible value is 'noise'.")
-	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method.")
-	parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
-	parser.add_argument("--epoch_one", "-eo", type=str, default="Aufklärung", help="Name of the first epoch.")
+	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method. Possible values are 'amann', brenner'.")
+	#parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
+	parser.add_argument("--epoch_one", "-eo", type=str, default="Barock", help="Name of the first epoch.")
 	parser.add_argument("--epoch_two", "-et", type=str, default="Realismus", help="Name of the first epoch.")
 	parser.add_argument("--lowercase", "-l", type=bool, default=True, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")

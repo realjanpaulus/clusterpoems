@@ -16,4 +16,33 @@ Clustering files for the course "Clustering" at the Julius-Maximilians Universit
 
 **results**: Contains the experiment results as images and json files.
 
+## TODOs:
+
+- [x] Text cleaning erweitert
+
+- Andere Art der Zusammenfassung von Gedichten: Dichter mit mehreren Epochenzuweisungen nach diesen aufteilen
+- Noise entdecken durch Hierarchisches Clustering inkl. Epochenzuteilungen
+- Korpus normalisieren und Experimente durchführen
+- Analyse von Gedichten/Dichter, die sich gut clustern lassen
+- Topic Modelling anwenden: erzeugen epochen bestimmte topics?
+- Topic Modelling anwenden als downstream task für klassifizierung?
+- DBSCAN anwenden
+- mit veränderter zusammenfassung mal clustering auf gesamten korpus
+- andere zuteilung finden anstatt brenner
+- guideline schreiben für stelle in repo, die für gute ergebnisse verantwortlich waren
+- schreiben, dass clustering von korpus so nicht funktioniert hat (mit erklärung)
+- pca und umap experimente (kein truncated svd)
+- mit pca bisschen rumspielen, um einblick in daten zu bekommen
+- kmeans erweitern mit cosinus distance?
+
+
+
+
+
+
+
+
+
+
+
 
