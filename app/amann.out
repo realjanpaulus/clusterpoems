@@ -1,0 +1,646 @@
+INFO: Clustering for all epoch combinations.
+INFO: Argument combination 1/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Aufklärung'.
+INFO: Count of different poets: 99
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Aufklärung': 61
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.5191702068269909.
+INFO: V-measure for K-Means: 0.4656563617613416.
+INFO: Run-time K-Means: 0.20461034774780273 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 2/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Klassik'.
+INFO: Count of different poets: 100
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Klassik': 59
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.7364130581483861.
+INFO: V-measure for K-Means: 0.6884426378181666.
+INFO: Run-time K-Means: 0.27103447914123535 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 3/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Romantik'.
+INFO: Count of different poets: 54
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Romantik': 13
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.10151298740174992.
+INFO: V-measure for K-Means: 0.12094354148941426.
+INFO: Run-time K-Means: 0.20644855499267578 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 4/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Biedermeier'.
+INFO: Count of different poets: 69
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Biedermeier': 28
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.37908709638014576.
+INFO: V-measure for K-Means: 0.45036388935626376.
+INFO: Run-time K-Means: 0.1786491870880127 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 5/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Realismus'.
+INFO: Count of different poets: 90
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Realismus': 49
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.6724739926937197.
+INFO: V-measure for K-Means: 0.6421980664275747.
+INFO: Run-time K-Means: 0.19051885604858398 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 6/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Naturalismus'.
+INFO: Count of different poets: 63
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Naturalismus': 22
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.4148516905206389.
+INFO: V-measure for K-Means: 0.4683338559198958.
+INFO: Run-time K-Means: 0.173661470413208 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 7/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Expressionismus'.
+INFO: Count of different poets: 56
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Expressionismus': 15
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.09634757161348433.
+INFO: V-measure for K-Means: 0.0983747109126094.
+INFO: Run-time K-Means: 0.1698462963104248 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 8/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Klassik'.
+INFO: Count of different poets: 101
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Klassik': 59
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.2783837551285662.
+INFO: V-measure for K-Means: 0.21612697202288503.
+INFO: Run-time K-Means: 0.2773759365081787 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 9/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Romantik'.
+INFO: Count of different poets: 74
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Romantik': 13
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.02024853799146749.
+INFO: V-measure for K-Means: 0.054592075813776036.
+INFO: Run-time K-Means: 0.1951429843902588 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 10/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Biedermeier'.
+INFO: Count of different poets: 89
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Biedermeier': 28
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.140111507428057.
+INFO: V-measure for K-Means: 0.30205391915601343.
+INFO: Run-time K-Means: 0.22023725509643555 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 11/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Realismus'.
+INFO: Count of different poets: 109
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Realismus': 49
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.37636388075576677.
+INFO: V-measure for K-Means: 0.44456764093623535.
+INFO: Run-time K-Means: 0.26764655113220215 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 12/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Naturalismus'.
+INFO: Count of different poets: 83
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Naturalismus': 22
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.026473532884941153.
+INFO: V-measure for K-Means: 0.19236879869657106.
+INFO: Run-time K-Means: 0.20007085800170898 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 13/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Expressionismus'.
+INFO: Count of different poets: 76
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Expressionismus': 15
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.11206059929403879.
+INFO: V-measure for K-Means: 0.09308976148325292.
+INFO: Run-time K-Means: 0.18068504333496094 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 14/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Romantik'.
+INFO: Count of different poets: 62
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Romantik': 13
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.0498902898233256.
+INFO: V-measure for K-Means: 0.04757678131980383.
+INFO: Run-time K-Means: 0.18345165252685547 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 15/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Biedermeier'.
+INFO: Count of different poets: 77
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Biedermeier': 28
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.08532039544592616.
+INFO: V-measure for K-Means: 0.06259523589583128.
+INFO: Run-time K-Means: 0.18695521354675293 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 16/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Realismus'.
+INFO: Count of different poets: 100
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Realismus': 49
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.0076695453419815965.
+INFO: V-measure for K-Means: 0.008622037476607383.
+INFO: Run-time K-Means: 0.25263214111328125 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 17/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Naturalismus'.
+INFO: Count of different poets: 81
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Naturalismus': 22
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.15984380904396028.
+INFO: V-measure for K-Means: 0.08785939569745474.
+INFO: Run-time K-Means: 0.19812893867492676 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 18/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Expressionismus'.
+INFO: Count of different poets: 74
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Expressionismus': 15
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.08569245243848048.
+INFO: V-measure for K-Means: 0.13418103488453204.
+INFO: Run-time K-Means: 0.17283225059509277 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 19/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Biedermeier'.
+INFO: Count of different poets: 33
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Count of poets of epoch 'Biedermeier': 28
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.04627424293977544.
+INFO: V-measure for K-Means: 0.04680332089688353.
+INFO: Run-time K-Means: 0.12843036651611328 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 20/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Realismus'.
+INFO: Count of different poets: 54
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Count of poets of epoch 'Realismus': 49
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.00704843054946428.
+INFO: V-measure for K-Means: 0.0006095432681385523.
+INFO: Run-time K-Means: 0.16379022598266602 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 21/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Naturalismus'.
+INFO: Count of different poets: 35
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Count of poets of epoch 'Naturalismus': 22
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.014804673450208309.
+INFO: V-measure for K-Means: 0.0006205291333215283.
+INFO: Run-time K-Means: 0.1305687427520752 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 22/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Expressionismus'.
+INFO: Count of different poets: 28
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Count of poets of epoch 'Expressionismus': 15
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.015876953609526116.
+INFO: V-measure for K-Means: 0.029316050833108724.
+INFO: Run-time K-Means: 0.1157219409942627 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 23/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Realismus'.
+INFO: Count of different poets: 65
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Count of poets of epoch 'Realismus': 49
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.02583950779259357.
+INFO: V-measure for K-Means: 0.018682821327883205.
+INFO: Run-time K-Means: 0.16673851013183594 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 24/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Naturalismus'.
+INFO: Count of different poets: 49
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Count of poets of epoch 'Naturalismus': 22
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.0017097829319058543.
+INFO: V-measure for K-Means: 0.0013082839680571853.
+INFO: Run-time K-Means: 0.1445770263671875 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 25/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Expressionismus'.
+INFO: Count of different poets: 43
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Count of poets of epoch 'Expressionismus': 15
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.02579879101899821.
+INFO: V-measure for K-Means: 0.004843737735542884.
+INFO: Run-time K-Means: 0.14148402214050293 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 26/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Naturalismus'.
+INFO: Count of different poets: 64
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Count of poets of epoch 'Naturalismus': 22
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.032171873160216205.
+INFO: V-measure for K-Means: 0.05243027551716678.
+INFO: Run-time K-Means: 0.17053866386413574 seconds
+INFO: Run-time: 0.15 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 27/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Expressionismus'.
+INFO: Count of different poets: 62
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Count of poets of epoch 'Expressionismus': 15
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.09246231155778895.
+INFO: V-measure for K-Means: 0.05344540592779871.
+INFO: Run-time K-Means: 0.151472806930542 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Argument combination 28/28.
+INFO: Epoch 1: Naturalismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Naturalismus' and 'Expressionismus'.
+INFO: Count of different poets: 31
+INFO: Count of poets of epoch 'Naturalismus': 22
+INFO: Count of poets of epoch 'Expressionismus': 15
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.008763388510223912.
+INFO: V-measure for K-Means: 0.014998151576317145.
+INFO: Run-time K-Means: 0.13077974319458008 seconds
+INFO: Run-time: 0.13333333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+INFO: Overall run-time: 5.1 minute(s).
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
