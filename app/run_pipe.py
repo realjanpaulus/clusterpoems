@@ -43,27 +43,22 @@ def main():
 	if args.clear_json:
 		clear_json(output_path)
 
-	if args.epoch_division == "brenner":
-		epochs = {
-					"Barock": {"b": 1600, "e": 1700},
-					"Frühaufklärung": {"b": 1700, "e": 1755},
-					"Aufklärung": {"b": 1755, "e": 1810},
-					"Klassik_Romantik": {"b": 1786, "e": 1832},
-					"Biedermeier": {"b": 1815, "e": 1848},
-					"Realismus": {"b": 1848, "e": 1900},
-					"Moderne": {"b": 1880, "e": 1918},
-					"Weimarer_Republik": {"b": 1918, "e": 1933}
-				}
+	with open("epochs.json") as f:
+		epochs = json.loads(f.read())
 
-		unique_epochs = list(epochs.keys())
+	if args.epoch_division == "amann":
+		epochs = epochs["amann"]
+		epoch_exceptions = ["Sturm_Drang"]
+	elif args.epoch_division == "brenner":
+		epochs = epochs["brenner"]
+		epoch_exceptions = ["Klassik_Romantik"]
+		
+	for exception in epoch_exceptions:
+		del epochs[exception]
 
-		if args.epoch_exception in unique_epochs:
-			unique_epochs.remove(args.epoch_exception)
-
-
-
+	unique_epochs = list(epochs.keys())
+	
 	combinations_inputs = list(combinations(unique_epochs, r=2))
-
 
 	for idx, t in enumerate(combinations_inputs):
 		
