@@ -19,8 +19,7 @@ Clustering files for the course "Clustering" at the Julius-Maximilians Universit
 ## TODOs:
 
 - [x] Text cleaning erweitert
-
-- Andere Art der Zusammenfassung von Gedichten: Dichter mit mehreren Epochenzuweisungen nach diesen aufteilen
+- [x] Andere Art der Zusammenfassung von Gedichten: Dichter mit mehreren Epochenzuweisungen nach diesen aufteilen
 - Noise entdecken durch Hierarchisches Clustering inkl. Epochenzuteilungen
 - Korpus normalisieren und Experimente durchführen
 - Analyse von Gedichten/Dichter, die sich gut clustern lassen

@@ -89,7 +89,6 @@ def main():
 		epoch_exceptions = ["Sturm_Drang"]
 		corpus = add_epoch_division(corpus, epochs, epoch_exceptions=epoch_exceptions)
 		logging.info(f"Added epoch division by '{args.epoch_division}'.")
-	 
 	elif args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
 		epoch_exceptions = ["Klassik_Romantik"]
@@ -174,26 +173,16 @@ def main():
 
 
 	
-
 		print("--------------- Metrics (K-Means) ---------------")
 		kmeans_ari = adjusted_rand_score(labels, kmeans.labels_)
 		logging.info(f"Adjusted Rand Score for K-Means: {kmeans_ari}.")
 
 		kmeans_vm = v_measure_score(labels, kmeans.labels_)
 		logging.info(f"V-measure for K-Means: {kmeans_vm}.")
-		"""TODO: weg?
-		kmeans_amis = adjusted_mutual_info_score(labels, kmeans.labels_)
-		logging.info(f"Adjusted Mutual Info Score for K-Means: {kmeans_amis}.")
-
-		kmeans_hs = homogeneity_score(labels, kmeans.labels_)
-		logging.info(f"Homogeneity Score for K-Means: {kmeans_hs}.")
-
-		kmeans_cs = completeness_score(labels, kmeans.labels_)
-		logging.info(f"Completeness Score for K-Means: {kmeans_cs}.")
-		"""
 		print("--------------------------------------------------")
 
-		output_name = "kmeans_results"
+
+		output_name = f"kmeans_{args.epoch_divison}"
 
 		if args.reduce_dimensionality:
 			output_name += "_rd"
@@ -220,7 +209,6 @@ def main():
 			clear_json(output_path)
 
 		
-
 		kmeans_duration = float(time.time() - kmeans_st)
 		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
 	elif args.method == "dbscan" or args.method == "all":
