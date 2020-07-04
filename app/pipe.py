@@ -182,7 +182,7 @@ def main():
 		print("--------------------------------------------------")
 
 
-		output_name = f"kmeans_{args.epoch_divison}"
+		output_name = f"kmeans_results_{args.epoch_divison}"
 
 		if args.reduce_dimensionality:
 			output_name += "_rd"
