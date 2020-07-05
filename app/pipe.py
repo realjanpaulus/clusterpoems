@@ -23,7 +23,7 @@ import pandas as pd
 from sklearn.cluster import DBSCAN, KMeans
 from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import adjusted_mutual_info_score, adjusted_rand_score, completeness_score, homogeneity_score, v_measure_score
+from sklearn.metrics import adjusted_rand_score, v_measure_score
 from sklearn.mixture import GaussianMixture
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import LabelEncoder, Normalizer
