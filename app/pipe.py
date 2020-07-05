@@ -13,6 +13,7 @@
 import argparse
 from collections import Counter, defaultdict
 from datetime import datetime
+from itertools import product
 import json
 import logging
 import numpy as np
@@ -222,13 +223,51 @@ def main():
 		kmeans_duration = float(time.time() - kmeans_st)
 		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
 	elif args.method == "dbscan" or args.method == "all":
-
-	
 		dbscan_st = time.time()
-		dbscan = DBSCAN(n_jobs=n_jobs)
-		dbscan.fit(vector)
+
+		if args.use_tuning:
+			eps_search = [0.1, 0.3, 0.5, 0.7, 0.9, 1.0]
+			min_samples = [2, 3, 4, 5]
+			metrics = ["cosine", "euclidean"]
+
+			dbscan_best_params = {"ari": 0,
+								  "vm": 0,
+								  "params": ()}
+
+			cartesian_inputs = list(product(eps_search, min_samples, metrics))
+			for t in cartesian_inputs:
+				dbscan = DBSCAN(eps=t[0],
+								min_samples=t[1],
+								metric=t[2],
+								n_jobs=n_jobs)
+				dbscan.fit(vector)
+				dbscan_ari = adjusted_rand_score(labels, dbscan.labels_)
+				dbscan_vm = v_measure_score(labels, dbscan.labels_)
+
+				prev_ari = dbscan_best_params["ari"]
+
+				if dbscan_ari > prev_ari:
+					dbscan_best_params["ari"] = dbscan_ari
+					dbscan_best_params["vm"] = dbscan_vm
+					dbscan_best_params["params"] = t
+
+
+			t = dbscan_best_params["params"]
+			dbscan = DBSCAN(eps=t[0],
+							min_samples=t[1],
+							metric=t[2],
+							n_jobs=n_jobs)
+			dbscan.fit(vector)
+
+		else:
+			dbscan = DBSCAN(n_jobs=n_jobs)
+			dbscan.fit(vector)
+
 		dbscan_ari = adjusted_rand_score(labels, dbscan.labels_)
 		logging.info(f"Adjusted Rand Score for DBSCAN: {dbscan_ari}.")
+		dbscan_vm = v_measure_score(labels, dbscan.labels_)
+		logging.info(f"V-measure for DBSCAN: {dbscan_vm}.")
+
 		dbscan_duration = float(time.time() - dbscan_st)
 		logging.info(f"Run-time DBSCAN: {dbscan_duration} seconds")
 	elif args.method == "gmm" or args.method == "all":
@@ -326,6 +365,7 @@ if __name__ == "__main__":
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
 	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
+	parser.add_argument("--use_tuning", "-ut", action="store_true", help="Indicates if parameter tuning should be used.")
 	parser.add_argument("--visualization", "-v", action="store_true", help="Indicates if results should be visualized.")
 
 	args = parser.parse_args()
