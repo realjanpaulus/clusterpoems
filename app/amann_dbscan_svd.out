@@ -1,0 +1,814 @@
+INFO: Clustering for all epoch combinations.
+INFO: Argument combination 1/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Aufklärung'.
+INFO: Count of different poets: 99
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 16%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 5
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.4171728736544975.
+INFO: V-measure for DBSCAN: 0.3594894088209264.
+INFO: Create results file.
+INFO: Run-time DBSCAN: 2.371811866760254 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 2/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Klassik'.
+INFO: Count of different poets: 100
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 18%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.3
+min_samples: 5
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.7264507256746057.
+INFO: V-measure for DBSCAN: 0.6447160518782622.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.3102385997772217 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 3/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Romantik'.
+INFO: Count of different poets: 54
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 20%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 5
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.4584464685285138.
+INFO: V-measure for DBSCAN: 0.5632830511342627.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.0506112575531006 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 4/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Biedermeier'.
+INFO: Count of different poets: 69
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 20%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.3
+min_samples: 4
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.5761376710625972.
+INFO: V-measure for DBSCAN: 0.556791730515316.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.1462600231170654 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 5/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Realismus'.
+INFO: Count of different poets: 90
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 19%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.2
+min_samples: 2
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.7681864926643285.
+INFO: V-measure for DBSCAN: 0.7126055736555555.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.223565101623535 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 6/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Naturalismus'.
+INFO: Count of different poets: 63
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Naturalismus': 22
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 21%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.3
+min_samples: 7
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.52838306273097.
+INFO: V-measure for DBSCAN: 0.533094252801469.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.1722054481506348 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 7/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Expressionismus'.
+INFO: Count of different poets: 56
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Expressionismus': 15
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 20%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 5
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.5371547505203352.
+INFO: V-measure for DBSCAN: 0.6430963398548167.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.063535451889038 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 8/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Klassik'.
+INFO: Count of different poets: 101
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 9%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 6
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.07175363800851031.
+INFO: V-measure for DBSCAN: 0.11242364886834867.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.4081618785858154 seconds
+INFO: Run-time: 0.21666666666666667 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 9/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Romantik'.
+INFO: Count of different poets: 74
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 5
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.1020071496195628.
+INFO: V-measure for DBSCAN: 0.02874380112640616.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.2122278213500977 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 10/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Biedermeier'.
+INFO: Count of different poets: 89
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 9%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.2
+min_samples: 2
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.6707064334033903.
+INFO: V-measure for DBSCAN: 0.5495395692567362.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.324686288833618 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 11/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Realismus'.
+INFO: Count of different poets: 109
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.2
+min_samples: 2
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.6792132233442313.
+INFO: V-measure for DBSCAN: 0.585714269796341.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.352299213409424 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 12/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Naturalismus'.
+INFO: Count of different poets: 83
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Naturalismus': 22
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 7
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.6119269089098297.
+INFO: V-measure for DBSCAN: 0.5426735468948662.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.237139940261841 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 13/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Expressionismus'.
+INFO: Count of different poets: 76
+INFO: Count of poets of epoch 'Aufklärung': 61
+INFO: Count of poets of epoch 'Expressionismus': 15
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 6
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.4339706536238328.
+INFO: V-measure for DBSCAN: 0.370954367954564.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.2163074016571045 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 14/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Romantik'.
+INFO: Count of different poets: 62
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 5
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.09872669272744505.
+INFO: V-measure for DBSCAN: 0.027530619477785703.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.2216475009918213 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 15/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Biedermeier'.
+INFO: Count of different poets: 77
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 9%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 7
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.20197400012222905.
+INFO: V-measure for DBSCAN: 0.10617025168643897.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.256970167160034 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 16/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Realismus'.
+INFO: Count of different poets: 100
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 9%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 6
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.042497733848012954.
+INFO: V-measure for DBSCAN: 0.06879657392612883.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.2726235389709473 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 17/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Naturalismus'.
+INFO: Count of different poets: 81
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Naturalismus': 22
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 9%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.2
+min_samples: 5
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.12189252462075253.
+INFO: V-measure for DBSCAN: 0.13254208282338792.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.198641538619995 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 18/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Expressionismus'.
+INFO: Count of different poets: 74
+INFO: Count of poets of epoch 'Klassik': 59
+INFO: Count of poets of epoch 'Expressionismus': 15
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.2
+min_samples: 3
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.13385055923403053.
+INFO: V-measure for DBSCAN: 0.22812667355175384.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.1816306114196777 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 19/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Biedermeier'.
+INFO: Count of different poets: 33
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 12%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.2
+min_samples: 3
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.021002751829411137.
+INFO: V-measure for DBSCAN: 0.03740000085815836.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 1.9972050189971924 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 20/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Realismus'.
+INFO: Count of different poets: 54
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.3
+min_samples: 6
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.14683411255497106.
+INFO: V-measure for DBSCAN: 0.054453896086340804.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.1001439094543457 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 21/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Naturalismus'.
+INFO: Count of different poets: 35
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Count of poets of epoch 'Naturalismus': 22
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 12%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.19530464334015335.
+INFO: V-measure for DBSCAN: 0.24849246266151143.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 1.9636991024017334 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 22/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Expressionismus'.
+INFO: Count of different poets: 28
+INFO: Count of poets of epoch 'Romantik': 13
+INFO: Count of poets of epoch 'Expressionismus': 15
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 14%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.5
+min_samples: 4
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.5620178041543027.
+INFO: V-measure for DBSCAN: 0.5520069821233107.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 1.9922678470611572 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 23/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Realismus'.
+INFO: Count of different poets: 65
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.3
+min_samples: 4
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.04615479927308769.
+INFO: V-measure for DBSCAN: 0.039541757687628194.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.2252228260040283 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 24/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Naturalismus'.
+INFO: Count of different poets: 49
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Count of poets of epoch 'Naturalismus': 22
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.1
+min_samples: 2
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.20675346037739378.
+INFO: V-measure for DBSCAN: 0.20951965800191927.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.0187876224517822 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 25/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Expressionismus'.
+INFO: Count of different poets: 43
+INFO: Count of poets of epoch 'Biedermeier': 28
+INFO: Count of poets of epoch 'Expressionismus': 15
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 12%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.3
+min_samples: 2
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.5581586518701193.
+INFO: V-measure for DBSCAN: 0.5034713476057096.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.087963819503784 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 26/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Naturalismus'.
+INFO: Count of different poets: 64
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Count of poets of epoch 'Naturalismus': 22
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 9%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.2
+min_samples: 2
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.08020096468460586.
+INFO: V-measure for DBSCAN: 0.04471036970049472.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.237239122390747 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 27/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Expressionismus'.
+INFO: Count of different poets: 62
+INFO: Count of poets of epoch 'Realismus': 49
+INFO: Count of poets of epoch 'Expressionismus': 15
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 10%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.2
+min_samples: 5
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.08893608804788572.
+INFO: V-measure for DBSCAN: 0.04192664256643717.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.235011339187622 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 28/28.
+INFO: Epoch 1: Naturalismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Added epoch division by 'amann'.
+INFO: Used epochs are 'Naturalismus' and 'Expressionismus'.
+INFO: Count of different poets: 31
+INFO: Count of poets of epoch 'Naturalismus': 22
+INFO: Count of poets of epoch 'Expressionismus': 15
+INFO: Reduce dimensionality to 3.
+INFO: Explained variance of the SVD step: 12%
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.4
+min_samples: 7
+metrics: euclidean
+INFO: Adjusted Rand Score for DBSCAN: 0.06049590364060549.
+INFO: V-measure for DBSCAN: 0.045437815117019484.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 2.0708677768707275 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Overall run-time: 6.066666666666666 minute(s).
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
