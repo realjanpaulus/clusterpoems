@@ -215,19 +215,20 @@ def main():
 				json.dump(dic, f)
 		
 
-			
 		if args.clear_json:
 			clear_json(output_path)
 
 		
 		kmeans_duration = float(time.time() - kmeans_st)
 		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
+
 	elif args.method == "dbscan" or args.method == "all":
 		dbscan_st = time.time()
 
 		if args.use_tuning:
-			eps_search = [0.1, 0.3, 0.5, 0.7, 0.9, 1.0]
-			min_samples = [2, 3, 4, 5]
+			logging.info("Tuning hyperparameters for dbscan.")
+			eps_search = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+			min_samples = [2, 3, 4, 5, 6, 7]
 			metrics = ["cosine", "euclidean"]
 
 			dbscan_best_params = {"ari": 0,
@@ -253,6 +254,7 @@ def main():
 
 
 			t = dbscan_best_params["params"]
+			logging.info(f"Best params for DBSCAN:\neps: {t[0]}\nmin_samples: {t[1]}\nmetrics: {t[2]}")
 			dbscan = DBSCAN(eps=t[0],
 							min_samples=t[1],
 							metric=t[2],
@@ -263,13 +265,49 @@ def main():
 			dbscan = DBSCAN(n_jobs=n_jobs)
 			dbscan.fit(vector)
 
+
+		print("--------------- Metrics (DBSCAN) ---------------")
 		dbscan_ari = adjusted_rand_score(labels, dbscan.labels_)
 		logging.info(f"Adjusted Rand Score for DBSCAN: {dbscan_ari}.")
 		dbscan_vm = v_measure_score(labels, dbscan.labels_)
 		logging.info(f"V-measure for DBSCAN: {dbscan_vm}.")
+		print("------------------------------------------------")
+
+
+		# TODO: top words?
+
+
+		output_name = f"dbscan_results_{args.epoch_division}"
+
+		if args.reduce_dimensionality:
+			output_name += "_rd"
+
+		if args.save_date:
+			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
+
+		output_path = f"../results/{output_name}.json"
+
+		
+		if os.path.exists(output_path):
+			logging.info("Update results file.")
+			with open(output_path, "r+") as f:
+				dic = json.load(f)
+				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": dbscan_ari, 
+														"vm": dbscan_vm}}
+				f.seek(0)
+				f.write(json.dumps(dic))
+				f.truncate()
+		else:
+			logging.info("Create results file.")
+			with open(output_path, "w") as f:
+				dic = {}
+				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": dbscan_ari, 
+														"vm": dbscan_vm}}
+				json.dump(dic, f)
 
 		dbscan_duration = float(time.time() - dbscan_st)
 		logging.info(f"Run-time DBSCAN: {dbscan_duration} seconds")
+
 	elif args.method == "gmm" or args.method == "all":
 
 		gmm_st = time.time()

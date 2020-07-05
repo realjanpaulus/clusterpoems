@@ -57,7 +57,7 @@ def main():
 		del epochs[exception]
 
 	unique_epochs = list(epochs.keys())
-	
+
 	combinations_inputs = list(combinations(unique_epochs, r=2))
 
 	for idx, t in enumerate(combinations_inputs):
@@ -84,6 +84,9 @@ def main():
 		if args.clear_json:
 			command += " -cj"
 
+		if args.use_tuning:
+			command += " -ut"
+
 
 		subprocess.call(["bash", "-c", command])
 		print("\n")
@@ -106,7 +109,9 @@ if __name__ == "__main__":
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
 	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
+	parser.add_argument("--use_tuning", "-ut", action="store_true", help="Indicates if parameter tuning should be used.")
 	
+
 	args = parser.parse_args()
 
 	main()
