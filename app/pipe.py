@@ -90,7 +90,7 @@ def main():
 	#TODO: brenner als preload
 	if args.epoch_division == "amann":
 		if args.preload:
-			corpus = pd.read_csv("../amann_poems.csv", index_col=0)
+			corpus = pd.read_csv("../corpora/amann_poems.csv", index_col=0)
 			logging.info(f"Read preload corpus with epoch division by '{args.epoch_division}'.")
 		else:
 			epochs = epochs["amann"]
