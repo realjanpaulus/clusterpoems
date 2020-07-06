@@ -87,11 +87,21 @@ def main():
 		epochs = json.loads(f.read())
 
 	#TODO: mehr
+	#TODO: brenner als preload
 	if args.epoch_division == "amann":
-		epochs = epochs["amann"]
-		epoch_exceptions = ["Sturm_Drang"]
-		corpus = add_epoch_division(corpus, epochs, epoch_exceptions=epoch_exceptions)
-		logging.info(f"Added epoch division by '{args.epoch_division}'.")
+		if args.preload:
+			corpus = pd.read_csv("../amann_poems.csv", index_col=0)
+			logging.info(f"Read preload corpus with epoch division by '{args.epoch_division}'.")
+		else:
+			epochs = epochs["amann"]
+			epoch_exceptions = ["Sturm_Drang"]
+			corpus = add_epoch_division(corpus, epochs, epoch_exceptions=epoch_exceptions)
+			logging.info(f"Added epoch division by '{args.epoch_division}'.")
+
+			if args.merge_poet:
+				corpus = merge_corpus_poets(corpus)
+				corpus["poemlength"] = corpus.poem.apply(lambda x: len(word_tokenize(x)))
+				corpus = corpus[corpus.poemlength >= 1000]
 	elif args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
 		epoch_exceptions = ["Klassik_Romantik"]
@@ -106,10 +116,7 @@ def main():
 
 
 
-	if args.merge_poet:
-		corpus = merge_corpus_poets(corpus)
-		corpus["poemlength"] = corpus.poem.apply(lambda x: len(word_tokenize(x)))
-		corpus = corpus[corpus.poemlength >= 1000]
+	
 
 	epoch1 = args.epoch_one
 	epoch2 = args.epoch_two
@@ -405,6 +412,7 @@ if __name__ == "__main__":
 	parser.add_argument("--merge_poet", "-mp", action="store_true", help="Indicates if all poems of a poet should be merged.")
 	parser.add_argument("--method", "-m", type=str, default="kmeans", help="Indicates clustering method. Possible values are 'kmeans', 'dbscan', 'gmm', 'all'.")
 	parser.add_argument("--n_jobs", "-nj", type=int, default=1, help="Indicates the number of processors used for computation.")
+	parser.add_argument("--preload", "-p", type=bool, default=True, help="Indicates if preload epoch division should be used.")
 	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
 	parser.add_argument("--use_tuning", "-ut", action="store_true", help="Indicates if parameter tuning should be used.")
