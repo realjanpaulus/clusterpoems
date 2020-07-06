@@ -1,0 +1,753 @@
+INFO: Clustering for all epoch combinations.
+INFO: Argument combination 1/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Aufklärung'.
+INFO: Count of different poets: 97
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.5
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.3747120025122984.
+INFO: V-measure for DBSCAN: 0.3808854183354524.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 8.258177995681763 seconds
+INFO: Run-time: 0.26666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 2/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Klassik'.
+INFO: Count of different poets: 95
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 6
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.4913005973210071.
+INFO: V-measure for DBSCAN: 0.49945593734359156.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 8.108492851257324 seconds
+INFO: Run-time: 0.26666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 3/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Romantik'.
+INFO: Count of different poets: 50
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.22075141518424005.
+INFO: V-measure for DBSCAN: 0.36456437723416857.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.109612464904785 seconds
+INFO: Run-time: 0.21666666666666667 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 4/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Biedermeier'.
+INFO: Count of different poets: 68
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.4523674877681898.
+INFO: V-measure for DBSCAN: 0.5135351813200306.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.848875045776367 seconds
+INFO: Run-time: 0.23333333333333334 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 5/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Realismus'.
+INFO: Count of different poets: 84
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.5150604569370093.
+INFO: V-measure for DBSCAN: 0.5315037390931865.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 7.507491827011108 seconds
+INFO: Run-time: 0.25 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 6/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Naturalismus'.
+INFO: Count of different poets: 60
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.4118934340028332.
+INFO: V-measure for DBSCAN: 0.44424788029522966.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.5338454246521 seconds
+INFO: Run-time: 0.21666666666666667 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 7/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Expressionismus'.
+INFO: Count of different poets: 51
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 3
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.2406368113618142.
+INFO: V-measure for DBSCAN: 0.30259182491017494.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.1948559284210205 seconds
+INFO: Run-time: 0.21666666666666667 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 8/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Klassik'.
+INFO: Count of different poets: 100
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 3
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.032473343283368025.
+INFO: V-measure for DBSCAN: 0.14254080675068476.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 8.973668336868286 seconds
+INFO: Run-time: 0.3 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 9/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Romantik'.
+INFO: Count of different poets: 68
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.3134495918144387.
+INFO: V-measure for DBSCAN: 0.15296267099994817.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 7.242959499359131 seconds
+INFO: Run-time: 0.23333333333333334 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 10/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Biedermeier'.
+INFO: Count of different poets: 86
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 7
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.07509761059555686.
+INFO: V-measure for DBSCAN: 0.02762492487627586.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 7.720174312591553 seconds
+INFO: Run-time: 0.25 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 11/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Realismus'.
+INFO: Count of different poets: 102
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.06805692365891854.
+INFO: V-measure for DBSCAN: 0.0943629033378967.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 8.334561824798584 seconds
+INFO: Run-time: 0.26666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 12/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Naturalismus'.
+INFO: Count of different poets: 78
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.13161977666097585.
+INFO: V-measure for DBSCAN: 0.1553261654886092.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 7.352838754653931 seconds
+INFO: Run-time: 0.23333333333333334 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 13/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Expressionismus'.
+INFO: Count of different poets: 69
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.056371599678216915.
+INFO: V-measure for DBSCAN: 0.00814051276380803.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.961825609207153 seconds
+INFO: Run-time: 0.23333333333333334 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 14/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Romantik'.
+INFO: Count of different poets: 57
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.09252483010977525.
+INFO: V-measure for DBSCAN: 0.021820457991255794.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.832165956497192 seconds
+INFO: Run-time: 0.23333333333333334 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 15/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Biedermeier'.
+INFO: Count of different poets: 72
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.0629352918829936.
+INFO: V-measure for DBSCAN: 0.05909739790013525.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 7.617843866348267 seconds
+INFO: Run-time: 0.25 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 16/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Realismus'.
+INFO: Count of different poets: 92
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.9
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.011405730164261302.
+INFO: V-measure for DBSCAN: 0.04331248047501829.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 8.239145994186401 seconds
+INFO: Run-time: 0.26666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 17/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Naturalismus'.
+INFO: Count of different poets: 73
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.09530835054588363.
+INFO: V-measure for DBSCAN: 0.030449906688870938.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 7.272869348526001 seconds
+INFO: Run-time: 0.23333333333333334 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 18/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Expressionismus'.
+INFO: Count of different poets: 64
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.217995703273095.
+INFO: V-measure for DBSCAN: 0.09052492356510282.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.867090225219727 seconds
+INFO: Run-time: 0.23333333333333334 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 19/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Biedermeier'.
+INFO: Count of different poets: 31
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 3
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.1954848640328374.
+INFO: V-measure for DBSCAN: 0.09484075662495077.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.478362083435059 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 20/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Realismus'.
+INFO: Count of different poets: 50
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.16675714466316166.
+INFO: V-measure for DBSCAN: 0.07545457846683884.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.204930067062378 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 21/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Naturalismus'.
+INFO: Count of different poets: 28
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.1525851197982345.
+INFO: V-measure for DBSCAN: 0.11453636126383507.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.2642738819122314 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 22/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Expressionismus'.
+INFO: Count of different poets: 19
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.10830324909747292.
+INFO: V-measure for DBSCAN: 0.23876721316494962.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 4.751505136489868 seconds
+INFO: Run-time: 0.16666666666666666 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 23/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Realismus'.
+INFO: Count of different poets: 60
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 3
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.042626226779384636.
+INFO: V-measure for DBSCAN: 0.029748613064033372.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.948700904846191 seconds
+INFO: Run-time: 0.23333333333333334 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 24/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Naturalismus'.
+INFO: Count of different poets: 45
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Tuning hyperparameters for dbscan.
+Traceback (most recent call last):
+  File "pipe.py", line 423, in <module>
+    main()
+  File "pipe.py", line 268, in main
+    logging.info(f"Best params for DBSCAN:\neps: {t[0]}\nmin_samples: {t[1]}\nmetrics: {t[2]}")
+IndexError: tuple index out of range
+INFO: Argument combination 25/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Expressionismus'.
+INFO: Count of different poets: 37
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.28999172870140616.
+INFO: V-measure for DBSCAN: 0.19005436614516577.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.4354307651519775 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 26/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Naturalismus'.
+INFO: Count of different poets: 59
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 7
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.05210604482517117.
+INFO: V-measure for DBSCAN: 0.017092306137864298.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.703505516052246 seconds
+INFO: Run-time: 0.21666666666666667 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 27/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Expressionismus'.
+INFO: Count of different poets: 53
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.22549601995960553.
+INFO: V-measure for DBSCAN: 0.11412419109147338.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.240472793579102 seconds
+INFO: Run-time: 0.2 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Argument combination 28/28.
+INFO: Epoch 1: Naturalismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Naturalismus' and 'Expressionismus'.
+INFO: Count of different poets: 28
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.17267478530881566.
+INFO: V-measure for DBSCAN: 0.136068720554534.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.230057239532471 seconds
+INFO: Run-time: 0.18333333333333332 minute(s).
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+INFO: Overall run-time: 7.333333333333333 minute(s).
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
