@@ -225,9 +225,9 @@ def generate_wordcloud(top_words, pos_remove=False, img_name = ""):
 	plt.axis("off")
 	
 	if pos_remove:
-		plt.savefig(f"img/results/wc{img_name}_top_n_words_pos_remove")
+		plt.savefig(f"../results/figures/wc{img_name}_top_n_words_pos_remove")
 	else:
-		plt.savefig(f"img/results/wc{img_name}_top_n_words")
+		plt.savefig(f"../results/figures/wc{img_name}_top_n_words")
 	plt.show()
 
 def get_epoch(year, epochs):

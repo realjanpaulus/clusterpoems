@@ -16,6 +16,7 @@ from datetime import datetime
 from itertools import product
 import json
 import logging
+from nltk import word_tokenize
 import numpy as np
 import os
 import pandas as pd
@@ -107,6 +108,8 @@ def main():
 
 	if args.merge_poet:
 		corpus = merge_corpus_poets(corpus)
+		corpus["poemlength"] = corpus.poem.apply(lambda x: len(word_tokenize(x)))
+		corpus = corpus[corpus.poemlength >= 1000]
 
 	epoch1 = args.epoch_one
 	epoch2 = args.epoch_two
@@ -236,6 +239,7 @@ def main():
 								  "params": ()}
 
 			cartesian_inputs = list(product(eps_search, min_samples, metrics))
+
 			for t in cartesian_inputs:
 				dbscan = DBSCAN(eps=t[0],
 								min_samples=t[1],
