@@ -20,6 +20,8 @@ Clustering files for the course "Clustering" at the Julius-Maximilians Universit
 
 - [x] Text cleaning erweitert
 - [x] Andere Art der Zusammenfassung von Gedichten: Dichter mit mehreren Epochenzuweisungen nach diesen aufteilen
+- In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
+- SVM machen
 - Noise entdecken durch Hierarchisches Clustering inkl. Epochenzuteilungen
 - Korpus normalisieren und Experimente durchführen
 - Analyse von Gedichten/Dichter, die sich gut clustern lassen
