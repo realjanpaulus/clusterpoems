@@ -30,6 +30,7 @@ from sklearn.mixture import GaussianMixture
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import LabelEncoder, Normalizer
 
+from sklearn_extra.cluster import KMedoids
 
 from stop_words import get_stop_words
 import sys
@@ -234,7 +235,61 @@ def main():
 		
 		kmeans_duration = float(time.time() - kmeans_st)
 		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
+	
+	elif args.method == "kmedoids" or args.method == "all":
+		kmedoids_st = time.time()
+		kmedoids = KMedoids(n_clusters=len(unique_epochs),
+							init="k-medoids++",
+							metric="cosine")
+		kmedoids.fit(vector)
 
+
+
+	
+		print("--------------- Metrics (K-Medoids) ---------------")
+		kmedoids_ari = adjusted_rand_score(labels, kmedoids.labels_)
+		logging.info(f"Adjusted Rand Score for K-Medoids: {kmedoids_ari}.")
+
+		kmedoids_vm = v_measure_score(labels, kmedoids.labels_)
+		logging.info(f"V-measure for K-Medoids: {kmedoids_vm}.")
+		print("--------------------------------------------------")
+
+
+		output_name = f"kmedoids_results_{args.epoch_division}"
+
+		if args.reduce_dimensionality:
+			output_name += "_rd"
+
+		if args.save_date:
+			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
+
+		output_path = f"../results/{output_name}.json"
+
+		
+		if os.path.exists(output_path):
+			logging.info("Update results file.")
+			with open(output_path, "r+") as f:
+				dic = json.load(f)
+				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": kmedoids_ari, 
+														"vm": kmedoids_vm}}
+				f.seek(0)
+				f.write(json.dumps(dic))
+				f.truncate()
+		else:
+			logging.info("Create results file.")
+			with open(output_path, "w") as f:
+				dic = {}
+				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": kmedoids_ari, 
+														"vm": kmedoids_vm}}
+				json.dump(dic, f)
+		
+
+		if args.clear_json:
+			clear_json(output_path)
+
+		
+		kmedoids_duration = float(time.time() - kmedoids_st)
+		logging.info(f"Run-time K-Medoids: {kmedoids_duration} seconds")
 	elif args.method == "dbscan" or args.method == "all":
 		dbscan_st = time.time()
 
