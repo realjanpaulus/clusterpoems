@@ -290,6 +290,7 @@ def main():
 		
 		kmedoids_duration = float(time.time() - kmedoids_st)
 		logging.info(f"Run-time K-Medoids: {kmedoids_duration} seconds")
+	
 	elif args.method == "dbscan" or args.method == "all":
 		dbscan_st = time.time()
 
@@ -380,23 +381,17 @@ def main():
 	elif args.method == "gmm" or args.method == "all":
 
 		gmm_st = time.time()
-		gmm = GaussianMixture(n_components=2, n_init=10, max_iter=100)
+		gmm = GaussianMixture(n_components=len(unique_epochs), n_init=10, max_iter=100)
 		gmm.fit(vector.toarray())
 
 		if not gmm.converged_:
 			logging.info("Gaussian Mixture Model didn't converged. Increase max iter.")
-			gmm = GaussianMixture(n_components=2, n_init=10, max_iter=250)
+			gmm = GaussianMixture(n_components=len(unique_epochs), n_init=10, max_iter=250)
 			gmm.fit(vector.toarray())
 
 		gmm_labels = gmm.predict(vector.toarray())
 
-		# ==================
-		# gmm top words #
-		# ==================
-
-		# TODO
-
-
+		
 		print("--------------- Metrics (Gaussian Mixture Model) ---------------")
 		gmm_ari = adjusted_rand_score(labels, gmm_labels)
 		logging.info(f"Adjusted Rand Score for Gaussian Mixture Model: {gmm_ari}.")
@@ -404,6 +399,9 @@ def main():
 
 		gmm_vm = v_measure_score(labels, gmm_labels)
 		logging.info(f"V-measure for for Gaussian Mixture Model: {gmm_vm}.")
+		print("-----------------------------------------------------------------")
+
+
 
 		output_name = "gmm_results"
 
@@ -416,17 +414,37 @@ def main():
 		
 		output_path = f"../results/{output_name}.json"
 
+
+		output_name = f"gmm_results_{args.epoch_division}"
+
+		if args.reduce_dimensionality:
+			output_name += "_rd"
+
+		if args.save_date:
+			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
+
+		output_path = f"../results/{output_name}.json"
+
 		if args.keep_json:
 			clear_json(output_path)
 
-		with open(output_path, "r+") as f:
-			dic = json.load(f)
-			dic[f"{epoch1}/{epoch2}"] = {"ari": gmm_ari, "vm": gmm_vm}
-			f.seek(0)
-			json.dump(dic, f)
+		if os.path.exists(output_path):
+			logging.info("Update results file.")
+			with open(output_path, "r+") as f:
+				dic = json.load(f)
+				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": gmm_ari, 
+														"vm": gmm_vm}}
+				f.seek(0)
+				f.write(json.dumps(dic))
+				f.truncate()
+		else:
+			logging.info("Create results file.")
+			with open(output_path, "w") as f:
+				dic = {}
+				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": gmm_ari, 
+													"vm": gmm_vm}}
 
-		print("-----------------------------------------------------------------")
-
+		
 		gmm_duration = float(time.time() - gmm_st)
 		logging.info(f"Run-time Gaussian Mixture Model: {gmm_duration} seconds")
 	else:
