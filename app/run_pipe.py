@@ -49,6 +49,9 @@ def main():
 	if args.epoch_division == "amann":
 		epochs = epochs["amann"]
 		epoch_exceptions = ["Sturm_Drang"]
+	elif args.epoch_division == "amann":
+		epochs = epochs["amann_noise"]
+		epoch_exceptions = ["Sturm_Drang"]
 	elif args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
 		epoch_exceptions = ["Klassik_Romantik"]
