@@ -50,7 +50,7 @@ def main():
 	# =======================
 
 	n_jobs = args.n_jobs
-	n_components = 3 #for dimension reduction
+	n_components = 3 # for dimensionality reduction
 	results_dict = {}
 	top_words = {}
 
@@ -102,6 +102,9 @@ def main():
 				corpus = merge_corpus_poets(corpus)
 				corpus["poemlength"] = corpus.poem.apply(lambda x: len(word_tokenize(x)))
 				corpus = corpus[corpus.poemlength >= 1000]
+	elif args.epoch_division == "amann_noise":
+		corpus = pd.read_csv("../corpora/amann_poems_noiseless.csv", index_col=0)
+		logging.info(f"Read preload corpus with epoch division by '{args.epoch_division}'.")
 	elif args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
 		epoch_exceptions = ["Klassik_Romantik"]

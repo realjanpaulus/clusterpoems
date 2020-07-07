@@ -288,11 +288,11 @@ def get_top_n_words(column, n = None, stopwords = "", pos_remove = False):
 	return words_freq[:n]
 
 
-def remove_noise_poet(corpus, noise_pids, min_n=50):
+def remove_noise_poet(corpus, noise_pids, pid="id", min_n=50):
 	""" Removes noisy poets from corpus.
 	"""
 	df = corpus.copy()
-	noise_df = corpus[corpus.pid.isin(noise_pids)]
+	noise_df = corpus[corpus[pid].isin(noise_pids)]
 	noise_poets = dict(noise_df.poet.value_counts())
 	poets = [k for k, v in noise_poets.items() if v >= min_n]
 	df = df[df.poet.isin(poets) == False]
