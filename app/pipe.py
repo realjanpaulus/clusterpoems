@@ -406,7 +406,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(prog="pipe", description="Pipeline for clustering.", add_help=True)
 	parser.add_argument("--clear_json", "-cj", action="store_true", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'. Another possible value is 'noise'.")
-	parser.add_argument("--epoch_division", "-ed", type=str, default="brenner", help="Indicates the epoch division method. Possible values are 'amann', brenner'.")
+	parser.add_argument("--epoch_division", "-ed", type=str, default="amann", help="Indicates the epoch division method. Possible values are 'amann', brenner'.")
 	#parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
 	parser.add_argument("--epoch_one", "-eo", type=str, default="Barock", help="Name of the first epoch.")
 	parser.add_argument("--epoch_two", "-et", type=str, default="Realismus", help="Name of the first epoch.")
