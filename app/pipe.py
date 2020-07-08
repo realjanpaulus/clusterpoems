@@ -425,7 +425,7 @@ def main():
 
 		output_path = f"../results/{output_name}.json"
 
-		if args.keep_json:
+		if args.clear_json:
 			clear_json(output_path)
 
 		if os.path.exists(output_path):
