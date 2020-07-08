@@ -88,7 +88,7 @@ def main():
 					   "clf__penalty": ["l2"],
 					   "clf__loss": ["squared_hinge"],
 					   "clf__tol": [1e-5, 1e-3],
-					   "clf__C": list(range(1, 11, 2)),
+					   "clf__C": [1.0, 3.0, 5.0],
 					   "clf__max_iter": [1000, 3000, 5000],
 					   "clf__class_weight": [None, "balanced"]}
 	
