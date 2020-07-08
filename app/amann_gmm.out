@@ -1,0 +1,702 @@
+INFO: Clustering for all epoch combinations.
+INFO: Argument combination 1/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Aufklärung'.
+INFO: Count of different poets: 97
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.5136064986964053.
+INFO: V-measure for for Gaussian Mixture Model: 0.42650975956636417.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 2/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Klassik'.
+INFO: Count of different poets: 95
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.798382484156581.
+INFO: V-measure for for Gaussian Mixture Model: 0.7114302691436644.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 3/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Romantik'.
+INFO: Count of different poets: 50
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.21647382971395598.
+INFO: V-measure for for Gaussian Mixture Model: 0.30021354643938414.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 4/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Biedermeier'.
+INFO: Count of different poets: 68
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.723530268459634.
+INFO: V-measure for for Gaussian Mixture Model: 0.6863890616995051.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 5/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Realismus'.
+INFO: Count of different poets: 84
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.8605806088252305.
+INFO: V-measure for for Gaussian Mixture Model: 0.8119461410948712.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 6/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Naturalismus'.
+INFO: Count of different poets: 60
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.3503833905307573.
+INFO: V-measure for for Gaussian Mixture Model: 0.42446160833037944.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 7/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Expressionismus'.
+INFO: Count of different poets: 51
+INFO: Count of poets of epoch 'Barock': 41
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.04654137557807727.
+INFO: V-measure for for Gaussian Mixture Model: 0.21824920973141518.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 8/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Klassik'.
+INFO: Count of different poets: 100
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.23016293469427865.
+INFO: V-measure for for Gaussian Mixture Model: 0.19233322477621764.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 9/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Romantik'.
+INFO: Count of different poets: 68
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.007906682755846767.
+INFO: V-measure for for Gaussian Mixture Model: 0.0003875234130693489.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 10/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Biedermeier'.
+INFO: Count of different poets: 86
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.27858821840627296.
+INFO: V-measure for for Gaussian Mixture Model: 0.3214272194546663.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 11/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Realismus'.
+INFO: Count of different poets: 102
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.5508307138668315.
+INFO: V-measure for for Gaussian Mixture Model: 0.48832100015109514.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 12/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Naturalismus'.
+INFO: Count of different poets: 78
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.06814951809397325.
+INFO: V-measure for for Gaussian Mixture Model: 0.13988697221775662.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 13/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Expressionismus'.
+INFO: Count of different poets: 69
+INFO: Count of poets of epoch 'Aufklärung': 59
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.002158979391560423.
+INFO: V-measure for for Gaussian Mixture Model: 0.007081394275978883.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 14/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Romantik'.
+INFO: Count of different poets: 57
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.028886104332915642.
+INFO: V-measure for for Gaussian Mixture Model: 0.030421250327651504.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 15/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Biedermeier'.
+INFO: Count of different poets: 72
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.03209876543209877.
+INFO: V-measure for for Gaussian Mixture Model: 0.05430230088487762.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 16/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Realismus'.
+INFO: Count of different poets: 92
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.046410755445143316.
+INFO: V-measure for for Gaussian Mixture Model: 0.0397205816400381.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 17/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Naturalismus'.
+INFO: Count of different poets: 73
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.22073787377489226.
+INFO: V-measure for for Gaussian Mixture Model: 0.225360516813186.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 18/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Expressionismus'.
+INFO: Count of different poets: 64
+INFO: Count of poets of epoch 'Klassik': 54
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.03937506597698729.
+INFO: V-measure for for Gaussian Mixture Model: 0.11054633406651034.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 19/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Biedermeier'.
+INFO: Count of different poets: 31
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.018743804631882424.
+INFO: V-measure for for Gaussian Mixture Model: 0.0032830760112793934.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 20/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Realismus'.
+INFO: Count of different poets: 50
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.10937102408105676.
+INFO: V-measure for for Gaussian Mixture Model: 0.1011166640778608.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 21/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Naturalismus'.
+INFO: Count of different poets: 28
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.03644646924829159.
+INFO: V-measure for for Gaussian Mixture Model: 0.030691816515557052.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 22/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Expressionismus'.
+INFO: Count of different poets: 19
+INFO: Count of poets of epoch 'Romantik': 9
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.6012345679012345.
+INFO: V-measure for for Gaussian Mixture Model: 0.5138027220818576.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 23/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Realismus'.
+INFO: Count of different poets: 60
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.010648306666296492.
+INFO: V-measure for for Gaussian Mixture Model: 0.003153711674082838.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 24/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Naturalismus'.
+INFO: Count of different poets: 45
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.022866750735603215.
+INFO: V-measure for for Gaussian Mixture Model: 0.0024169642491036225.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 25/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Expressionismus'.
+INFO: Count of different poets: 37
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.026951976478275033.
+INFO: V-measure for for Gaussian Mixture Model: 0.01835798032065922.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 26/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Naturalismus'.
+INFO: Count of different poets: 59
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.009976440475844098.
+INFO: V-measure for for Gaussian Mixture Model: 0.04248505810625734.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 27/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Expressionismus'.
+INFO: Count of different poets: 53
+INFO: Count of poets of epoch 'Realismus': 43
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.047804510333563706.
+INFO: V-measure for for Gaussian Mixture Model: 0.12474504987642204.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Argument combination 28/28.
+INFO: Epoch 1: Naturalismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Naturalismus' and 'Expressionismus'.
+INFO: Count of different poets: 28
+INFO: Count of poets of epoch 'Naturalismus': 19
+INFO: Count of poets of epoch 'Expressionismus': 10
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.032203389830508536.
+INFO: V-measure for for Gaussian Mixture Model: 0.0004686216107286107.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 499, in <module>
+    main()
+  File "pipe.py", line 428, in main
+    if args.keep_json:
+AttributeError: 'Namespace' object has no attribute 'keep_json'
+INFO: Overall run-time: 290.8 minute(s).
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
