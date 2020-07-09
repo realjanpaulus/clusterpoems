@@ -35,16 +35,37 @@ def add_epoch_division(corpus, epochs, epoch_exceptions=[], add_years=0):
 	df["epoch"] = df.apply(lambda row: get_epoch(row.year, epochs_d), axis=1)
 	return df
 
+
+def alter_epoch_division(corpus, alternative_epochs):
+	""" Alter epoch division by another epoch division json file.
+	"""
+	df = corpus.copy()
+	valid_epochs = ['Aufklärung', 'Barock', 'Biedermeier', 'Expressionismus',
+					'Klassik', 'Naturalismus', 'Realismus',
+					'Romantik', 'Sturm_Drang']
+	
+	for idx, row in df.iterrows():
+		if row.poet in alternative_epochs.keys():
+			epoch = alternative_epochs[row.poet]
+			if epoch in valid_epochs:
+				row.epoch = epoch
+			else:
+				row.epoch = "delete"
+	
+	return df[df.epoch != "delete"]
+
 def replace_poets(text):
 	""" Unify poet spelling
 	"""
 	text = re.sub('Abschatz, Hans Assmann von', 'Abschatz, Hans Aßmann von', text)
 	text = re.sub('Czepko, Daniel von', 'Czepko von Reigersfeld, Daniel', text)
 	text = re.sub('Goethe, Johann Wolfgang', 'Goethe, Johann Wolfgang von', text)
+	text = re.sub('Goethe, Johann Wolfgang von von', 'Goethe, Johann Wolfgang von', text)
 	text = re.sub('Hoffmannswaldau, Christian Hoffmann von', 'Hofmann von Hofmannswaldau, Christian', text)
 	text = re.sub('Hofmannswaldau, Christian Hofmann von', 'Hofmann von Hofmannswaldau, Christian', text)
 	text = re.sub('Karsch, Anna Luise', 'Karsch, Anna Louisa', text)
 	text = re.sub('Kosegarten, Gotthard Ludwig', 'Kosegarten, Ludwig Gotthard', text)
+	text = re.sub('Stieler, Kaspar von von', 'Stieler, Kaspar von', text)
 	text = re.sub('Stieler, Kaspar', 'Stieler, Kaspar von', text)
 	text = re.sub('Zachariä, Justus Friedrich Wilhelm', 'Zachariae, Justus Friedrich Wilhelm', text)
 	text = re.sub('Zinzendorf, Nicolaus Ludwig von', 'Zinzendorf, Nikolaus Ludwig von', text)

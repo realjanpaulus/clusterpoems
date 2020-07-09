@@ -87,8 +87,6 @@ def main():
 	with open("epochs.json") as f:
 		epochs = json.loads(f.read())
 
-	#TODO: mehr
-	#TODO: brenner als preload
 	if args.epoch_division == "amann":
 		if args.preload:
 			corpus = pd.read_csv("../corpora/amann_poems.csv", index_col=0)
@@ -378,7 +376,7 @@ def main():
 		dbscan_duration = float(time.time() - dbscan_st)
 		logging.info(f"Run-time DBSCAN: {dbscan_duration} seconds")
 
-	elif args.method == "gmm" or args.method == "all":
+	elif args.method == "gmm":
 
 		gmm_st = time.time()
 		gmm = GaussianMixture(n_components=len(unique_epochs), n_init=10, max_iter=100)
