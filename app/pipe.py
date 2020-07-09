@@ -234,7 +234,7 @@ def main():
 		kmeans_duration = float(time.time() - kmeans_st)
 		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
 	
-	elif args.method == "kmedoids" or args.method == "all":
+	if args.method == "kmedoids" or args.method == "all":
 		kmedoids_st = time.time()
 		kmedoids = KMedoids(n_clusters=len(unique_epochs),
 							init="k-medoids++",
@@ -289,7 +289,7 @@ def main():
 		kmedoids_duration = float(time.time() - kmedoids_st)
 		logging.info(f"Run-time K-Medoids: {kmedoids_duration} seconds")
 	
-	elif args.method == "dbscan" or args.method == "all":
+	if args.method == "dbscan" or args.method == "all":
 		dbscan_st = time.time()
 
 		if args.use_tuning:
@@ -376,7 +376,7 @@ def main():
 		dbscan_duration = float(time.time() - dbscan_st)
 		logging.info(f"Run-time DBSCAN: {dbscan_duration} seconds")
 
-	elif args.method == "gmm":
+	if args.method == "gmm":
 
 		gmm_st = time.time()
 		gmm = GaussianMixture(n_components=len(unique_epochs), n_init=10, max_iter=100)
@@ -445,7 +445,8 @@ def main():
 		
 		gmm_duration = float(time.time() - gmm_st)
 		logging.info(f"Run-time Gaussian Mixture Model: {gmm_duration} seconds")
-	else:
+	
+	if args.method not in ["all", "kmeans", "kmedoids", "dbscan", "gmm"]:
 		logging.warning(f"Couldn't find a method with the name '{args.method}'.")
 
 	
