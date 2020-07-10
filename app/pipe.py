@@ -422,7 +422,7 @@ def main():
 								  n_init=10, 
 								  covariance_type=t[0],
 								  max_iter=250)
-			gmm.fit(vector)
+			gmm.fit(vector.toarray())
 
 		else:
 			gmm = GaussianMixture(n_components=len(unique_epochs), 
