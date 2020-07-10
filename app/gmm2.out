@@ -1,0 +1,699 @@
+INFO: Clustering for all epoch combinations.
+INFO: Argument combination 1/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Aufklärung'.
+INFO: Count of different poets: 90
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: tied
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.48024740017584816.
+INFO: V-measure for for Gaussian Mixture Model: 0.48440788296643084.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 923.1285047531128 seconds
+INFO: Run-time: 15.516666666666667 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 2/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Klassik'.
+INFO: Count of different poets: 65
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.7653967620019674.
+INFO: V-measure for for Gaussian Mixture Model: 0.6735550905637514.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 695.6107137203217 seconds
+INFO: Run-time: 11.716666666666667 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 3/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Romantik'.
+INFO: Count of different poets: 66
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.8237925001901575.
+INFO: V-measure for for Gaussian Mixture Model: 0.7754058305489957.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 693.5098679065704 seconds
+INFO: Run-time: 11.683333333333334 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 4/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Biedermeier'.
+INFO: Count of different poets: 65
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.7115757945532198.
+INFO: V-measure for for Gaussian Mixture Model: 0.6248081845550487.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 688.3918931484222 seconds
+INFO: Run-time: 11.583333333333334 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 5/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Realismus'.
+INFO: Count of different poets: 68
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.6860757771580165.
+INFO: V-measure for for Gaussian Mixture Model: 0.5878184543401218.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1154.5884728431702 seconds
+INFO: Run-time: 19.366666666666667 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 6/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Naturalismus'.
+INFO: Count of different poets: 56
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.7290053603335318.
+INFO: V-measure for for Gaussian Mixture Model: 0.6805691735753392.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 688.4490370750427 seconds
+INFO: Run-time: 11.583333333333334 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 7/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Expressionismus'.
+INFO: Count of different poets: 50
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.8451556850985118.
+INFO: V-measure for for Gaussian Mixture Model: 0.7777773376490587.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 681.7700393199921 seconds
+INFO: Run-time: 11.466666666666667 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 8/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Klassik'.
+INFO: Count of different poets: 70
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.04174735752827266.
+INFO: V-measure for for Gaussian Mixture Model: 0.11941946903278813.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1156.392144203186 seconds
+INFO: Run-time: 19.4 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 9/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Romantik'.
+INFO: Count of different poets: 83
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.20901175529178648.
+INFO: V-measure for for Gaussian Mixture Model: 0.3447779653334385.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 680.1730358600616 seconds
+INFO: Run-time: 11.466666666666667 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 10/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Biedermeier'.
+INFO: Count of different poets: 82
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.16087041756518325.
+INFO: V-measure for for Gaussian Mixture Model: 0.11835280639920548.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1131.8935325145721 seconds
+INFO: Run-time: 19.0 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 11/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Realismus'.
+INFO: Count of different poets: 85
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.4589152731627811.
+INFO: V-measure for for Gaussian Mixture Model: 0.4973065526258273.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1140.5409173965454 seconds
+INFO: Run-time: 19.133333333333333 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 12/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Naturalismus'.
+INFO: Count of different poets: 73
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.47724647724647723.
+INFO: V-measure for for Gaussian Mixture Model: 0.4792965949654446.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 692.8031167984009 seconds
+INFO: Run-time: 11.666666666666666 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 13/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Expressionismus'.
+INFO: Count of different poets: 67
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.870474322631683.
+INFO: V-measure for for Gaussian Mixture Model: 0.7528778259555773.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 659.0122320652008 seconds
+INFO: Run-time: 11.1 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 14/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Romantik'.
+INFO: Count of different poets: 49
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: spherical
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.0013485527139623149.
+INFO: V-measure for for Gaussian Mixture Model: 0.033452314833023654.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 651.7380266189575 seconds
+INFO: Run-time: 10.983333333333333 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 15/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Biedermeier'.
+INFO: Count of different poets: 45
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.018559038304378748.
+INFO: V-measure for for Gaussian Mixture Model: 3.243780651685246e-16.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 675.121572971344 seconds
+INFO: Run-time: 11.366666666666667 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 16/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Realismus'.
+INFO: Count of different poets: 52
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.006617723089649411.
+INFO: V-measure for for Gaussian Mixture Model: 0.011204066298942454.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1101.572928905487 seconds
+INFO: Run-time: 18.466666666666665 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 17/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Naturalismus'.
+INFO: Count of different poets: 45
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.12178072111846937.
+INFO: V-measure for for Gaussian Mixture Model: 0.20650805201733913.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1133.4622445106506 seconds
+INFO: Run-time: 19.0 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 18/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Expressionismus'.
+INFO: Count of different poets: 39
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.030668677727501262.
+INFO: V-measure for for Gaussian Mixture Model: 0.0056669163893867435.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 687.4827921390533 seconds
+INFO: Run-time: 11.566666666666666 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 19/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Biedermeier'.
+INFO: Count of different poets: 50
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.15993537964458798.
+INFO: V-measure for for Gaussian Mixture Model: 0.14156644530070964.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 698.9242689609528 seconds
+INFO: Run-time: 11.766666666666667 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 20/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Realismus'.
+INFO: Count of different poets: 56
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.10368060781994771.
+INFO: V-measure for for Gaussian Mixture Model: 0.08740775795411843.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1197.7409825325012 seconds
+INFO: Run-time: 20.083333333333332 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 21/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Naturalismus'.
+INFO: Count of different poets: 46
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.41263440860215056.
+INFO: V-measure for for Gaussian Mixture Model: 0.32896086122760704.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1220.8231530189514 seconds
+INFO: Run-time: 20.466666666666665 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 22/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Expressionismus'.
+INFO: Count of different poets: 40
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.3116060828763638.
+INFO: V-measure for for Gaussian Mixture Model: 0.3136556660357203.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1218.075445175171 seconds
+INFO: Run-time: 20.416666666666668 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 23/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Realismus'.
+INFO: Count of different poets: 48
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Tuning hyperparameters for gmm.
+Traceback (most recent call last):
+  File "pipe.py", line 535, in <module>
+    main()
+  File "pipe.py", line 420, in main
+    logging.info(f"Best params for GMM:\ncovariance type: {t[0]}")
+IndexError: tuple index out of range
+INFO: Argument combination 24/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Naturalismus'.
+INFO: Count of different poets: 45
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: tied
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.014790468364831649.
+INFO: V-measure for for Gaussian Mixture Model: 0.029553482211788384.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 984.6651062965393 seconds
+INFO: Run-time: 16.533333333333335 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 25/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Expressionismus'.
+INFO: Count of different poets: 39
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.24505215139347572.
+INFO: V-measure for for Gaussian Mixture Model: 0.2753310037521468.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1259.4325819015503 seconds
+INFO: Run-time: 21.1 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 26/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Naturalismus'.
+INFO: Count of different poets: 46
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: spherical
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.017723513194170797.
+INFO: V-measure for for Gaussian Mixture Model: 0.023177195484047862.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 734.4792506694794 seconds
+INFO: Run-time: 12.35 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 27/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Expressionismus'.
+INFO: Count of different poets: 42
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.41987285336856006.
+INFO: V-measure for for Gaussian Mixture Model: 0.33020940988194164.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1191.8393726348877 seconds
+INFO: Run-time: 19.966666666666665 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 28/28.
+INFO: Epoch 1: Naturalismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Naturalismus' and 'Expressionismus'.
+INFO: Count of different poets: 29
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: tied
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.04394757131842725.
+INFO: V-measure for for Gaussian Mixture Model: 0.11830143070002035.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 949.8477280139923 seconds
+INFO: Run-time: 15.933333333333334 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Overall run-time: 428.3 minute(s).
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
