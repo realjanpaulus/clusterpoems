@@ -57,7 +57,7 @@ if DIM_RED:
 else:
     orig_X_red = orig_vector.toarray()
 
-
+print("Starting Clustering.")
 orig_agcl = AgglomerativeClustering(n_clusters=None, distance_threshold=0)
 orig_model = orig_agcl.fit(orig_X_red)
 
@@ -66,6 +66,7 @@ linkage = pd.DataFrame(linkage_matrix(model))
 
 linkage.to_csv("../results/linkage_matrix_poems.csv", index=False)
 
+print("Finished.")
 
 
 

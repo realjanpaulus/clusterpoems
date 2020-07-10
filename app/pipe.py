@@ -118,7 +118,6 @@ def main():
 
 
 
-	
 
 	epoch1 = args.epoch_one
 	epoch2 = args.epoch_two
@@ -138,7 +137,6 @@ def main():
 	# vectorization #
 	# ===============
 
-	#TODO: min, max df to args?!
 	vectorizer = TfidfVectorizer(max_df=0.5,
 								 lowercase=args.lowercase,
 								 max_features=args.max_features,
@@ -379,13 +377,65 @@ def main():
 	if args.method == "gmm":
 
 		gmm_st = time.time()
-		gmm = GaussianMixture(n_components=len(unique_epochs), n_init=10, max_iter=100)
-		gmm.fit(vector.toarray())
 
-		if not gmm.converged_:
-			logging.info("Gaussian Mixture Model didn't converged. Increase max iter.")
-			gmm = GaussianMixture(n_components=len(unique_epochs), n_init=10, max_iter=250)
+		if args.use_tuning:
+			logging.info("Tuning hyperparameters for gmm.")
+			covariance_types = ["full", "tied", "diag", "spherical"]
+
+			gmm_best_params = {"ari": 0,
+							   "vm": 0,
+							   "params": ()}
+
+			cartesian_inputs = list(product(covariance_types))
+
+			for t in cartesian_inputs:
+
+				gmm = GaussianMixture(n_components=len(unique_epochs), 
+								  	  n_init=10,
+								  	  covariance_type=t[0], 
+								  	  max_iter=100)
+				gmm.fit(vector.toarray())
+
+				if not gmm.converged_:
+					logging.info("Gaussian Mixture Model didn't converged. Increase max iter.")
+					gmm = GaussianMixture(n_components=len(unique_epochs), 
+										  n_init=10, 
+								  	  	  covariance_type=t[0],
+										  max_iter=250)
+					gmm.fit(vector.toarray())
+
+				gmm_labels = gmm.predict(vector.toarray())
+				gmm_ari = adjusted_rand_score(labels, gmm_labels)
+				gmm_vm = v_measure_score(labels, gmm_labels)
+
+				prev_ari = gmm_best_params["ari"]
+
+				if gmm_ari > prev_ari:
+					gmm_best_params["ari"] = gmm_ari
+					gmm_best_params["vm"] = gmm_vm
+					gmm_best_params["params"] = t
+
+
+			t = gmm_best_params["params"]
+			logging.info(f"Best params for GMM:\ncovariance type: {t[0]}")
+			gmm = GaussianMixture(n_components=len(unique_epochs), 
+								  n_init=10, 
+								  covariance_type=t[0],
+								  max_iter=250)
+			gmm.fit(vector)
+
+		else:
+			gmm = GaussianMixture(n_components=len(unique_epochs), 
+								  n_init=10, 
+								  max_iter=100)
 			gmm.fit(vector.toarray())
+
+			if not gmm.converged_:
+				logging.info("Gaussian Mixture Model didn't converged. Increase max iter.")
+				gmm = GaussianMixture(n_components=len(unique_epochs), 
+									  n_init=10, 
+									  max_iter=250)
+				gmm.fit(vector.toarray())
 
 		gmm_labels = gmm.predict(vector.toarray())
 
@@ -398,19 +448,6 @@ def main():
 		gmm_vm = v_measure_score(labels, gmm_labels)
 		logging.info(f"V-measure for for Gaussian Mixture Model: {gmm_vm}.")
 		print("-----------------------------------------------------------------")
-
-
-
-		output_name = "gmm_results"
-
-		if args.reduce_dimensionality:
-			output_name += "_rd"
-
-		if args.save_date:
-			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
-
-		
-		output_path = f"../results/{output_name}.json"
 
 
 		output_name = f"gmm_results_{args.epoch_division}"
@@ -440,7 +477,7 @@ def main():
 			with open(output_path, "w") as f:
 				dic = {}
 				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": gmm_ari, 
-													"vm": gmm_vm}}
+														"vm": gmm_vm}}
 
 		
 		gmm_duration = float(time.time() - gmm_st)
