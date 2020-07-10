@@ -50,6 +50,7 @@ distribution.
 - pca und umap experimente (kein truncated svd)
 - mit pca bisschen rumspielen, um einblick in daten zu bekommen
 - autoencoder
+	- dim red: https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
 - zeitlichen aspekt untersuchen
 - evaluation aufräumen
 
