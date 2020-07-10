@@ -1,7 +1,5 @@
 import json
 import matplotlib.pyplot as plt
-%matplotlib inline
-%config InlineBackend.figure_format = 'svg'
 from nltk import word_tokenize
 import numpy as np
 import pandas as pd
