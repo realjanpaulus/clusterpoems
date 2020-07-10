@@ -1,0 +1,942 @@
+INFO: Clustering for all epoch combinations.
+INFO: Argument combination 1/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Aufklärung'.
+INFO: Count of different poets: 90
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.3961152446818972.
+INFO: V-measure for for Gaussian Mixture Model: 0.32620205441284683.
+INFO: Create results file.
+INFO: Run-time Gaussian Mixture Model: 442.05474376678467 seconds
+INFO: Run-time: 7.5 minute(s).
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 2/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Klassik'.
+INFO: Count of different poets: 65
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.7115981897240217.
+INFO: V-measure for for Gaussian Mixture Model: 0.6785204904022237.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 3/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Romantik'.
+INFO: Count of different poets: 66
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.7156523859382395.
+INFO: V-measure for for Gaussian Mixture Model: 0.6822373725198808.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 4/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Biedermeier'.
+INFO: Count of different poets: 65
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.7115981897240217.
+INFO: V-measure for for Gaussian Mixture Model: 0.6785204904022237.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 5/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Realismus'.
+INFO: Count of different poets: 68
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.6860757771580165.
+INFO: V-measure for for Gaussian Mixture Model: 0.5878184543401218.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 6/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Naturalismus'.
+INFO: Count of different poets: 56
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.45168328232477806.
+INFO: V-measure for for Gaussian Mixture Model: 0.486274550975413.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 7/28.
+INFO: Epoch 1: Barock.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Barock' and 'Expressionismus'.
+INFO: Count of different poets: 50
+INFO: Count of poets of epoch 'Barock': 38
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.27881216120669344.
+INFO: V-measure for for Gaussian Mixture Model: 0.37220456082856257.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 8/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Klassik'.
+INFO: Count of different poets: 70
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.14288857918286507.
+INFO: V-measure for for Gaussian Mixture Model: 0.14387125376120394.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 9/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Romantik'.
+INFO: Count of different poets: 83
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.23566689771264482.
+INFO: V-measure for for Gaussian Mixture Model: 0.21759965775916187.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 10/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Biedermeier'.
+INFO: Count of different poets: 82
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.001467028533705014.
+INFO: V-measure for for Gaussian Mixture Model: 0.00961835490208036.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 11/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Realismus'.
+INFO: Count of different poets: 85
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.42799243447716834.
+INFO: V-measure for for Gaussian Mixture Model: 0.4780030063122054.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 12/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Naturalismus'.
+INFO: Count of different poets: 73
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.14867477393202364.
+INFO: V-measure for for Gaussian Mixture Model: 0.22130641534307227.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 13/28.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Aufklärung' and 'Expressionismus'.
+INFO: Count of different poets: 67
+INFO: Count of poets of epoch 'Aufklärung': 55
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.24747885255133736.
+INFO: V-measure for for Gaussian Mixture Model: 0.32722205924688186.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 14/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Romantik'.
+INFO: Count of different poets: 49
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.0016155088852989304.
+INFO: V-measure for for Gaussian Mixture Model: 0.013127375187855353.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 15/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Biedermeier'.
+INFO: Count of different poets: 45
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.03174017346373872.
+INFO: V-measure for for Gaussian Mixture Model: 0.03772510291880444.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 16/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Realismus'.
+INFO: Count of different poets: 52
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.03833704266949627.
+INFO: V-measure for for Gaussian Mixture Model: 0.04292554279214706.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 17/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Naturalismus'.
+INFO: Count of different poets: 45
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.15931804820693715.
+INFO: V-measure for for Gaussian Mixture Model: 0.19009805713498468.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 18/28.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Klassik' and 'Expressionismus'.
+INFO: Count of different poets: 39
+INFO: Count of poets of epoch 'Klassik': 27
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.24533903336895851.
+INFO: V-measure for for Gaussian Mixture Model: 0.22867215546024425.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 19/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Biedermeier'.
+INFO: Count of different poets: 50
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.041727672035139135.
+INFO: V-measure for for Gaussian Mixture Model: 0.0608771413568992.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 20/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Realismus'.
+INFO: Count of different poets: 56
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.01629827126515866.
+INFO: V-measure for for Gaussian Mixture Model: 0.025913105176097073.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 21/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Naturalismus'.
+INFO: Count of different poets: 46
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.41287115410452774.
+INFO: V-measure for for Gaussian Mixture Model: 0.39066767573759964.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 22/28.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Romantik' and 'Expressionismus'.
+INFO: Count of different poets: 40
+INFO: Count of poets of epoch 'Romantik': 28
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.4992460796139928.
+INFO: V-measure for for Gaussian Mixture Model: 0.5203151622475326.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 23/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Realismus'.
+INFO: Count of different poets: 48
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.01283201894250428.
+INFO: V-measure for for Gaussian Mixture Model: 0.0017863712594088869.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 24/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Naturalismus'.
+INFO: Count of different poets: 45
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.15993537964458804.
+INFO: V-measure for for Gaussian Mixture Model: 0.14511809299306308.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 25/28.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Biedermeier' and 'Expressionismus'.
+INFO: Count of different poets: 39
+INFO: Count of poets of epoch 'Biedermeier': 27
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.2444777326009939.
+INFO: V-measure for for Gaussian Mixture Model: 0.19794818367019038.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 26/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Naturalismus'.
+INFO: Count of different poets: 46
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.02328468026559785.
+INFO: V-measure for for Gaussian Mixture Model: 0.06538790696569623.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 27/28.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Realismus' and 'Expressionismus'.
+INFO: Count of different poets: 42
+INFO: Count of poets of epoch 'Realismus': 30
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.3849957877922561.
+INFO: V-measure for for Gaussian Mixture Model: 0.2898959863362229.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Argument combination 28/28.
+INFO: Epoch 1: Naturalismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Used epochs are 'Naturalismus' and 'Expressionismus'.
+INFO: Count of different poets: 29
+INFO: Count of poets of epoch 'Naturalismus': 18
+INFO: Count of poets of epoch 'Expressionismus': 12
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.03279541905257677.
+INFO: V-measure for for Gaussian Mixture Model: 1.6108148322786655e-16.
+INFO: Update results file.
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 498, in <module>
+    main()
+  File "pipe.py", line 432, in main
+    dic = json.load(f)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO: Overall run-time: 209.3 minute(s).
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
