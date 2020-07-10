@@ -37,6 +37,8 @@ distribution.
 
 - **Noise** entdecken
 	- Hierarchisches Clustering inkl. Epochenzuteilungen
+		- originales Korpus
+		- reduziertes Korpus
 	- Topic Modelling --> Dialekt
 	- LSVM
 - In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
@@ -49,6 +51,8 @@ distribution.
 - mit pca bisschen rumspielen, um einblick in daten zu bekommen
 - autoencoder
 - zeitlichen aspekt untersuchen
+- evaluation aufräumen
+
 
 
 
