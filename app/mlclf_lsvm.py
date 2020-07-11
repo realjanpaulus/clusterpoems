@@ -34,7 +34,7 @@ def main():
 	# =======================
 
 	n_jobs = args.n_jobs
-	cv = 5
+	cv = 2
 	cv_dict = {}
 	vectorizer = TfidfVectorizer(max_df=0.5,
 								 lowercase=args.lowercase,
@@ -59,7 +59,10 @@ def main():
 	# =================
 
 	if args.epoch_division == "amann":
-		corpus = pd.read_csv("../corpora/amann_poems.csv", index_col=0)
+		try:
+			corpus = pd.read_csv("../corpora/amann_poems_noiseless.csv", index_col=0)
+		except:
+			corpus = pd.read_csv("../corpora/amann_poems.csv", index_col=0)
 		logging.info(f"Read preload corpus with epoch division by '{args.epoch_division}'.")
 	else:
 		logging.warning(f"Couldn't find a corpus with the name '{args.corpus_name}'.")
@@ -147,6 +150,7 @@ def main():
 		output_path = f"../results/lsvm_preds_{args.epoch_division}({datetime.now():%d.%m.%y}_{datetime.now():%H:%M}).csv"
 	else:
 		output_path = f"../results/lsvm_preds_{args.epoch_division}.csv"
+
 	results_df.to_csv(output_path)
 
 	logging.info(f"LSVM score: {np.mean(lsvm_cv_scores['test_score'])}")
