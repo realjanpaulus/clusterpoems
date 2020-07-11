@@ -63,6 +63,7 @@ def main():
 
 	combinations_inputs = list(combinations(unique_epochs, r=2))
 
+
 	for idx, t in enumerate(combinations_inputs):
 		
 		print("--------------------------------------------")
@@ -71,7 +72,7 @@ def main():
 		logging.info(f"Epoch 2: {t[1]}.")
 		print("--------------------------------------------")
 
-
+	
 		command = f"python pipe.py -cn {args.corpus_name} -ed {args.epoch_division} -eo {t[0]} -et {t[1]} -l {args.lowercase} -m {args.method} -mf {args.max_features} -nj {args.n_jobs} -p {args.preload}"
 
 		

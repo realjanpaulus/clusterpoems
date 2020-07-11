@@ -232,7 +232,7 @@ def main():
 		kmeans_duration = float(time.time() - kmeans_st)
 		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
 	
-	if args.method == "kmedoids" or args.method == "all":
+	if args.method == "kmedoids": # or args.method == "all":
 		kmedoids_st = time.time()
 		kmedoids = KMedoids(n_clusters=len(unique_epochs),
 							init="k-medoids++",
@@ -374,7 +374,7 @@ def main():
 		dbscan_duration = float(time.time() - dbscan_st)
 		logging.info(f"Run-time DBSCAN: {dbscan_duration} seconds")
 
-	if args.method == "gmm":
+	if args.method == "gmm" or args.method == "all"::
 
 		gmm_st = time.time()
 

@@ -36,7 +36,7 @@ distribution.
 	- [x] angewandt --> langsam und weniger gute ergebnisse
 
 - **Noise** entdecken
-	- Hierarchisches Clustering inkl. Epochenzuteilungen
+	- [x] Hierarchisches Clustering inkl. Epochenzuteilungen
 		- originales Korpus
 		- reduziertes Korpus
 	- [x] Topic Modelling --> Dialekt
