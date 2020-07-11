@@ -374,7 +374,7 @@ def main():
 		dbscan_duration = float(time.time() - dbscan_st)
 		logging.info(f"Run-time DBSCAN: {dbscan_duration} seconds")
 
-	if args.method == "gmm" or args.method == "all"::
+	if args.method == "gmm" or args.method == "all":
 
 		gmm_st = time.time()
 
