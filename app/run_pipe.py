@@ -46,11 +46,8 @@ def main():
 	with open("epochs.json") as f:
 		epochs = json.loads(f.read())
 
-	if args.epoch_division == "amann":
+	if args.epoch_division == "amann" or args.epoch_division == "amann_noise":
 		epochs = epochs["amann"]
-		epoch_exceptions = ["Sturm_Drang"]
-	elif args.epoch_division == "amann":
-		epochs = epochs["amann_noise"]
 		epoch_exceptions = ["Sturm_Drang"]
 	elif args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
