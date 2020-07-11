@@ -39,7 +39,7 @@ distribution.
 	- Hierarchisches Clustering inkl. Epochenzuteilungen
 		- originales Korpus
 		- reduziertes Korpus
-	- Topic Modelling --> Dialekt
+	- [x] Topic Modelling --> Dialekt
 	- LSVM
 - In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
 	- guideline schreiben für stelle in repo, die für gute ergebnisse verantwortlich waren
