@@ -59,10 +59,7 @@ def main():
 	# =================
 
 	if args.epoch_division == "amann":
-		try:
-			corpus = pd.read_csv("../corpora/amann_poems_noiseless.csv", index_col=0)
-		except:
-			corpus = pd.read_csv("../corpora/amann_poems.csv", index_col=0)
+		corpus = pd.read_csv("../corpora/amann_poems.csv", index_col=0)
 		logging.info(f"Read preload corpus with epoch division by '{args.epoch_division}'.")
 	else:
 		logging.warning(f"Couldn't find a corpus with the name '{args.corpus_name}'.")
@@ -113,8 +110,7 @@ def main():
 							 n_jobs=args.n_jobs,
 							 scoring="f1_macro")
 
-	#lsvm_grid2.fit(features, class2)
-	
+		
 
 	lsvm_cv_scores = cross_validate(lsvm_grid, 
 									text, 
@@ -142,6 +138,9 @@ def main():
 		output_path = f"../results/lsvm_cm_{args.epoch_division}.csv"
 	cm_df.to_csv(output_path)
 
+	
+	results_df = corpus.copy()
+	results_df["pred"] = lsvm_preds
 
 
 	if args.save_date:
