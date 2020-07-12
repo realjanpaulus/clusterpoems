@@ -38,20 +38,16 @@ distribution.
 		- reduziertes Korpus
 	- [x] Topic Modelling --> Dialekt
 	- [x] LSVM
-
-drei oder mehr cluster?
-- In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
-	- guideline schreiben für stelle in repo, die für gute ergebnisse verantwortlich waren
+- POS-TAGGING
 - Analyse von Gedichten/Dichter, die sich gut clustern lassen
 - Topic Modelling anwenden: erzeugen epochen bestimmte topics?
-- Topic Modelling anwenden als downstream task für klassifizierung?
-- schreiben, dass clustering von korpus so nicht funktioniert hat (mit erklärung)
-- pca und umap experimente (kein truncated svd)
-- mit pca bisschen rumspielen, um einblick in daten zu bekommen
 - autoencoder
 	- dim red: https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
 - zeitlichen aspekt untersuchen
+- schreiben, dass clustering von korpus so nicht funktioniert hat (mit erklärung)
 - evaluation aufräumen
+- In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
+	- guideline schreiben für stelle in repo, die für gute ergebnisse verantwortlich waren
 
 
 

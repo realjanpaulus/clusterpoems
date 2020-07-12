@@ -1,6 +1,7 @@
 {
 "amann": {
-      "Barock": {"b": 1600, "e": 1720},
+      "Frühbarock": {"b": 1600, "e": 1650},
+      "Hochbarock": {"b": 1650, "e": 1720},
       "Aufklärung": {"b": 1720, "e": 1785},
       "Sturm_Drang": {"b": 1767, "e": 1785},
       "Klassik": {"b": 1786, "e": 1832},
