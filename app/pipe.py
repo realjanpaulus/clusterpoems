@@ -232,7 +232,7 @@ def main():
 		kmeans_duration = float(time.time() - kmeans_st)
 		logging.info(f"Run-time K-Means: {kmeans_duration} seconds")
 	
-	if args.method == "kmedoids": # or args.method == "all":
+	if args.method == "kmedoids" or args.method == "all":
 		kmedoids_st = time.time()
 		kmedoids = KMedoids(n_clusters=len(unique_epochs),
 							init="k-medoids++",
@@ -338,9 +338,6 @@ def main():
 		dbscan_vm = v_measure_score(labels, dbscan.labels_)
 		logging.info(f"V-measure for DBSCAN: {dbscan_vm}.")
 		print("------------------------------------------------")
-
-
-		# TODO: top words?
 
 
 		output_name = f"dbscan_results_{args.epoch_division}"
@@ -450,6 +447,7 @@ def main():
 		print("-----------------------------------------------------------------")
 
 
+		
 		output_name = f"gmm_results_{args.epoch_division}"
 
 		if args.reduce_dimensionality:
@@ -459,9 +457,6 @@ def main():
 			output_name += f"({datetime.now():%d.%m.%y}_{datetime.now():%H:%M})"
 
 		output_path = f"../results/{output_name}.json"
-
-		if args.clear_json:
-			clear_json(output_path)
 
 		if os.path.exists(output_path):
 			logging.info("Update results file.")
@@ -478,6 +473,8 @@ def main():
 				dic = {}
 				dic[f"{epoch1}/{epoch2}"] = {"scores": {"ari": gmm_ari, 
 														"vm": gmm_vm}}
+
+				json.dump(dic, f)
 
 		
 		gmm_duration = float(time.time() - gmm_st)
