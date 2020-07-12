@@ -30,17 +30,16 @@ distribution.
 - [x] andere zuteilung finden anstatt brenner
 - [x] kmeans erweitern mit cosinus distance? --> k-medoids
 - [x]Korpus normalisieren und Experimente durchführen
-- SVM machen
-
-- [x, ] GMM anwenden als Vergleich, vllt nur auf besten Epochenzuweisung!
+- [x, x] GMM anwenden als Vergleich, vllt nur auf besten Epochenzuweisung!
 	- [x] angewandt --> langsam und weniger gute ergebnisse
-
-- **Noise** entdecken
+- [x] **Noise** entdecken
 	- [x] Hierarchisches Clustering inkl. Epochenzuteilungen
 		- originales Korpus
 		- reduziertes Korpus
 	- [x] Topic Modelling --> Dialekt
-	- LSVM
+	- [x] LSVM
+
+drei oder mehr cluster?
 - In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
 	- guideline schreiben für stelle in repo, die für gute ergebnisse verantwortlich waren
 - Analyse von Gedichten/Dichter, die sich gut clustern lassen

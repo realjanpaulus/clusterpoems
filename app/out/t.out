@@ -1,0 +1,4 @@
+  File "mlclf_lsvm.py", line 48
+    logging_filename = f"../logs/mlclflsvm_{args.corpus_name}.log"
+                                                                 ^
+SyntaxError: invalid syntax

@@ -1,0 +1,5 @@
+INFO: Read preload corpus with epoch division by 'amann'.
+INFO: Read poems corpus (0 minute(s)).
+INFO: LSVM score: 0.44925527116863434
+INFO: Run-time LSVM: 3071.8659596443176 seconds
+INFO: Run-time: 51.2 minute(s).
