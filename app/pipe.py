@@ -1,15 +1,4 @@
 #!/usr/bin/env python
-"""TODO
-- mehr corpora
-- mehr Epocheneinteilungen
-- dimensionality reduction
-- KernelPCA zur Visualisierung nutzen? 
-	- siehe GERON, dimension reduction, 226f.
-	- da dann acuh GridSearch machen (GERON, 228)
-- Durchgehen: https://scikit-learn.org/stable/modules/clustering.html#clustering-performance-evaluation
-	- vllt noch weitere, interessante Evaluationsmetriken
-	- nochmal klar machen, was welche metrik verwendet
-"""
 import argparse
 from collections import Counter, defaultdict
 from datetime import datetime
@@ -35,7 +24,7 @@ from sklearn_extra.cluster import KMedoids
 from stop_words import get_stop_words
 import sys
 import time
-from utils import add_epoch_division, clear_json, merge_corpus_poets, text_cleaning
+from utils import add_epoch_division, clear_json, merge_corpus_poets, text_cleaning, replace_spelling
 from yellowbrick.text import UMAPVisualizer
 
 def main():
@@ -128,6 +117,9 @@ def main():
 	logging.info(f"Count of poets of epoch '{epoch2}': {len(np.unique(corpus[corpus.epoch == epoch2].poet))}")
 
 	text = corpus[text_name].values
+	if args.adjust_spelling:
+		text = replace_spelling(text)
+
 	labels = LabelEncoder().fit_transform(corpus["epoch"].values)
 	unique_epochs = list(np.unique(corpus["epoch"]))
 
@@ -181,7 +173,7 @@ def main():
 
 		top_words_cluster = {}
 		for i in range(len(unique_epochs)):
-			top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :10]]
+			top_words_cluster[i] = [terms[ind] for ind in order_centroids[i, :100]]
 
 
 	
@@ -460,7 +452,7 @@ def main():
 		else:
 			gmm_labels = gmm.predict(vector.toarray())
 		
-			
+
 		
 		print("--------------- Metrics (Gaussian Mixture Model) ---------------")
 		gmm_ari = adjusted_rand_score(labels, gmm_labels)
@@ -541,6 +533,7 @@ def main():
 if __name__ == "__main__":
 	
 	parser = argparse.ArgumentParser(prog="pipe", description="Pipeline for clustering.", add_help=True)
+	parser.add_argument("--adjust_spelling", "-aj", action="store_true", help="Indicates if spelling should be adjusted.")
 	parser.add_argument("--clear_json", "-cj", action="store_true", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'. Another possible value is 'noise'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="amann", help="Indicates the epoch division method. Possible values are 'amann', brenner'.")

@@ -131,6 +131,7 @@ dmypy.json
 
 # my stuff
 app/old/
+app/out/
 corpora/old/
 corpora/malletfiles/
 presentation/literature/

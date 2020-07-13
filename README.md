@@ -38,11 +38,16 @@ distribution.
 		- reduziertes Korpus
 	- [x] Topic Modelling --> Dialekt
 	- [x] LSVM
-- POS-TAGGING
+- [x] POS-TAGGING
+
+
 - Analyse von Gedichten/Dichter, die sich gut clustern lassen
 - Topic Modelling anwenden: erzeugen epochen bestimmte topics?
+	- Topics der besten Epochen-Unterscheidungen angucken
+	- FRAGE: hier wirklich andere Themen oder nur Rechtschreibung?
 - autoencoder
 	- dim red: https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
+	- https://github.com/erickrf/autoencoder/tree/master/src
 - zeitlichen aspekt untersuchen
 - schreiben, dass clustering von korpus so nicht funktioniert hat (mit erklärung)
 - evaluation aufräumen

@@ -88,6 +88,9 @@ def main():
 		if args.use_tuning:
 			command += " -ut"
 
+		if args.adjust_spelling:
+			command += " -aj"
+
 
 		subprocess.call(["bash", "-c", command])
 		print("\n")
@@ -99,6 +102,7 @@ def main():
 if __name__ == "__main__":
 	
 	parser = argparse.ArgumentParser(prog="run_pipe", description="Runs clustering script with multiple epoch combinations.")
+	parser.add_argument("--adjust_spelling", "-aj", action="store_true", help="Indicates if spelling should be adjusted.")
 	parser.add_argument("--clear_json", "-cj", action="store_true", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="amann", help="Indicates the epoch division method. Possible values are 'amann', brenner'.")
