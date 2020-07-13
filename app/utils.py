@@ -222,6 +222,9 @@ def replace_spelling(text):
 	text = re.sub("freyheit", "freiheit", text)
 	text = re.sub("schöpffer", "schöpfer", text)
 	text = re.sub("thu", "tu", text)
+	text = re.sub("best", "beste", text)
+	text = re.sub("solldat", "soldat", text)
+	text = re.sub("willder", "wilder", text)
 
 	return text
 

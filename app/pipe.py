@@ -116,9 +116,10 @@ def main():
 	logging.info(f"Count of poets of epoch '{epoch1}': {len(np.unique(corpus[corpus.epoch == epoch1].poet))}")
 	logging.info(f"Count of poets of epoch '{epoch2}': {len(np.unique(corpus[corpus.epoch == epoch2].poet))}")
 
-	text = corpus[text_name].values
+
 	if args.adjust_spelling:
-		text = replace_spelling(text)
+		corpus["poem"] = corpus["poem"].apply(lambda x: replace_spelling(x))
+	text = corpus[text_name].values
 
 	labels = LabelEncoder().fit_transform(corpus["epoch"].values)
 	unique_epochs = list(np.unique(corpus["epoch"]))
@@ -380,9 +381,9 @@ def main():
 			for t in cartesian_inputs:
 
 				gmm = GaussianMixture(n_components=len(unique_epochs), 
-								  	  n_init=10,
-								  	  covariance_type=t[0], 
-								  	  max_iter=100)
+									  n_init=10,
+									  covariance_type=t[0], 
+									  max_iter=100)
 
 				if args.reduce_dimensionality:
 					gmm.fit(vector)
@@ -393,7 +394,7 @@ def main():
 					logging.info("Gaussian Mixture Model didn't converged. Increase max iter.")
 					gmm = GaussianMixture(n_components=len(unique_epochs), 
 										  n_init=10, 
-								  	  	  covariance_type=t[0],
+										  covariance_type=t[0],
 										  max_iter=250)
 
 					if args.reduce_dimensionality:
