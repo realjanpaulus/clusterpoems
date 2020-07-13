@@ -391,7 +391,11 @@ def main():
 								  	  n_init=10,
 								  	  covariance_type=t[0], 
 								  	  max_iter=100)
-				gmm.fit(vector.toarray())
+
+				if args.reduce_dimensionality:
+					gmm.fit(vector)
+				else:
+					gmm.fit(vector.toarray())
 
 				if not gmm.converged_:
 					logging.info("Gaussian Mixture Model didn't converged. Increase max iter.")
@@ -399,7 +403,11 @@ def main():
 										  n_init=10, 
 								  	  	  covariance_type=t[0],
 										  max_iter=250)
-					gmm.fit(vector.toarray())
+
+					if args.reduce_dimensionality:
+						gmm.fit(vector)
+					else:
+						gmm.fit(vector.toarray())
 
 				gmm_labels = gmm.predict(vector.toarray())
 				gmm_ari = adjusted_rand_score(labels, gmm_labels)
@@ -419,23 +427,37 @@ def main():
 								  n_init=10, 
 								  covariance_type=t[0],
 								  max_iter=250)
-			gmm.fit(vector.toarray())
+			if args.reduce_dimensionality:
+				gmm.fit(vector)
+			else:
+				gmm.fit(vector.toarray())
 
 		else:
 			gmm = GaussianMixture(n_components=len(unique_epochs), 
 								  n_init=10, 
 								  max_iter=100)
-			gmm.fit(vector.toarray())
+
+			if args.reduce_dimensionality:
+				gmm.fit(vector)
+			else:
+				gmm.fit(vector.toarray())
 
 			if not gmm.converged_:
 				logging.info("Gaussian Mixture Model didn't converged. Increase max iter.")
 				gmm = GaussianMixture(n_components=len(unique_epochs), 
 									  n_init=10, 
 									  max_iter=250)
-				gmm.fit(vector.toarray())
+				if args.reduce_dimensionality:
+					gmm.fit(vector)
+				else:
+					gmm.fit(vector.toarray())
 
-		gmm_labels = gmm.predict(vector.toarray())
-
+		if args.reduce_dimensionality:
+			gmm_labels = gmm.predict(vector)
+		else:
+			gmm_labels = gmm.predict(vector.toarray())
+		
+			
 		
 		print("--------------- Metrics (Gaussian Mixture Model) ---------------")
 		gmm_ari = adjusted_rand_score(labels, gmm_labels)
@@ -488,6 +510,7 @@ def main():
 		umap = UMAPVisualizer(color="bold")
 		umap.fit(vector, list(corpus.epoch))
 
+
 		figure_name = f"{epoch1}_{epoch2}"
 
 		if args.reduce_dimensionality:
@@ -499,6 +522,11 @@ def main():
 
 		figure_path = f"../results/figures/{figure_name}.png"
 		umap.show(outpath=figure_path, dpi=300)
+
+		if args.method == "kmeans" or args.method == "all":
+			umap.fit(vector, kmeans.labels_)
+			figure_path = f"../results/figures/kmeans_{figure_name}.png"
+			umap.show(outpath=figure_path, dpi=300)
 
 
 	
