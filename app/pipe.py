@@ -409,7 +409,10 @@ def main():
 					else:
 						gmm.fit(vector.toarray())
 
-				gmm_labels = gmm.predict(vector.toarray())
+				if args.reduce_dimensionality:
+					gmm_labels = gmm.predict(vector)
+				else:
+					gmm_labels = gmm.predict(vector.toarray())
 				gmm_ari = adjusted_rand_score(labels, gmm_labels)
 				gmm_vm = v_measure_score(labels, gmm_labels)
 
