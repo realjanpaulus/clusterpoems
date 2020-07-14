@@ -1,0 +1,95 @@
+INFO: Clustering for all epoch combinations.
+INFO: Argument combination 1/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Hochbarock.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Hochbarock'.
+INFO: Count of different poets: 37
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Hochbarock': 23
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.30392474862147256.
+INFO: V-measure for K-Means: 0.26667818407663446.
+INFO: Create results file.
+INFO: Run-time K-Means: 0.15991711616516113 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.23969847425071583.
+INFO: V-measure for K-Medoids: 0.1721304984344919.
+INFO: Create results file.
+INFO: Run-time K-Medoids: 0.019295454025268555 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.06346732588134128.
+INFO: V-measure for DBSCAN: 0.28640355653995064.
+INFO: Create results file.
+INFO: Run-time DBSCAN: 5.371763467788696 seconds
+INFO: Tuning hyperparameters for gmm.
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 557, in <module>
+    main()
+  File "pipe.py", line 421, in main
+    logging.info(f"Best params for GMM:\ncovariance type: {t[0]}")
+IndexError: tuple index out of range
+INFO: Argument combination 2/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Aufklärung'.
+INFO: Count of different poets: 67
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Aufklärung': 53
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.23351091034114843.
+INFO: V-measure for K-Means: 0.3225945945060742.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.2120192050933838 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.17906276870163368.
+INFO: V-measure for K-Medoids: 0.2933691729500177.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.030916690826416016 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.18189351731091055.
+INFO: V-measure for DBSCAN: 0.29664216908643926.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.61313271522522 seconds
+INFO: Tuning hyperparameters for gmm.
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+Traceback (most recent call last):
+  File "run_pipe.py", line 123, in <module>
+    main()
+  File "run_pipe.py", line 95, in main
+    subprocess.call(["bash", "-c", command])
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/subprocess.py", line 342, in call
+    return p.wait(timeout=timeout)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/subprocess.py", line 1079, in wait
+    return self._wait(timeout=timeout)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/subprocess.py", line 1804, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/home/paulus/.conda/envs/bertpoems/lib/python3.8/subprocess.py", line 1762, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

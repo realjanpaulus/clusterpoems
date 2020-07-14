@@ -1,0 +1,1760 @@
+INFO: Clustering for all epoch combinations.
+INFO: Argument combination 1/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Hochbarock.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Hochbarock'.
+INFO: Count of different poets: 37
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Hochbarock': 23
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.021472392638036783.
+INFO: V-measure for K-Means: 0.17949265956526744.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.14312982559204102 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.0749657394718323.
+INFO: V-measure for K-Medoids: 0.12616194864706873.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.014543771743774414 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.06346732588134128.
+INFO: V-measure for DBSCAN: 0.28640355653995064.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.306889533996582 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.02031252816177932.
+INFO: V-measure for for Gaussian Mixture Model: 0.0029743258279454027.
+INFO: Create results file.
+INFO: Run-time Gaussian Mixture Model: 1039.648719549179 seconds
+INFO: Run-time: 17.55 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 2/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Aufklärung'.
+INFO: Count of different poets: 67
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Aufklärung': 53
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.20559702982154981.
+INFO: V-measure for K-Means: 0.30755009360101654.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.23847103118896484 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.17906276870163368.
+INFO: V-measure for K-Medoids: 0.2933691729500177.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.021509408950805664 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.18189351731091055.
+INFO: V-measure for DBSCAN: 0.29664216908643926.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.6448750495910645 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.29370164261527554.
+INFO: V-measure for for Gaussian Mixture Model: 0.35566719269025476.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 633.5050451755524 seconds
+INFO: Run-time: 10.866666666666667 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 3/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Klassik'.
+INFO: Count of different poets: 31
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Klassik': 17
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 1.0.
+INFO: V-measure for K-Means: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.18977069854736328 seconds
+INFO: Adjusted Rand Score for K-Medoids: 1.0.
+INFO: V-measure for K-Medoids: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.009925603866577148 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.1311118031765806.
+INFO: V-measure for DBSCAN: 0.23806972076618887.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.134902715682983 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.8708692029991669.
+INFO: V-measure for for Gaussian Mixture Model: 0.8253555672890204.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1003.8062744140625 seconds
+INFO: Run-time: 16.95 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 4/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Romantik'.
+INFO: Count of different poets: 34
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Romantik': 20
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 1.0.
+INFO: V-measure for K-Means: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.15977048873901367 seconds
+INFO: Adjusted Rand Score for K-Medoids: 1.0.
+INFO: V-measure for K-Medoids: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.0250856876373291 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.10198948090555685.
+INFO: V-measure for DBSCAN: 0.2720826022075423.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.2173120975494385 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: tied
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.025204788909892695.
+INFO: V-measure for for Gaussian Mixture Model: 0.06600136823862839.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 859.6513237953186 seconds
+INFO: Run-time: 14.566666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 5/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Biedermeier'.
+INFO: Count of different poets: 37
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Biedermeier': 23
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 1.0.
+INFO: V-measure for K-Means: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.21099472045898438 seconds
+INFO: Adjusted Rand Score for K-Medoids: 1.0.
+INFO: V-measure for K-Medoids: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.01841259002685547 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.5433807030665669.
+INFO: V-measure for DBSCAN: 0.620501170382195.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.3007001876831055 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 1.0.
+INFO: V-measure for for Gaussian Mixture Model: 1.0.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 618.6010687351227 seconds
+INFO: Run-time: 10.533333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 6/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Realismus'.
+INFO: Count of different poets: 38
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Realismus': 24
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 1.0.
+INFO: V-measure for K-Means: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.15933752059936523 seconds
+INFO: Adjusted Rand Score for K-Medoids: 1.0.
+INFO: V-measure for K-Medoids: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.01770472526550293 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.3460018031763645.
+INFO: V-measure for DBSCAN: 0.48197865547449037.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.442452669143677 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: spherical
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.023294509151414303.
+INFO: V-measure for for Gaussian Mixture Model: 0.027346589261900364.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 625.7285392284393 seconds
+INFO: Run-time: 10.65 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 7/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Naturalismus'.
+INFO: Count of different poets: 30
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Naturalismus': 16
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 1.0.
+INFO: V-measure for K-Means: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.14763832092285156 seconds
+INFO: Adjusted Rand Score for K-Medoids: 1.0.
+INFO: V-measure for K-Medoids: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.021169424057006836 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.43659484281172733.
+INFO: V-measure for DBSCAN: 0.46852936493180763.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.008007526397705 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 1.0.
+INFO: V-measure for for Gaussian Mixture Model: 1.0.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 635.072140455246 seconds
+INFO: Run-time: 10.8 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 8/36.
+INFO: Epoch 1: Frühbarock.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Frühbarock' and 'Expressionismus'.
+INFO: Count of different poets: 25
+INFO: Count of poets of epoch 'Frühbarock': 14
+INFO: Count of poets of epoch 'Expressionismus': 11
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 1.0.
+INFO: V-measure for K-Means: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.14613127708435059 seconds
+INFO: Adjusted Rand Score for K-Medoids: 1.0.
+INFO: V-measure for K-Medoids: 1.0.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.011708259582519531 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.28559428811423776.
+INFO: V-measure for DBSCAN: 0.3900965773216312.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 4.923191785812378 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 1.0.
+INFO: V-measure for for Gaussian Mixture Model: 1.0.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1068.4629578590393 seconds
+INFO: Run-time: 18.016666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 9/36.
+INFO: Epoch 1: Hochbarock.
+INFO: Epoch 2: Aufklärung.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Hochbarock' and 'Aufklärung'.
+INFO: Count of different poets: 74
+INFO: Count of poets of epoch 'Hochbarock': 23
+INFO: Count of poets of epoch 'Aufklärung': 53
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.16580803384664058.
+INFO: V-measure for K-Means: 0.2498445579483185.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.2349565029144287 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.03382329958132148.
+INFO: V-measure for K-Medoids: 0.009364402193702479.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.033203125 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 6
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.22705918808699613.
+INFO: V-measure for DBSCAN: 0.17956272832872297.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.870696067810059 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.1910329563601386.
+INFO: V-measure for for Gaussian Mixture Model: 0.19767097687905286.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1020.1794188022614 seconds
+INFO: Run-time: 17.316666666666666 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 10/36.
+INFO: Epoch 1: Hochbarock.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Hochbarock' and 'Klassik'.
+INFO: Count of different poets: 40
+INFO: Count of poets of epoch 'Hochbarock': 23
+INFO: Count of poets of epoch 'Klassik': 17
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.8051166735704283.
+INFO: V-measure for K-Means: 0.7599907436853194.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.21438050270080566 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.8051166735704283.
+INFO: V-measure for K-Medoids: 0.7599907436853194.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.017170429229736328 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.2970523033608084.
+INFO: V-measure for DBSCAN: 0.4304537516442308.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.407702922821045 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.899996055071206.
+INFO: V-measure for for Gaussian Mixture Model: 0.85446102048737.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 624.6320812702179 seconds
+INFO: Run-time: 10.65 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 11/36.
+INFO: Epoch 1: Hochbarock.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Hochbarock' and 'Romantik'.
+INFO: Count of different poets: 43
+INFO: Count of poets of epoch 'Hochbarock': 23
+INFO: Count of poets of epoch 'Romantik': 20
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.9069359991755127.
+INFO: V-measure for K-Means: 0.863285058232484.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.19734907150268555 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.8183036174379058.
+INFO: V-measure for K-Medoids: 0.7731362955589165.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.02596426010131836 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 3
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.22979568895813202.
+INFO: V-measure for DBSCAN: 0.4003163319832513.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.602764368057251 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.9069359991755127.
+INFO: V-measure for for Gaussian Mixture Model: 0.863285058232484.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1015.8314418792725 seconds
+INFO: Run-time: 17.166666666666668 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 12/36.
+INFO: Epoch 1: Hochbarock.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Hochbarock' and 'Biedermeier'.
+INFO: Count of different poets: 46
+INFO: Count of poets of epoch 'Hochbarock': 23
+INFO: Count of poets of epoch 'Biedermeier': 23
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.9130042531254028.
+INFO: V-measure for K-Means: 0.870220135553578.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.18524408340454102 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.8298969072164949.
+INFO: V-measure for K-Medoids: 0.7835639993750275.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.02701878547668457 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.14110429447852765.
+INFO: V-measure for DBSCAN: 0.26889544884142413.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.590523958206177 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.9130042531254028.
+INFO: V-measure for for Gaussian Mixture Model: 0.870220135553578.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 637.4923243522644 seconds
+INFO: Run-time: 10.85 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 13/36.
+INFO: Epoch 1: Hochbarock.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Hochbarock' and 'Realismus'.
+INFO: Count of different poets: 47
+INFO: Count of poets of epoch 'Hochbarock': 23
+INFO: Count of poets of epoch 'Realismus': 24
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.7698610972319376.
+INFO: V-measure for K-Means: 0.7262071307338949.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.17914748191833496 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.769777661668797.
+INFO: V-measure for K-Medoids: 0.6751871364622591.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.01908135414123535 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.28835697668504057.
+INFO: V-measure for DBSCAN: 0.43568171103052633.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.589240550994873 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.8432351153341652.
+INFO: V-measure for for Gaussian Mixture Model: 0.7567767435191095.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1060.9498054981232 seconds
+INFO: Run-time: 17.9 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 14/36.
+INFO: Epoch 1: Hochbarock.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Hochbarock' and 'Naturalismus'.
+INFO: Count of different poets: 39
+INFO: Count of poets of epoch 'Hochbarock': 23
+INFO: Count of poets of epoch 'Naturalismus': 16
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.8974424347496703.
+INFO: V-measure for K-Means: 0.8509457078688777.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.1817913055419922 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.8002608112833663.
+INFO: V-measure for K-Medoids: 0.7025088245154874.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.01735663414001465 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.6118273624166933.
+INFO: V-measure for DBSCAN: 0.522394510996598.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.398721218109131 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.8974424347496703.
+INFO: V-measure for for Gaussian Mixture Model: 0.8509457078688777.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 658.4266939163208 seconds
+INFO: Run-time: 11.2 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 15/36.
+INFO: Epoch 1: Hochbarock.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Hochbarock' and 'Expressionismus'.
+INFO: Count of different poets: 34
+INFO: Count of poets of epoch 'Hochbarock': 23
+INFO: Count of poets of epoch 'Expressionismus': 11
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.8887633307436966.
+INFO: V-measure for K-Means: 0.8379113250868575.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.16429400444030762 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.7841269841269841.
+INFO: V-measure for K-Medoids: 0.7357077166370194.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.014376640319824219 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.728907524342283.
+INFO: V-measure for DBSCAN: 0.6330514912119887.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.092611789703369 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.7841269841269841.
+INFO: V-measure for for Gaussian Mixture Model: 0.7357077166370196.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1075.710925579071 seconds
+INFO: Run-time: 18.133333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 16/36.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Klassik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Aufklärung' and 'Klassik'.
+INFO: Count of different poets: 63
+INFO: Count of poets of epoch 'Aufklärung': 53
+INFO: Count of poets of epoch 'Klassik': 17
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.23723484023897642.
+INFO: V-measure for K-Means: 0.15165958089275727.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.21391892433166504 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.020937317689764697.
+INFO: V-measure for K-Medoids: 0.19363824408958538.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.03337407112121582 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 4
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.11683303273851572.
+INFO: V-measure for DBSCAN: 0.07436018128329074.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.796117067337036 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: spherical
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.05729826832298577.
+INFO: V-measure for for Gaussian Mixture Model: 0.1673898582523638.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 667.7545082569122 seconds
+INFO: Run-time: 11.433333333333334 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 17/36.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Aufklärung' and 'Romantik'.
+INFO: Count of different poets: 73
+INFO: Count of poets of epoch 'Aufklärung': 53
+INFO: Count of poets of epoch 'Romantik': 20
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.07071858895615439.
+INFO: V-measure for K-Means: 0.15433683717524985.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.2238616943359375 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.22055405621041085.
+INFO: V-measure for K-Medoids: 0.3396548095029358.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.034148216247558594 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.6
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.1439817021364777.
+INFO: V-measure for DBSCAN: 0.210071147672032.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.897098064422607 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.17114456829146568.
+INFO: V-measure for for Gaussian Mixture Model: 0.2034396927935525.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1039.8472435474396 seconds
+INFO: Run-time: 17.633333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 18/36.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Aufklärung' and 'Biedermeier'.
+INFO: Count of different poets: 76
+INFO: Count of poets of epoch 'Aufklärung': 53
+INFO: Count of poets of epoch 'Biedermeier': 23
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.6170802368056431.
+INFO: V-measure for K-Means: 0.5897797081573029.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.2199549674987793 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.010908922642666217.
+INFO: V-measure for K-Medoids: 0.2215035332293065.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.03538680076599121 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.07945781078665354.
+INFO: V-measure for DBSCAN: 0.195686658347231.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 7.058929443359375 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: spherical
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.09785003418673557.
+INFO: V-measure for for Gaussian Mixture Model: 0.2766685504884765.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 638.732143163681 seconds
+INFO: Run-time: 10.95 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 19/36.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Aufklärung' and 'Realismus'.
+INFO: Count of different poets: 77
+INFO: Count of poets of epoch 'Aufklärung': 53
+INFO: Count of poets of epoch 'Realismus': 24
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.6762731273576432.
+INFO: V-measure for K-Means: 0.640730275202947.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.23216986656188965 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.6762731273576432.
+INFO: V-measure for K-Medoids: 0.640730275202947.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.03381705284118652 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.09987586780667201.
+INFO: V-measure for DBSCAN: 0.04737191070812138.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 7.096715211868286 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.6762731273576432.
+INFO: V-measure for for Gaussian Mixture Model: 0.640730275202947.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 662.002135515213 seconds
+INFO: Run-time: 11.333333333333334 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 20/36.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Aufklärung' and 'Naturalismus'.
+INFO: Count of different poets: 69
+INFO: Count of poets of epoch 'Aufklärung': 53
+INFO: Count of poets of epoch 'Naturalismus': 16
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.7641397807052142.
+INFO: V-measure for K-Means: 0.6323086042880606.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.2136378288269043 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.3774575272799379.
+INFO: V-measure for K-Medoids: 0.41323709899967204.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.03021693229675293 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.19300036618249197.
+INFO: V-measure for DBSCAN: 0.35045391164668.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.785715579986572 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: tied
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.019795358790878008.
+INFO: V-measure for for Gaussian Mixture Model: 0.012491491441457064.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 842.5187356472015 seconds
+INFO: Run-time: 14.333333333333334 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 21/36.
+INFO: Epoch 1: Aufklärung.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Aufklärung' and 'Expressionismus'.
+INFO: Count of different poets: 64
+INFO: Count of poets of epoch 'Aufklärung': 53
+INFO: Count of poets of epoch 'Expressionismus': 11
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.9315295875176363.
+INFO: V-measure for K-Means: 0.871909390994256.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.18097996711730957 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.035829710060684875.
+INFO: V-measure for K-Medoids: 0.16961927634841606.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.021132230758666992 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 3
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.17035647279549712.
+INFO: V-measure for DBSCAN: 0.32548087425346933.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 6.56213903427124 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: tied
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.9294022393807144.
+INFO: V-measure for for Gaussian Mixture Model: 0.8671915992844819.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 851.0195055007935 seconds
+INFO: Run-time: 14.466666666666667 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 22/36.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Romantik.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Klassik' and 'Romantik'.
+INFO: Count of different poets: 34
+INFO: Count of poets of epoch 'Klassik': 17
+INFO: Count of poets of epoch 'Romantik': 20
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.01455249292089314.
+INFO: V-measure for K-Means: 0.001502853612429156.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.1649925708770752 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.04048322147651008.
+INFO: V-measure for K-Medoids: 0.05274522344712141.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.024896621704101562 seconds
+INFO: Tuning hyperparameters for dbscan.
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 557, in <module>
+    main()
+  File "pipe.py", line 316, in main
+    logging.info(f"Best params for DBSCAN:\neps: {t[0]}\nmin_samples: {t[1]}\nmetrics: {t[2]}")
+IndexError: tuple index out of range
+INFO: Argument combination 23/36.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Klassik' and 'Biedermeier'.
+INFO: Count of different poets: 32
+INFO: Count of poets of epoch 'Klassik': 17
+INFO: Count of poets of epoch 'Biedermeier': 23
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.013525485795286625.
+INFO: V-measure for K-Means: 0.0030092529523523437.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.15821170806884766 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.022902068022560257.
+INFO: V-measure for K-Medoids: 2.113562228177775e-05.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.017900705337524414 seconds
+INFO: Tuning hyperparameters for dbscan.
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 557, in <module>
+    main()
+  File "pipe.py", line 316, in main
+    logging.info(f"Best params for DBSCAN:\neps: {t[0]}\nmin_samples: {t[1]}\nmetrics: {t[2]}")
+IndexError: tuple index out of range
+INFO: Argument combination 24/36.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Klassik' and 'Realismus'.
+INFO: Count of different poets: 37
+INFO: Count of poets of epoch 'Klassik': 17
+INFO: Count of poets of epoch 'Realismus': 24
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.02928308663523945.
+INFO: V-measure for K-Means: 0.05369819121581947.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.18931055068969727 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.021461242337665793.
+INFO: V-measure for K-Medoids: 0.006155613203095856.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.012494802474975586 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 7
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.06956710485260408.
+INFO: V-measure for DBSCAN: 0.04560879291075854.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.591911315917969 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: tied
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.005387501546158088.
+INFO: V-measure for for Gaussian Mixture Model: 0.002968032790352258.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 868.2549865245819 seconds
+INFO: Run-time: 14.7 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 25/36.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Klassik' and 'Naturalismus'.
+INFO: Count of different poets: 33
+INFO: Count of poets of epoch 'Klassik': 17
+INFO: Count of poets of epoch 'Naturalismus': 16
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.03443619176232268.
+INFO: V-measure for K-Means: 0.14169736421823495.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.1751720905303955 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.06139954853273143.
+INFO: V-measure for K-Medoids: 0.18207882921976595.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.01645827293395996 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.046767537826685045.
+INFO: V-measure for DBSCAN: 0.056886816021176685.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.174653768539429 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.08312284730195177.
+INFO: V-measure for for Gaussian Mixture Model: 0.0872651975089693.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1080.6741993427277 seconds
+INFO: Run-time: 18.233333333333334 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 26/36.
+INFO: Epoch 1: Klassik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Klassik' and 'Expressionismus'.
+INFO: Count of different poets: 28
+INFO: Count of poets of epoch 'Klassik': 17
+INFO: Count of poets of epoch 'Expressionismus': 11
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.13215812529688076.
+INFO: V-measure for K-Means: 0.19261286536331698.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.15810227394104004 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.5221395977691398.
+INFO: V-measure for K-Medoids: 0.4417743205481945.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.01334381103515625 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.2607272919195651.
+INFO: V-measure for DBSCAN: 0.38251213355693886.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 4.998218774795532 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.26203597357301667.
+INFO: V-measure for for Gaussian Mixture Model: 0.2437392852341858.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 653.8191125392914 seconds
+INFO: Run-time: 11.1 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 27/36.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Biedermeier.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Romantik' and 'Biedermeier'.
+INFO: Count of different poets: 39
+INFO: Count of poets of epoch 'Romantik': 20
+INFO: Count of poets of epoch 'Biedermeier': 23
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.020638532110091697.
+INFO: V-measure for K-Means: 1.7108052341986464e-05.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.19678592681884766 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.00698875721665137.
+INFO: V-measure for K-Medoids: 0.04523509298187304.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.012655496597290039 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.08661744369572982.
+INFO: V-measure for DBSCAN: 0.1273115325911645.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.759178638458252 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.020612181799443446.
+INFO: V-measure for for Gaussian Mixture Model: 0.03156347527826653.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1085.5625789165497 seconds
+INFO: Run-time: 18.333333333333332 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 28/36.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Romantik' and 'Realismus'.
+INFO: Count of different poets: 43
+INFO: Count of poets of epoch 'Romantik': 20
+INFO: Count of poets of epoch 'Realismus': 24
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.010470630531920266.
+INFO: V-measure for K-Means: 0.05029073804305925.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.16291594505310059 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.033740534875836156.
+INFO: V-measure for K-Medoids: 0.03249587038238983.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.01932835578918457 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.05610856009943807.
+INFO: V-measure for DBSCAN: 0.04791598594732532.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.616086483001709 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.05644457375618281.
+INFO: V-measure for for Gaussian Mixture Model: 0.062460292105324625.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1078.755940914154 seconds
+INFO: Run-time: 18.216666666666665 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 29/36.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Romantik' and 'Naturalismus'.
+INFO: Count of different poets: 36
+INFO: Count of poets of epoch 'Romantik': 20
+INFO: Count of poets of epoch 'Naturalismus': 16
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.5083329137505664.
+INFO: V-measure for K-Means: 0.43823749796273853.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.17632341384887695 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.019642230796211874.
+INFO: V-measure for K-Medoids: 0.02160429705938304.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.01757979393005371 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 6
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.08603667136812404.
+INFO: V-measure for DBSCAN: 0.07564284474331212.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.475086450576782 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.28856624319419233.
+INFO: V-measure for for Gaussian Mixture Model: 0.2409373147792201.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1077.3359463214874 seconds
+INFO: Run-time: 18.183333333333334 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 30/36.
+INFO: Epoch 1: Romantik.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Romantik' and 'Expressionismus'.
+INFO: Count of different poets: 31
+INFO: Count of poets of epoch 'Romantik': 20
+INFO: Count of poets of epoch 'Expressionismus': 11
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.5608077099586967.
+INFO: V-measure for K-Means: 0.5713374383941167.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.17171978950500488 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.38346211509629796.
+INFO: V-measure for K-Medoids: 0.41249295961533916.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.014086723327636719 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 7
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.24277191372189078.
+INFO: V-measure for DBSCAN: 0.22497623289936303.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.220607042312622 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.6591300355790198.
+INFO: V-measure for for Gaussian Mixture Model: 0.5587925311312624.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 667.1775908470154 seconds
+INFO: Run-time: 11.333333333333334 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 31/36.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Realismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Biedermeier' and 'Realismus'.
+INFO: Count of different poets: 39
+INFO: Count of poets of epoch 'Biedermeier': 23
+INFO: Count of poets of epoch 'Realismus': 24
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.009908838684106178.
+INFO: V-measure for K-Means: 0.03210416751619314.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.27686142921447754 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.013503703204154291.
+INFO: V-measure for K-Medoids: 0.15306279763150243.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.022721529006958008 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.7
+min_samples: 5
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.00303871052979262.
+INFO: V-measure for DBSCAN: 0.00862474392552294.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.82741904258728 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: spherical
+INFO: Adjusted Rand Score for Gaussian Mixture Model: -0.005932421975754553.
+INFO: V-measure for for Gaussian Mixture Model: 0.03171999254500999.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 644.4923830032349 seconds
+INFO: Run-time: 10.966666666666667 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 32/36.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Biedermeier' and 'Naturalismus'.
+INFO: Count of different poets: 39
+INFO: Count of poets of epoch 'Biedermeier': 23
+INFO: Count of poets of epoch 'Naturalismus': 16
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.05545965080960602.
+INFO: V-measure for K-Means: 0.05522105197044533.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.1829533576965332 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.022524166934376977.
+INFO: V-measure for K-Medoids: 0.0011275696925198684.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.020003080368041992 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.9
+min_samples: 6
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.022420275727614594.
+INFO: V-measure for DBSCAN: 0.05860949250434757.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.382819890975952 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.2161247255032137.
+INFO: V-measure for for Gaussian Mixture Model: 0.17760443346190122.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1059.30370926857 seconds
+INFO: Run-time: 17.866666666666667 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 33/36.
+INFO: Epoch 1: Biedermeier.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Biedermeier' and 'Expressionismus'.
+INFO: Count of different poets: 34
+INFO: Count of poets of epoch 'Biedermeier': 23
+INFO: Count of poets of epoch 'Expressionismus': 11
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.7835685921854318.
+INFO: V-measure for K-Means: 0.6755753186951002.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.16573572158813477 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.8887633307436966.
+INFO: V-measure for K-Medoids: 0.8379113250868575.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.010729074478149414 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 4
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.12316662111688076.
+INFO: V-measure for DBSCAN: 0.08177317049888191.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.068981409072876 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: diag
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.7827255667697925.
+INFO: V-measure for for Gaussian Mixture Model: 0.7253969471480305.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 619.6229310035706 seconds
+INFO: Run-time: 10.533333333333333 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 34/36.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Naturalismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Realismus' and 'Naturalismus'.
+INFO: Count of different poets: 38
+INFO: Count of poets of epoch 'Realismus': 24
+INFO: Count of poets of epoch 'Naturalismus': 16
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: -0.03109707269330015.
+INFO: V-measure for K-Means: 0.0205044836915664.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.14453601837158203 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.04622398772175331.
+INFO: V-measure for K-Medoids: 0.13439859388283484.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.016552209854125977 seconds
+INFO: Tuning hyperparameters for dbscan.
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+Traceback (most recent call last):
+  File "pipe.py", line 557, in <module>
+    main()
+  File "pipe.py", line 316, in main
+    logging.info(f"Best params for DBSCAN:\neps: {t[0]}\nmin_samples: {t[1]}\nmetrics: {t[2]}")
+IndexError: tuple index out of range
+INFO: Argument combination 35/36.
+INFO: Epoch 1: Realismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Realismus' and 'Expressionismus'.
+INFO: Count of different poets: 35
+INFO: Count of poets of epoch 'Realismus': 24
+INFO: Count of poets of epoch 'Expressionismus': 11
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.5449817992719709.
+INFO: V-measure for K-Means: 0.41413474197033917.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.15723085403442383 seconds
+INFO: Adjusted Rand Score for K-Medoids: -0.07431340872374805.
+INFO: V-measure for K-Medoids: 0.12372166498179964.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.02180194854736328 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.9
+min_samples: 2
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.053254437869822424.
+INFO: V-measure for DBSCAN: 0.07697864745110962.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 5.1483564376831055 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.024960998439937654.
+INFO: V-measure for for Gaussian Mixture Model: 0.23708694091174096.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1044.9126553535461 seconds
+INFO: Run-time: 17.616666666666667 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Argument combination 36/36.
+INFO: Epoch 1: Naturalismus.
+INFO: Epoch 2: Expressionismus.
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/utils/deprecation.py:143: FutureWarning: The sklearn.metrics.classification module is  deprecated in version 0.22 and will be removed in version 0.24. The corresponding classes / functions should instead be imported from sklearn.metrics. Anything that cannot be imported from sklearn.metrics is now part of the private API.
+  warnings.warn(message, FutureWarning)
+INFO: Read 'poems' corpus.
+INFO: Read preload corpus with epoch division by 'amann_noise'.
+INFO: Used epochs are 'Naturalismus' and 'Expressionismus'.
+INFO: Count of different poets: 26
+INFO: Count of poets of epoch 'Naturalismus': 16
+INFO: Count of poets of epoch 'Expressionismus': 11
+/home/paulus/.conda/envs/bertpoems/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:973: FutureWarning: 'n_jobs' was deprecated in version 0.23 and will be removed in 0.25.
+  warnings.warn("'n_jobs' was deprecated in version 0.23 and will be"
+INFO: Adjusted Rand Score for K-Means: 0.04195070791819618.
+INFO: V-measure for K-Means: 0.12463420155506767.
+INFO: Update results file.
+INFO: Run-time K-Means: 0.13541007041931152 seconds
+INFO: Adjusted Rand Score for K-Medoids: 0.036669542709231985.
+INFO: V-measure for K-Medoids: 0.05517268389301492.
+INFO: Update results file.
+INFO: Run-time K-Medoids: 0.011960983276367188 seconds
+INFO: Tuning hyperparameters for dbscan.
+INFO: Best params for DBSCAN:
+eps: 0.8
+min_samples: 4
+metrics: cosine
+INFO: Adjusted Rand Score for DBSCAN: 0.06347125097125099.
+INFO: V-measure for DBSCAN: 0.06752373512546157.
+INFO: Update results file.
+INFO: Run-time DBSCAN: 4.862496614456177 seconds
+INFO: Tuning hyperparameters for gmm.
+INFO: Best params for GMM:
+covariance type: full
+INFO: Adjusted Rand Score for Gaussian Mixture Model: 0.024512183283176423.
+INFO: V-measure for for Gaussian Mixture Model: 0.038283371641473635.
+INFO: Update results file.
+INFO: Run-time Gaussian Mixture Model: 1065.7527980804443 seconds
+INFO: Run-time: 17.966666666666665 minute(s).
+--------------- Metrics (K-Means) ---------------
+--------------------------------------------------
+--------------- Metrics (K-Medoids) ---------------
+--------------------------------------------------
+--------------- Metrics (DBSCAN) ---------------
+------------------------------------------------
+--------------- Metrics (Gaussian Mixture Model) ---------------
+-----------------------------------------------------------------
+INFO: Overall run-time: 480.35 minute(s).
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
+--------------------------------------------
+--------------------------------------------
+
+
