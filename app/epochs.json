@@ -15,6 +15,7 @@
       "Frühbarock": {"b": 1600, "e": 1640},
       "Hochbarock": {"b": 1660, "e": 1710},
       "Aufklärung": {"b": 1730, "e": 1775},
+      "Sturm_Drang": {"b": 1767, "e": 1785},
       "Klassik": {"b": 1796, "e": 1822},
       "Romantik": {"b": 1808, "e": 1825},
       "Biedermeier": {"b": 1825, "e": 1838},
