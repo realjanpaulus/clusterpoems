@@ -24,7 +24,6 @@ from sklearn_extra.cluster import KMedoids
 from stop_words import get_stop_words
 import sys
 import time
-from umap import UMAP
 
 from utils import add_epoch_division, clear_json, merge_corpus_poets, text_cleaning, replace_spelling
 from yellowbrick.text import UMAPVisualizer
@@ -141,14 +140,12 @@ def main():
 								 stop_words=get_stop_words("de"))
 	vector = vectorizer.fit_transform(text)
 
-	#TODO: weg
-	n_components = 4
 
 	if args.reduce_dimensionality:
 		logging.info(f"Reduce dimensionality to {n_components}.")
 
 		if args.dimension_reduction == "umap":
-			
+			from umap import UMAP
 			vector = UMAP(n_components=n_components).fit_transform(vector)
 		elif args.dimension_reduction == "svd":
 			svd = TruncatedSVD(n_components=n_components)
@@ -168,7 +165,7 @@ def main():
 	if args.method == "kmeans" or args.method == "all":
 
 		kmeans_st = time.time()
-		kmeans = KMeans(4,#len(unique_epochs),
+		kmeans = KMeans(len(unique_epochs),
 						n_jobs=n_jobs)
 		kmeans.fit(vector)
 
