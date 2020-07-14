@@ -23,33 +23,11 @@ distribution.
 
 ## TODOs:
 
-- [x] Text cleaning erweitert
-- [x] Andere Art der Zusammenfassung von Gedichten: Dichter mit mehreren Epochenzuweisungen nach diesen aufteilen
-- [x] mit veränderter zusammenfassung mal clustering auf gesamten korpus
-- [x] DBSCAN anwenden
-- [x] andere zuteilung finden anstatt brenner
-- [x] kmeans erweitern mit cosinus distance? --> k-medoids
-- [x]Korpus normalisieren und Experimente durchführen
-- [x, x] GMM anwenden als Vergleich, vllt nur auf besten Epochenzuweisung!
-	- [x] angewandt --> langsam und weniger gute ergebnisse
-- [x] **Noise** entdecken
-	- [x] Hierarchisches Clustering inkl. Epochenzuteilungen
-		- originales Korpus
-		- reduziertes Korpus
-	- [x] Topic Modelling --> Dialekt
-	- [x] LSVM
-- [x] POS-TAGGING
-
-
 - Analyse von Gedichten/Dichter, die sich gut clustern lassen
 - Topic Modelling anwenden: erzeugen epochen bestimmte topics?
 	- Topics der besten Epochen-Unterscheidungen angucken
 	- FRAGE: hier wirklich andere Themen oder nur Rechtschreibung?
-- autoencoder
-	- dim red: https://www.dlology.com/blog/how-to-do-unsupervised-clustering-with-keras/
-	- https://github.com/erickrf/autoencoder/tree/master/src
 - zeitlichen aspekt untersuchen
-- schreiben, dass clustering von korpus so nicht funktioniert hat (mit erklärung)
 - evaluation aufräumen
 - In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
 	- guideline schreiben für stelle in repo, die für gute ergebnisse verantwortlich waren

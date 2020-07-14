@@ -49,6 +49,9 @@ def main():
 	if args.epoch_division == "amann" or args.epoch_division == "amann_noise":
 		epochs = epochs["amann"]
 		epoch_exceptions = ["Sturm_Drang"]
+	if args.epoch_division == "amann_altered":
+		epochs = epochs["amann_altered"]
+		epoch_exceptions = ["Sturm_Drang"]
 	elif args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
 		epoch_exceptions = ["Klassik_Romantik"]
@@ -91,6 +94,9 @@ def main():
 		if args.adjust_spelling:
 			command += " -aj"
 
+		if args.visualization:
+			command += " -v"
+
 
 		subprocess.call(["bash", "-c", command])
 		print("\n")
@@ -106,7 +112,6 @@ if __name__ == "__main__":
 	parser.add_argument("--clear_json", "-cj", action="store_true", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="amann", help="Indicates the epoch division method. Possible values are 'amann', brenner'.")
-	#parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
 	parser.add_argument("--lowercase", "-l", type=bool, default=True, help="Indicates if words should be lowercased.")
 	parser.add_argument("--max_features", "-mf", type=int, default=10000, help="Indicates the number of most frequent words.")
 	parser.add_argument("--merge_poet", "-mp", action="store_true", help="Indicates if all poems of a poet should be merged.")
@@ -116,7 +121,8 @@ if __name__ == "__main__":
 	parser.add_argument("--reduce_dimensionality", "-rd", action="store_true", help="Indicates if dimension reduction should be applied before clustering.")
 	parser.add_argument("--save_date", "-sd", action="store_true", help="Indicates if the creation date of the results should be saved.")
 	parser.add_argument("--use_tuning", "-ut", action="store_true", help="Indicates if parameter tuning should be used.")
-	
+	parser.add_argument("--visualization", "-v", action="store_true", help="Indicates if results should be visualized.")
+
 
 	args = parser.parse_args()
 

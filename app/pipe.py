@@ -24,6 +24,8 @@ from sklearn_extra.cluster import KMedoids
 from stop_words import get_stop_words
 import sys
 import time
+from umap import UMAP
+
 from utils import add_epoch_division, clear_json, merge_corpus_poets, text_cleaning, replace_spelling
 from yellowbrick.text import UMAPVisualizer
 
@@ -93,6 +95,9 @@ def main():
 	elif args.epoch_division == "amann_noise":
 		corpus = pd.read_csv("../corpora/amann_poems_noiseless.csv", index_col=0)
 		logging.info(f"Read preload corpus with epoch division by '{args.epoch_division}'.")
+	elif args.epoch_division == "amann_altered":
+		corpus = pd.read_csv("../corpora/amann_poems_altered.csv", index_col=0)
+		logging.info(f"Read preload corpus with epoch division by '{args.epoch_division}'.")
 	elif args.epoch_division == "brenner":
 		epochs = epochs["brenner"]
 		epoch_exceptions = ["Klassik_Romantik"]
@@ -136,15 +141,23 @@ def main():
 								 stop_words=get_stop_words("de"))
 	vector = vectorizer.fit_transform(text)
 
+	#TODO: weg
+	n_components = 4
+
 	if args.reduce_dimensionality:
 		logging.info(f"Reduce dimensionality to {n_components}.")
-		svd = TruncatedSVD(n_components=n_components)
-		normalizer = Normalizer(copy=False)
-		lsa = make_pipeline(svd, normalizer)
-		vector = lsa.fit_transform(vector)
 
-		explained_variance = svd.explained_variance_ratio_.sum()
-		logging.info("Explained variance of the SVD step: {}%".format(int(explained_variance * 100)))
+		if args.dimension_reduction == "umap":
+			
+			vector = UMAP(n_components=n_components).fit_transform(vector)
+		elif args.dimension_reduction == "svd":
+			svd = TruncatedSVD(n_components=n_components)
+			normalizer = Normalizer(copy=False)
+			lsa = make_pipeline(svd, normalizer)
+			vector = lsa.fit_transform(vector)
+
+			explained_variance = svd.explained_variance_ratio_.sum()
+			logging.info("Explained variance of the SVD step: {}%".format(int(explained_variance * 100)))
 
 
 	# ============
@@ -155,7 +168,7 @@ def main():
 	if args.method == "kmeans" or args.method == "all":
 
 		kmeans_st = time.time()
-		kmeans = KMeans(len(unique_epochs),
+		kmeans = KMeans(4,#len(unique_epochs),
 						n_jobs=n_jobs)
 		kmeans.fit(vector)
 
@@ -164,7 +177,7 @@ def main():
 		# kmeans top words #
 		# ==================
 
-		if args.reduce_dimensionality:
+		if args.reduce_dimensionality and args.dimension_reduction == "svd":
 			original_space_centroids = svd.inverse_transform(kmeans.cluster_centers_)
 			order_centroids = original_space_centroids.argsort()[:, ::-1]
 		else:
@@ -313,12 +326,15 @@ def main():
 
 
 			t = dbscan_best_params["params"]
-			logging.info(f"Best params for DBSCAN:\neps: {t[0]}\nmin_samples: {t[1]}\nmetrics: {t[2]}")
-			dbscan = DBSCAN(eps=t[0],
-							min_samples=t[1],
-							metric=t[2],
-							n_jobs=n_jobs)
-			dbscan.fit(vector)
+			try:
+				logging.info(f"Best params for DBSCAN:\neps: {t[0]}\nmin_samples: {t[1]}\nmetrics: {t[2]}")
+				dbscan = DBSCAN(eps=t[0],
+								min_samples=t[1],
+								metric=t[2],
+								n_jobs=n_jobs)
+				dbscan.fit(vector)
+			except:
+				logging.info(f"Params: {t}")
 
 		else:
 			dbscan = DBSCAN(n_jobs=n_jobs)
@@ -537,6 +553,7 @@ if __name__ == "__main__":
 	parser.add_argument("--adjust_spelling", "-aj", action="store_true", help="Indicates if spelling should be adjusted.")
 	parser.add_argument("--clear_json", "-cj", action="store_true", help="Indicates if previous json results should cleared.")
 	parser.add_argument("--corpus_name", "-cn", type=str, default="poems", help="Indicates the corpus. Default is 'poems'. Another possible value is 'noise'.")
+	parser.add_argument("--dimension_reduction", "-dr", type=str, default="svd", help="Indicates the dimension reduction algorithm.")
 	parser.add_argument("--epoch_division", "-ed", type=str, default="amann", help="Indicates the epoch division method. Possible values are 'amann', brenner'.")
 	#parser.add_argument("--epoch_exception", "-ee", type=str, default="Klassik_Romantik", help="Indicates the epoch which should be skipped.")
 	parser.add_argument("--epoch_one", "-eo", type=str, default="Naturalismus", help="Name of the first epoch.")
