@@ -24,7 +24,6 @@ distribution.
 
 ## TODOs:
 
-- evaluation aufräumen
 - In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
 	- guideline schreiben für stelle in repo, die für gute ergebnisse verantwortlich waren
 
