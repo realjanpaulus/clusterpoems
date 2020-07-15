@@ -21,13 +21,9 @@ distribution.
 
 **results**: Contains the experiment results as images and json files.
 
+
 ## TODOs:
 
-- Analyse von Gedichten/Dichter, die sich gut clustern lassen
-- Topic Modelling anwenden: erzeugen epochen bestimmte topics?
-	- Topics der besten Epochen-Unterscheidungen angucken
-	- FRAGE: hier wirklich andere Themen oder nur Rechtschreibung?
-- zeitlichen aspekt untersuchen
 - evaluation aufräumen
 - In Powerpoint Verweise auf Notebooks, Python files etc. im Github-Repo
 	- guideline schreiben für stelle in repo, die für gute ergebnisse verantwortlich waren
