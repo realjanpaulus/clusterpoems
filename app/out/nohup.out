@@ -1,7 +1,0 @@
-INFO: Clustering for all epoch combinations.
-Traceback (most recent call last):
-  File "run_pipe.py", line 117, in <module>
-    main()
-  File "run_pipe.py", line 65, in main
-    combinations_inputs = list(combinations(unique_epochs, r=2))
-UnboundLocalError: local variable 'unique_epochs' referenced before assignment
