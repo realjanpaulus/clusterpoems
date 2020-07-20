@@ -1,5 +1,6 @@
-# clustering
-Clustering files for the course "Clustering" at the Julius-Maximilians University Würzburg, SS20.
+# Clustering poems
+
+Clustering files for the course "Clustering" at the Julius-Maximilians University Würzburg, SS20. In a series of experiments it was to be examined whether literary epochs were recognizable within a poetry corpus. 
 
 
 ## Project structure
