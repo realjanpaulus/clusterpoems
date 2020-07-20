@@ -388,6 +388,8 @@ def random_downsampling(corpus,
 # ==========
 
 def generate_wordcloud(top_words, pos_remove=False, img_name = ""):
+	""" Generate wordclouds by top words.
+	"""
 	plt.rcParams['figure.dpi']= 300
 
 	# Create and generate a word cloud image:
@@ -420,6 +422,8 @@ def get_json_dict(filename):
 	   return(json.load(f_in))
 
 def linkage_matrix(model):
+	""" Create linkage matrix.
+	"""
 	counts = np.zeros(model.children_.shape[0])
 	n_samples = len(model.labels_)
 	for i, merge in enumerate(model.children_):
@@ -436,7 +440,8 @@ def linkage_matrix(model):
 							counts]).astype(float)
 
 def plot_dendrogram(model, **kwargs):
-	# Create linkage matrix and then plot the dendrogram
+	""" Create linkage matrix and then plot the dendrogram.
+	"""
 
 	# create the counts of samples under each node
 	lm = linkage_matrix(model)
@@ -445,7 +450,8 @@ def plot_dendrogram(model, **kwargs):
 	dendrogram(lm, **kwargs)
 
 def purity_score(y_true, y_pred):
-	# compute contingency matrix (also called confusion matrix)
+	""" Compute confusion matrix.
+	"""
 	contingency_matrix = metrics.cluster.contingency_matrix(y_true, y_pred)
 	return np.sum(np.amax(contingency_matrix, axis=0)) / np.sum(contingency_matrix)
 
@@ -453,6 +459,7 @@ def purity_score(y_true, y_pred):
 def get_top_n_words(column, n = None, stopwords = "", pos_remove = False):
 	""" Get the top n words of a text column.
 	"""
+
 	texts = list(column)
 	if pos_remove:
 		texts = remove_pos(texts)
@@ -468,6 +475,7 @@ def get_top_n_words(column, n = None, stopwords = "", pos_remove = False):
 def remove_noise_poet(corpus, noise_pids, pid="id", min_n=50):
 	""" Removes noisy poets from corpus.
 	"""
+
 	df = corpus.copy()
 	noise_df = corpus[corpus[pid].isin(noise_pids)]
 	noise_poets = dict(noise_df.poet.value_counts())
@@ -478,6 +486,7 @@ def remove_noise_poet(corpus, noise_pids, pid="id", min_n=50):
 def remove_pos(lst, used_pos = ["VERB", "ADJ", "NOUN"]):
 	""" Remove every part of speach except the specified exceptions.
 	"""
+
 	nlp = spacy.load('de')
 	nlp.max_length = 3000000
 	new_lst = []
@@ -493,6 +502,8 @@ def remove_pos(lst, used_pos = ["VERB", "ADJ", "NOUN"]):
 	
 
 def wordcloud_epochs(df, epochs, n = 100, pos_remove = False):
+	""" Create word clouds by epochs.
+	"""
 	
 	top_words_dict = {}
 	
@@ -536,3 +547,5 @@ def hide_code():
 	}
 	</script>"""
 	display(HTML(toggle_code_prepare_str + toggle_code_str))
+
+
