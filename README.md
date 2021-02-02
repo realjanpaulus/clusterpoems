@@ -1,6 +1,11 @@
 # Clustering poems
 
-Clustering files for the course "Clustering" at the Julius-Maximilians University Würzburg, SS20. In a series of experiments it was to be examined whether literary epochs were recognizable within a poetry corpus. 
+In a series of experiments it was to be examined whether literary epochs were recognizable within a poetry corpus. A number of clustering methods were tried out for this purpose:
+- K-Means
+- DBSCAN
+- Gaussian Mixture Models
+- Hierarchical Clustering
+- Recurrent Autoencoder 
 
 
 ## Project structure
