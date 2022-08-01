@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "clusterpoems"
+version = "0.1.0"
+description = "Cluster epochs of poems."
+authors = ["Jan Paulus <janpaulus95@web.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.3"
+numpy = "^1.23.1"
+matplotlib = "^3.5.2"
+nltk = "^3.7"
+stop-words = "^2018.7.23"
+ipython = "^8.4.0"
+wordcloud = "^1.8.2"
+spacy = "^3.4.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+
+[tool.black]
+line-length = 99
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
